@@ -8192,3 +8192,41 @@
 {"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-07T15:50:52.620Z"}
 {"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-07T15:50:52.783Z"}
 {"level":"warn","message":"Redis connection failed - running without cache","timestamp":"2025-12-07T15:50:52.784Z"}
+{"level":"warn","message":"Razorpay credentials not configured - payment gateway disabled","timestamp":"2025-12-07T16:16:17.347Z"}
+{"level":"info","message":"Server running in development mode on port 5000","timestamp":"2025-12-07T16:16:17.361Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-07T16:16:17.368Z"}
+{"level":"info","message":"MongoDB Connected: localhost","timestamp":"2025-12-07T16:16:17.373Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-07T16:16:17.435Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-07T16:16:17.542Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-07T16:16:17.710Z"}
+{"level":"warn","message":"Redis connection failed - running without cache","timestamp":"2025-12-07T16:16:17.711Z"}
+{"level":"error","message":"Auth error: jwt expired","timestamp":"2025-12-07T16:16:44.445Z"}
+{"level":"info","message":"New client connected: F6I7n1LyoHd-W9a_AAAC","timestamp":"2025-12-07T16:16:47.550Z"}
+{"level":"info","message":"New client connected: Yx5z8pDtSiIplVMhAAAD","timestamp":"2025-12-07T16:16:47.561Z"}
+{"level":"info","message":"Socket Yx5z8pDtSiIplVMhAAAD joined room rider:693284309aaaca8639152072","timestamp":"2025-12-07T16:16:47.566Z"}
+{"level":"info","message":"Socket Yx5z8pDtSiIplVMhAAAD joined room rider:693284309aaaca8639152072","timestamp":"2025-12-07T16:16:47.570Z"}
+{"level":"warn","message":"Razorpay credentials not configured - payment gateway disabled","timestamp":"2025-12-07T17:10:21.654Z"}
+{"level":"info","message":"Server running in development mode on port 5000","timestamp":"2025-12-07T17:10:21.669Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-07T17:10:21.678Z"}
+{"level":"info","message":"MongoDB Connected: localhost","timestamp":"2025-12-07T17:10:21.689Z"}
+{"level":"info","message":"New client connected: ymeDCXXJchCzR77MAAAC","timestamp":"2025-12-07T17:10:21.715Z"}
+{"level":"info","message":"New client connected: FsTVsNhMEb9Z2_emAAAD","timestamp":"2025-12-07T17:10:21.721Z"}
+{"level":"info","message":"Socket ymeDCXXJchCzR77MAAAC joined room rider:693284309aaaca8639152072","timestamp":"2025-12-07T17:10:21.726Z"}
+{"level":"info","message":"Socket ymeDCXXJchCzR77MAAAC joined room rider:693284309aaaca8639152072","timestamp":"2025-12-07T17:10:21.733Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-07T17:10:21.742Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-07T17:10:21.849Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-07T17:10:22.004Z"}
+{"level":"warn","message":"Redis connection failed - running without cache","timestamp":"2025-12-07T17:10:22.004Z"}
+{"level":"error","message":"Auth error: jwt expired","timestamp":"2025-12-07T17:11:07.929Z"}
+{"level":"info","message":"Client disconnected: ymeDCXXJchCzR77MAAAC","timestamp":"2025-12-07T17:11:08.346Z"}
+{"level":"info","message":"Client disconnected: FsTVsNhMEb9Z2_emAAAD","timestamp":"2025-12-07T17:11:08.347Z"}
+{"level":"info","message":"New client connected: fkYL6ixPyZ54qQKzAAAG","timestamp":"2025-12-07T17:11:13.964Z"}
+{"level":"info","message":"New client connected: B-BPI_r3E5yN-VVjAAAH","timestamp":"2025-12-07T17:11:13.967Z"}
+{"level":"info","message":"Socket B-BPI_r3E5yN-VVjAAAH joined room rider:693284309aaaca8639152072","timestamp":"2025-12-07T17:11:13.980Z"}
+{"level":"info","message":"Socket B-BPI_r3E5yN-VVjAAAH joined room rider:693284309aaaca8639152072","timestamp":"2025-12-07T17:11:13.984Z"}
+{"level":"error","message":"Surge pricing calculation error: $geoNear, $near, and $nearSphere are not allowed in this context, as these operators require sorting geospatial data. If you do not need sort, consider using $geoWithin instead. Check out https://dochub.mongodb.org/core/near-sort-operation and https://dochub.mongodb.org/core/nearSphere-sort-operationfor more details.","timestamp":"2025-12-07T17:12:13.726Z"}
+{"level":"info","message":"Trip created: 6935b56d110d8a61362f49db","timestamp":"2025-12-07T17:12:13.796Z"}
+{"level":"info","message":"Socket B-BPI_r3E5yN-VVjAAAH joined room rider:693284309aaaca8639152072","timestamp":"2025-12-07T17:12:13.810Z"}
+{"level":"info","message":"Ride requested: 6935b56d110d8a61362f49db","timestamp":"2025-12-07T17:12:13.811Z"}
+{"level":"info","message":"Found 1 nearby drivers for vehicle type: bike","timestamp":"2025-12-07T17:12:13.839Z"}
+{"level":"info","message":"Sent request to driver 69347d9331ca303562ea8f63","timestamp":"2025-12-07T17:12:13.843Z"}

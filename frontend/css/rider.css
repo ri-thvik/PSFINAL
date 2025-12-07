@@ -588,8 +588,8 @@ body {
     transition: background 0.3s ease;
 }
 
-.location-input-group:focus-within ~ .location-divider,
-.location-input-group:focus-within + .location-divider {
+.location-input-group:focus-within~.location-divider,
+.location-input-group:focus-within+.location-divider {
     background: var(--primary-color);
 }
 
@@ -1203,17 +1203,46 @@ body {
 }
 
 /* ==================== RESPONSIVE ==================== */
+/* ==================== RESPONSIVE ==================== */
 @media (min-width: 768px) {
     .screen {
-        max-width: 480px;
-        margin: 0 auto;
-        box-shadow: var(--shadow-lg);
+        max-width: none;
+        margin: 0;
+        box-shadow: none;
     }
 
-    .bottom-sheet,
+    /* Floating Side Panel for Desktop */
+    .bottom-sheet {
+        position: fixed;
+        top: 100px;
+        right: 60px;
+        bottom: auto;
+        left: auto;
+        width: 400px;
+        /* Fixed width for the card */
+        max-width: 100%;
+        max-height: calc(100vh - 140px);
+        border-radius: 12px;
+        /* Rounded corners all around */
+        margin: 0;
+        transform: none;
+        /* Reset transform */
+        animation: fadeIn 0.4s ease-out;
+        /* Fade in animation */
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+        border: 1px solid var(--border-color);
+    }
+
+    /* Keep modals centered */
     .modal-content {
         max-width: 480px;
         margin: 0 auto;
+    }
+
+    /* Move current location button to left of the card */
+    .current-location-btn {
+        right: 480px;
+        bottom: 40px;
     }
 }
 
