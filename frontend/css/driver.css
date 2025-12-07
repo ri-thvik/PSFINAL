@@ -1,6 +1,22 @@
 /* Import Rider CSS as base */
 @import url('rider.css');
 
+/* Vehicle Info in Menu */
+.vehicle-info-text {
+    margin-top: 8px;
+    font-size: 13px !important;
+    opacity: 0.9 !important;
+    text-transform: capitalize;
+}
+
+.vehicle-number-text {
+    font-size: 13px !important;
+    opacity: 0.7 !important;
+    text-transform: uppercase;
+    font-family: monospace;
+    letter-spacing: 1px;
+}
+
 /* ==================== DRIVER PROFESSIONAL LIGHT THEME ==================== */
 :root {
     /* Professional Driver Color Palette */
@@ -23,6 +39,138 @@
     --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
     --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
     --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] {
+    --bg-white: #121212;
+    --bg-light: #000000;
+    --bg-card: #1E1E1E;
+    --bg-hover: #2C2C2C;
+    --text-dark: #FFFFFF;
+    --text-gray: #A0A0A0;
+    --text-light: #808080;
+    --border-light: #333333;
+    --bg-secondary: #1E1E1E;
+    /* Map to card bg for consistency */
+    --driver-bg-card: #1E1E1E;
+    --driver-bg-card-hover: #2C2C2C;
+
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+    --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Dark Mode Global Overrides */
+[data-theme="dark"] body,
+[data-theme="dark"] html {
+    background: var(--bg-light) !important;
+    color: var(--text-dark);
+}
+
+[data-theme="dark"] .screen,
+[data-theme="dark"] .map-container,
+[data-theme="dark"] #map {
+    background: var(--bg-light) !important;
+}
+
+/* Dark Mode Components */
+[data-theme="dark"] .top-bar {
+    background: rgba(18, 18, 18, 0.95);
+    border-bottom: 1px solid var(--border-light);
+}
+
+[data-theme="dark"] .menu-btn {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-dark);
+}
+
+[data-theme="dark"] .side-menu {
+    background: var(--bg-card);
+}
+
+[data-theme="dark"] .menu-item:hover {
+    background: var(--bg-hover);
+}
+
+[data-theme="dark"] .menu-item span {
+    color: var(--text-dark);
+}
+
+/* Sheets & Cards */
+[data-theme="dark"] .bottom-sheet,
+[data-theme="dark"] .modal-content,
+[data-theme="dark"] .page-modal {
+    background: var(--bg-card);
+    color: var(--text-dark);
+}
+
+[data-theme="dark"] .page-modal-header {
+    background: var(--bg-card);
+    border-bottom: 1px solid var(--border-light);
+}
+
+[data-theme="dark"] .page-modal-content {
+    background: var(--bg-light);
+}
+
+[data-theme="dark"] .quick-stat,
+[data-theme="dark"] .summary-card,
+[data-theme="dark"] .settings-option,
+[data-theme="dark"] .support-option,
+[data-theme="dark"] .trip-item {
+    background: var(--bg-card);
+    border-color: var(--border-light);
+}
+
+[data-theme="dark"] .quick-stat-value {
+    color: var(--text-dark);
+}
+
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4 {
+    color: var(--text-dark);
+    letter-spacing: 0.5px;
+}
+
+[data-theme="dark"] p,
+[data-theme="dark"] span {
+    color: var(--text-gray);
+}
+
+[data-theme="dark"] span.earnings-amount,
+[data-theme="dark"] span.earnings-total-amount,
+[data-theme="dark"] .stat-box-value,
+[data-theme="dark"] .breakdown-amount {
+    color: var(--text-dark);
+}
+
+/* Map Dark Mode */
+[data-theme="dark"] .leaflet-tile-pane {
+    filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
+}
+
+[data-theme="dark"] .leaflet-control-container {
+    filter: invert(1) hue-rotate(180deg) brightness(1.2);
+}
+
+/* Inputs & Forms */
+[data-theme="dark"] input {
+    background: #2C2C2C;
+    border: 1px solid var(--border-light);
+    color: var(--text-dark);
+}
+
+[data-theme="dark"] input:focus {
+    border-color: var(--driver-primary);
+    background: #333;
+}
+
+[data-theme="dark"] .back-btn {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-dark);
 }
 
 /* Clean background */
@@ -2596,11 +2744,12 @@ select {
     right: 0 !important;
     width: 380px !important;
     height: calc(100vh - 60px) !important;
-    overflow: hidden !important;   
+    overflow: hidden !important;
     padding-bottom: 0 !important;
 }
- #online-sheet.bottom-sheet {
-    overflow-y: hidden !important;  
+
+#online-sheet.bottom-sheet {
+    overflow-y: hidden !important;
 }
 
 @media (min-width: 768px) {
@@ -2608,6 +2757,7 @@ select {
         display: none !important;
     }
 }
+
 /* @media (min-width: 768px) {
     #online-sheet > *:not(.sheet-handle) {
         height: calc(100vh - 60px) !important;

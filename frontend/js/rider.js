@@ -15,6 +15,10 @@ let currentPaymentTripId = null;
 
 // ==================== INITIALIZATION ====================
 document.addEventListener('DOMContentLoaded', () => {
+    // Initialize Theme
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+
     // Restore trip from localStorage
     const savedTrip = localStorage.getItem('rapidRide_currentTrip');
     if (savedTrip) {
@@ -1192,6 +1196,7 @@ function closeHelp() {
 function showSettings() {
     const modal = document.getElementById('settings-modal');
     const content = document.getElementById('settings-content');
+    const isDark = localStorage.getItem('theme') === 'dark';
 
     modal.style.display = 'flex';
     content.innerHTML = `
@@ -1213,7 +1218,7 @@ function showSettings() {
             <div class="settings-item">
                 <span>Dark Mode</span>
                 <label class="switch">
-                    <input type="checkbox">
+                    <input type="checkbox" ${isDark ? 'checked' : ''} onchange="toggleTheme(this)">
                     <span class="slider"></span>
                 </label>
             </div>
@@ -1222,6 +1227,12 @@ function showSettings() {
             </div>
         </div>
     `;
+}
+
+function toggleTheme(input) {
+    const theme = input.checked ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
 }
 
 function closeSettings() {

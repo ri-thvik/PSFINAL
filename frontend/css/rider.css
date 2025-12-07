@@ -27,6 +27,42 @@
     --radius-xl: 24px;
 }
 
+[data-theme="dark"] {
+    --primary-color: #FFFFFF;
+    --secondary-color: #E0E0E0;
+    --text-primary: #FFFFFF;
+    --text-secondary: #AAAAAA;
+    --text-light: #666666;
+    --bg-primary: #121212;
+    --bg-secondary: #1E1E1E;
+    --border-color: #333333;
+
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.5);
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.6);
+}
+
+[data-theme="dark"] .btn-primary {
+    color: #000000;
+}
+
+[data-theme="dark"] .vehicle-option.selected {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .map-container {
+    filter: invert(1) hue-rotate(180deg) brightness(0.8);
+}
+
+/* Invert map tiles except for map controls */
+[data-theme="dark"] .leaflet-tile-pane {
+    filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
+}
+
+[data-theme="dark"] .leaflet-control-container {
+    filter: invert(1) hue-rotate(180deg) brightness(1.2);
+}
+
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     background: var(--bg-secondary);
@@ -1257,4 +1293,96 @@ body {
 
 .slide-up {
     animation: slideUp 0.4s ease;
+}
+
+/* ==================== DARK MODE COMPONENT OVERRIDES ==================== */
+[data-theme="dark"] .current-location-card {
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+    border-color: var(--border-color);
+}
+
+[data-theme="dark"] .current-location-card:hover {
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, #2c2c2c 100%);
+}
+
+[data-theme="dark"] .current-location-content h4 {
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .current-location-content p {
+    color: var(--text-secondary);
+}
+
+[data-theme="dark"] .current-location-arrow {
+    color: var(--text-light);
+}
+
+/* Fix White Top Bar in Dark Mode */
+[data-theme="dark"] .top-bar {
+    background: rgba(18, 18, 18, 0.85);
+    border-bottom: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .menu-btn {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .menu-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Beautiful Dark Mode Inputs */
+[data-theme="dark"] .location-input-group,
+[data-theme="dark"] .search-input-wrapper {
+    background: #252525;
+    border: 1px solid transparent;
+}
+
+[data-theme="dark"] .location-input-group:focus-within,
+[data-theme="dark"] .search-input-wrapper:focus-within {
+    background: #1E1E1E;
+    border-color: var(--text-secondary);
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.05);
+}
+
+/* Dark Mode Cards & Sheets */
+[data-theme="dark"] .bottom-sheet,
+[data-theme="dark"] .modal-content,
+[data-theme="dark"] .vehicle-option {
+    background: #1E1E1E;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+    border: 1px solid #333;
+}
+
+[data-theme="dark"] .vehicle-option:hover {
+    border-color: #555;
+    background: #252525;
+}
+
+[data-theme="dark"] .vehicle-option.selected {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+    border-color: var(--primary-color);
+}
+
+/* Saved Places in Dark Mode */
+[data-theme="dark"] .saved-place {
+    background: #252525;
+}
+
+[data-theme="dark"] .saved-place:hover {
+    background: #333;
+}
+
+[data-theme="dark"] .saved-place-icon {
+    background: #333;
+    color: #fff;
+}
+
+/* Text Enhancements */
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4 {
+    letter-spacing: 0.5px;
 }

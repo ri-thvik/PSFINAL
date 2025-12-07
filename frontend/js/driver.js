@@ -122,6 +122,10 @@ function showNotification(message, type = 'info') {
 
 // ==================== INITIALIZATION ====================
 document.addEventListener('DOMContentLoaded', () => {
+    // Initialize Theme
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+
     // Ensure both screens start hidden
     const authScreen = document.getElementById('auth-screen');
     const mainScreen = document.getElementById('main-screen');
@@ -140,6 +144,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }, 2000);
 });
+
+// ==================== THEME MANAGEMENT ====================
+function toggleDriverTheme(input) {
+    const theme = input.checked ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+}
 
 // ==================== AUTH FUNCTIONS ====================
 function showAuthScreen() {
@@ -553,6 +564,31 @@ function updateDriverInfo() {
         document.getElementById('menu-driver-name').textContent = driver.userId?.name || 'Driver';
         document.getElementById('menu-driver-phone').textContent = driver.userId?.phone || '+91 XXXXXXXXXX';
         document.getElementById('menu-driver-rating').textContent = driver.metrics?.avgRating || '5.0';
+
+        // Update Vehicle Info
+        const vehicleDesc = document.getElementById('menu-vehicle-desc');
+        const vehicleNumber = document.getElementById('menu-vehicle-number');
+
+        if (vehicleDesc) {
+            const parts = [];
+            // Check top-level properties first
+            const type = driver.vehicleType || (driver.vehicle && driver.vehicle.type);
+            const model = driver.vehicleModel || (driver.vehicle && driver.vehicle.model);
+            const color = driver.vehicleColor || (driver.vehicle && driver.vehicle.color);
+
+            if (type) parts.push(type);
+            if (model) parts.push(model);
+            if (color) parts.push(color);
+
+            if (parts.length > 0) {
+                vehicleDesc.textContent = parts.join(' • ');
+            }
+        }
+
+        if (vehicleNumber) {
+            vehicleNumber.textContent = driver.vehicleNumber || (driver.vehicle && driver.vehicle.number) || '';
+        }
+
         const liveRatingEl = document.getElementById('live-rating');
         if (liveRatingEl) {
             liveRatingEl.textContent = driver.metrics?.avgRating || '5.0';
@@ -1649,7 +1685,16 @@ function showSupport() {
 
 function showSettings() {
     toggleMenu();
-    document.getElementById('settings-modal-page').style.display = 'block';
+    const modal = document.getElementById('settings-modal-page');
+    modal.style.display = 'block';
+
+    // Update Dark Mode Switch State
+    const isDark = localStorage.getItem('theme') === 'dark';
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    if (darkModeToggle) {
+        darkModeToggle.checked = isDark;
+        darkModeToggle.onchange = function () { toggleDriverTheme(this); };
+    }
 }
 
 function closePageModal(modalId) {
