@@ -182,6 +182,21 @@ function updateUserInfo() {
 }
 
 function logout() {
+    // Show confirmation modal
+    document.getElementById('logout-modal').style.display = 'flex';
+
+    // Close side menu
+    const menu = document.getElementById('side-menu');
+    const overlay = document.getElementById('side-menu-overlay');
+    if (menu) menu.classList.remove('active');
+    if (overlay) overlay.classList.remove('active');
+}
+
+function closeLogoutModal() {
+    document.getElementById('logout-modal').style.display = 'none';
+}
+
+function confirmLogout() {
     localStorage.removeItem('token');
     token = null;
     user = null;

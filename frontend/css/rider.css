@@ -393,6 +393,11 @@ body {
     color: white;
 }
 
+[data-theme="dark"] .menu-header {
+    background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+    color: white;
+}
+
 .menu-avatar {
     width: 64px;
     height: 64px;

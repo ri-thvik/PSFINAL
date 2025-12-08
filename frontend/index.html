@@ -463,6 +463,26 @@
         </div>
     </div>
 
+    <!-- Logout Confirmation Modal -->
+    <div class="modal" id="logout-modal" style="display: none;">
+        <div class="modal-content logout-modal">
+            <div class="modal-header">
+                <h2>Logout</h2>
+                <button class="close-btn" onclick="closeLogoutModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="logout-content">
+                <i class="fas fa-sign-out-alt logout-icon"></i>
+                <p>Are you sure you want to logout?</p>
+                <div class="logout-actions">
+                    <button class="btn-secondary" onclick="closeLogoutModal()">Cancel</button>
+                    <button class="btn-primary" onclick="confirmLogout()">Yes, Logout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Payment Modal -->
     <div class="modal" id="payment-modal" style="display: none;">
         <div class="modal-content payment-modal">
@@ -474,7 +494,7 @@
                     <p>Total Fare</p>
                     <h1 id="payment-amount-display">₹0</h1>
                 </div>
-                
+
                 <div class="payment-methods-list">
                     <h3>Select Payment Method</h3>
                     <div class="payment-method-option" onclick="selectPaymentMethod('upi')" id="pm-upi">
@@ -485,7 +505,7 @@
                         </div>
                         <div class="pm-radio"><i class="far fa-circle"></i></div>
                     </div>
-                    
+
                     <div class="payment-method-option" onclick="selectPaymentMethod('cash')" id="pm-cash">
                         <div class="pm-icon"><i class="fas fa-money-bill-wave"></i></div>
                         <div class="pm-info">
@@ -494,7 +514,7 @@
                         </div>
                         <div class="pm-radio"><i class="far fa-circle"></i></div>
                     </div>
-                    
+
                     <div class="payment-method-option" onclick="selectPaymentMethod('wallet')" id="pm-wallet">
                         <div class="pm-icon"><i class="fas fa-wallet"></i></div>
                         <div class="pm-info">
@@ -503,7 +523,7 @@
                         </div>
                         <div class="pm-radio"><i class="far fa-circle"></i></div>
                     </div>
-                    
+
                     <div class="payment-method-option" onclick="selectPaymentMethod('card')" id="pm-card">
                         <div class="pm-icon"><i class="fas fa-credit-card"></i></div>
                         <div class="pm-info">

@@ -30,7 +30,7 @@
     --bg-light: #F8FAFB;
     --bg-card: #FFFFFF;
     --bg-hover: #F0F4F8;
-    --text-dark: #1A1A2E;
+    --text-dark: #111111;
     --text-gray: #64748B;
     --text-light: #94A3B8;
     --border-light: #E2E8F0;
@@ -137,7 +137,31 @@
 
 [data-theme="dark"] p,
 [data-theme="dark"] span {
-    color: var(--text-gray);
+    /* Removed global override that turned text grey on colored backgrounds */
+    /* color: var(--text-gray); */
+    color: inherit;
+}
+
+/* Ensure text remains white on green backgrounds in Dark Mode */
+[data-theme="dark"] .btn-go-online,
+[data-theme="dark"] .earnings-card,
+[data-theme="dark"] .menu-header,
+[data-theme="dark"] .trip-otp-card,
+[data-theme="dark"] .request-fare,
+[data-theme="dark"] .trip-fare,
+[data-theme="dark"] .complete-earnings {
+    color: #FFFFFF !important;
+}
+
+[data-theme="dark"] .btn-go-online span,
+[data-theme="dark"] .earnings-card span,
+[data-theme="dark"] .menu-header p,
+[data-theme="dark"] .menu-header h3,
+[data-theme="dark"] .trip-otp-card span,
+[data-theme="dark"] .request-fare span,
+[data-theme="dark"] .trip-fare span,
+[data-theme="dark"] .complete-earnings span {
+    color: #FFFFFF !important;
 }
 
 [data-theme="dark"] span.earnings-amount,
@@ -177,6 +201,7 @@
 body,
 html {
     background: var(--bg-light) !important;
+    color: var(--text-dark) !important;
 }
 
 /* Ensure screens are hidden by default */
@@ -218,6 +243,34 @@ html {
     color: var(--driver-primary);
     text-decoration: none;
     font-weight: 600;
+}
+
+/* Force Menu Header to have Driver Gradient background and White text in all modes */
+/* Force Menu Header to have Driver Gradient background and White text in all modes */
+.menu-header,
+[data-theme="dark"] .menu-header {
+    background: linear-gradient(135deg, #00C853 0%, #00A843 100%) !important;
+    color: white !important;
+}
+
+/* Ensure white text inside menu header */
+.menu-header h3,
+.menu-header p,
+.menu-header .vehicle-info-text,
+.menu-header .vehicle-number-text {
+    color: white !important;
+}
+
+/* Ensure rider name is visible in dark mode */
+[data-theme="dark"] .rider-name,
+[data-theme="dark"] .rider-rating,
+[data-theme="dark"] .rider-rating i {
+    color: #FFFFFF !important;
+}
+
+[data-theme="dark"] .rider-details span,
+[data-theme="dark"] .rider-details div {
+    color: #FFFFFF !important;
 }
 
 /* ==================== DRIVER STATUS ==================== */
