@@ -1,7 +1,8 @@
 const express = require('express');
-const { 
-    onboardDriver, 
-    getDriverProfile, 
+const {
+    onboardDriver,
+    onboardExistingUser,
+    getDriverProfile,
     updateStatus,
     getEarnings,
     getDriverTrips,
@@ -13,7 +14,8 @@ const { uploadSingle, handleUploadError } = require('../middleware/upload');
 
 const router = express.Router();
 
-router.post('/onboard', protect, onboardDriver);
+router.post('/onboard', onboardDriver); // Public route for complete driver registration
+router.post('/onboard-existing', protect, onboardExistingUser); // For existing users to become drivers
 router.get('/me', protect, getDriverProfile);
 router.put('/status', protect, updateStatus);
 router.get('/earnings', protect, getEarnings);

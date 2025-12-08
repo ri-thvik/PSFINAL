@@ -551,3 +551,11 @@
 {"level":"error","message":"Surge pricing calculation error: $geoNear, $near, and $nearSphere are not allowed in this context, as these operators require sorting geospatial data. If you do not need sort, consider using $geoWithin instead. Check out https://dochub.mongodb.org/core/near-sort-operation and https://dochub.mongodb.org/core/nearSphere-sort-operationfor more details.","timestamp":"2025-12-07T18:47:45.824Z"}
 {"level":"error","message":"Auth error: jwt expired","timestamp":"2025-12-08T05:14:28.190Z"}
 {"level":"error","message":"Auth error: jwt expired","timestamp":"2025-12-08T05:15:19.687Z"}
+{"level":"error","message":"Auth error: jwt expired","timestamp":"2025-12-08T09:49:08.218Z"}
+{"level":"error","message":"Auth error: jwt expired","timestamp":"2025-12-08T09:50:11.540Z"}
+{"level":"error","message":"Auth error: jwt expired","timestamp":"2025-12-08T09:50:24.441Z"}
+{"level":"error","message":"Auth error: jwt expired","timestamp":"2025-12-08T09:50:45.351Z"}
+{"level":"error","message":"Auth error: jwt expired","timestamp":"2025-12-08T09:51:00.871Z"}
+{"level":"error","message":"Auth error: jwt expired","timestamp":"2025-12-08T09:51:06.726Z"}
+{"level":"error","message":"User validation failed: password: Path `password` is required.","timestamp":"2025-12-08T09:53:57.687Z"}
+{"level":"error","message":"User validation failed: password: Path `password` is required.","timestamp":"2025-12-08T09:54:01.129Z"}

@@ -2,33 +2,188 @@ const Driver = require('../models/Driver');
 const User = require('../models/User');
 const logger = require('../utils/logger');
 
-// @desc    Register as driver
+// @desc    Register as driver (complete registration)
 // @route   POST /api/drivers/onboard
-// @access  Private
+// @access  Public
 exports.onboardDriver = async (req, res) => {
     try {
-        const { 
-            vehicleType, 
-            vehicleNumber, 
-            vehicleModel, 
+        const {
+            name,
+            phone,
+            email,
+            password,
+            vehicleType,
+            vehicleNumber,
+            vehicleModel,
             vehicleColor,
-            documents 
+            documents
+        } = req.body;
+
+        // Validate required fields
+        if (!name || !phone || !password) {
+            return res.status(400).json({
+                success: false,
+                message: 'Name, phone, and password are required'
+            });
+        }
+
+        if (!vehicleType || !vehicleNumber) {
+            return res.status(400).json({
+                success: false,
+                message: 'Vehicle type and vehicle number are required'
+            });
+        }
+
+        if (password.length < 6) {
+            return res.status(400).json({
+                success: false,
+                message: 'Password must be at least 6 characters'
+            });
+        }
+
+        // Check if user already exists
+        const existingUser = await User.findOne({
+            $or: [
+                { phone },
+                ...(email ? [{ email: email.toLowerCase() }] : [])
+            ]
+        });
+
+        if (existingUser) {
+            return res.status(400).json({
+                success: false,
+                message: 'User with this phone or email already exists'
+            });
+        }
+
+        // Check if vehicle number already exists
+        const existingDriver = await Driver.findOne({ vehicleNumber: vehicleNumber.toUpperCase().replace(/\s/g, '') });
+        if (existingDriver) {
+            return res.status(400).json({
+                success: false,
+                message: 'Vehicle number already registered'
+            });
+        }
+
+        // Create user account
+        const userData = {
+            name,
+            phone,
+            password,
+            role: 'driver',
+            isVerified: true // Auto-verify for driver registration
+        };
+
+        if (email) {
+            userData.email = email.toLowerCase();
+        }
+
+        const user = await User.create(userData);
+
+        // Create driver profile
+        const driver = await Driver.create({
+            userId: user._id,
+            vehicleType,
+            vehicleNumber: vehicleNumber.toUpperCase().replace(/\s/g, ''),
+            vehicleModel: vehicleModel || '',
+            vehicleColor: vehicleColor || '',
+            documents: documents || {},
+            location: {
+                type: 'Point',
+                coordinates: [77.5946, 12.9716], // Default: Bangalore
+                lastUpdate: Date.now()
+            },
+            verificationStatus: 'pending'
+        });
+
+        // Populate userId before sending response
+        await driver.populate('userId');
+
+        // Generate JWT token
+        const token = user.getSignedJwtToken();
+        const refreshToken = user.getRefreshToken();
+
+        // Save refresh token
+        user.refreshToken = refreshToken;
+        await user.save({ validateBeforeSave: false });
+
+        const options = {
+            expires: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000), // 30 days
+            httpOnly: true,
+            secure: process.env.NODE_ENV === 'production'
+        };
+
+        logger.info(`Driver registered: ${user.phone}`);
+
+        res
+            .status(201)
+            .cookie('token', token, options)
+            .json({
+                success: true,
+                token,
+                refreshToken,
+                data: {
+                    driver,
+                    user: {
+                        id: user._id,
+                        name: user.name,
+                        phone: user.phone,
+                        email: user.email,
+                        role: user.role
+                    }
+                }
+            });
+    } catch (err) {
+        logger.error(`Onboard driver error: ${err.message}`);
+
+        // Handle duplicate key errors
+        if (err.code === 11000) {
+            const field = Object.keys(err.keyPattern || {})[0];
+            if (field === 'vehicleNumber') {
+                return res.status(400).json({ success: false, message: 'Vehicle number already registered' });
+            } else if (field === 'phone' || field === 'email') {
+                return res.status(400).json({ success: false, message: 'User already exists' });
+            }
+            return res.status(400).json({ success: false, message: 'Duplicate entry error' });
+        }
+
+        // Handle validation errors
+        if (err.name === 'ValidationError') {
+            const messages = Object.values(err.errors).map(e => e.message).join(', ');
+            return res.status(400).json({ success: false, message: messages });
+        }
+
+        res.status(500).json({ success: false, message: 'Server Error' });
+    }
+};
+
+// @desc    Register as driver (legacy - requires existing user)
+// @route   POST /api/drivers/onboard-existing
+// @access  Private
+exports.onboardExistingUser = async (req, res) => {
+    try {
+        const {
+            vehicleType,
+            vehicleNumber,
+            vehicleModel,
+            vehicleColor,
+            documents
         } = req.body;
 
         // Validate required fields
         if (!vehicleType || !vehicleNumber) {
-            return res.status(400).json({ 
-                success: false, 
-                message: 'Vehicle type and vehicle number are required' 
+            return res.status(400).json({
+                success: false,
+                message: 'Vehicle type and vehicle number are required'
             });
         }
 
         // Check if vehicle number already exists
         const existingDriver = await Driver.findOne({ vehicleNumber });
         if (existingDriver) {
-            return res.status(400).json({ 
-                success: false, 
-                message: 'Vehicle number already registered' 
+            return res.status(400).json({
+                success: false,
+                message: 'Vehicle number already registered'
             });
         }
 
@@ -61,7 +216,7 @@ exports.onboardDriver = async (req, res) => {
         res.status(201).json({ success: true, data: driver });
     } catch (err) {
         logger.error(err.message);
-        
+
         // Handle duplicate key errors
         if (err.code === 11000) {
             const field = Object.keys(err.keyPattern || {})[0];
@@ -72,13 +227,13 @@ exports.onboardDriver = async (req, res) => {
             }
             return res.status(400).json({ success: false, message: 'Duplicate entry error' });
         }
-        
+
         // Handle validation errors
         if (err.name === 'ValidationError') {
             const messages = Object.values(err.errors).map(e => e.message).join(', ');
             return res.status(400).json({ success: false, message: messages });
         }
-        
+
         res.status(500).json({ success: false, message: 'Server Error' });
     }
 };
@@ -404,10 +559,10 @@ exports.getEarnings = async (req, res) => {
 
         const period = req.query.period || 'today'; // today, week, month, all
         const Trip = require('../models/Trip');
-        
+
         let startDate;
         const now = new Date();
-        
+
         switch (period) {
             case 'today':
                 startDate = new Date(now.getFullYear(), now.getMonth(), now.getDate());
@@ -432,7 +587,7 @@ exports.getEarnings = async (req, res) => {
         }
 
         const trips = await Trip.find(query).select('fare completedAt');
-        
+
         const totalEarnings = trips.reduce((sum, trip) => sum + (trip.fare.amount || 0), 0);
         const totalTrips = trips.length;
         const avgEarningPerTrip = totalTrips > 0 ? totalEarnings / totalTrips : 0;
@@ -577,7 +732,7 @@ exports.getDriverTrips = async (req, res) => {
 
         const Trip = require('../models/Trip');
         const query = { driverId: driver._id };
-        
+
         if (status) {
             query.status = status;
         }
