@@ -12,6 +12,7 @@ exports.onboardDriver = async (req, res) => {
             phone,
             email,
             password,
+            vehicleCategory,
             vehicleType,
             vehicleNumber,
             vehicleModel,
@@ -163,6 +164,7 @@ exports.onboardDriver = async (req, res) => {
 exports.onboardExistingUser = async (req, res) => {
     try {
         const {
+            vehicleCategory,
             vehicleType,
             vehicleNumber,
             vehicleModel,

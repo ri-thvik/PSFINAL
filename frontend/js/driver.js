@@ -241,20 +241,37 @@ async function verifyToken() {
 async function handleLogin() {
     const phone = document.getElementById('phone').value.trim();
     const email = document.getElementById('auth-email')?.value.trim();
+    const password = document.getElementById('auth-password')?.value;
 
     if ((!phone || phone.length < 10) && !email) {
         alert('Please enter a valid phone number or email');
         return;
     }
 
+    if (!password) {
+        alert('Please enter your password');
+        return;
+    }
+
     // Login flow only (registration handled via dedicated screen)
-    console.log('Attempting login with phone/email:', phone || email);
+    loginDriver(phone, email, password);
+}
+
+async function loginDriver(phone, email, password) {
+    const btn = document.getElementById('auth-btn');
+    const originalText = btn.innerHTML;
+    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Logging in...';
+    btn.disabled = true;
+
     try {
-        const res = await fetch(`${API_URL}/auth/login`, {
+        const res = await fetch(`${API_URL}/auth/login/password`, {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ phone: phone || undefined, email: email || undefined })
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ phone, email, password })
         });
+
         console.log('Login response status:', res.status);
         const data = await res.json();
         console.log('Login response data:', data);
@@ -286,17 +303,167 @@ async function handleLogin() {
         } else {
             // User not found - suggest registration
             alert(data.message || 'User not found. Please register.');
-            startRegistrationWithScroll();
+            if (data.message && data.message.includes('register')) {
+                startRegistrationWithScroll();
+            }
         }
     } catch (err) {
         console.error('Login error:', err);
         alert('Error connecting to server: ' + err.message);
+    } finally {
+        btn.innerHTML = originalText;
+        btn.disabled = false;
     }
 }
 
 // ==================== REGISTRATION FUNCTIONS ====================
 let currentStep = 1;
 let registrationData = {};
+let otpVerified = false;
+let pendingStep = null;
+let otpCountdownTimer = null;
+
+// ==================== OTP VERIFICATION FUNCTIONS ====================
+async function sendDriverOTP() {
+    const phone = document.getElementById('reg-phone').value.trim();
+    const email = document.getElementById('reg-email').value.trim();
+
+    console.log('Sending OTP to:', email || phone);
+
+    try {
+        const res = await fetch(`${API_URL}/auth/send-otp`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ phone, email })
+        });
+
+        const data = await res.json();
+
+        if (data.success) {
+            console.log('✅ OTP sent successfully');
+
+            // Show OTP in dev mode
+            if (data.otp) {
+                console.log('🔐 DEV MODE OTP:', data.otp);
+                document.getElementById('otp-dev-info').style.display = 'block';
+                document.getElementById('otp-dev-code').textContent = data.otp;
+            }
+
+            document.getElementById('otp-contact-display').textContent = email || phone;
+            document.getElementById('driver-otp-modal').style.display = 'flex';
+            startOTPCountdown();
+        } else {
+            alert('Failed to send OTP: ' + data.message);
+        }
+    } catch (err) {
+        console.error('OTP send error:', err);
+        alert('Error sending OTP. Please try again.');
+    }
+}
+
+async function verifyDriverOTP() {
+    const phone = document.getElementById('reg-phone').value.trim();
+    const otp = document.getElementById('driver-otp-input').value.trim();
+
+    if (!otp || otp.length !== 6) {
+        alert('Please enter the 6-digit OTP');
+        return;
+    }
+
+    const verifyBtn = document.querySelector('.otp-verify-btn');
+    const verifyText = document.getElementById('verify-btn-text');
+    const verifyIcon = document.getElementById('verify-btn-icon');
+
+    verifyBtn.disabled = true;
+    verifyText.textContent = 'Verifying...';
+    verifyIcon.className = 'fas fa-spinner fa-spin';
+
+    try {
+        const res = await fetch(`${API_URL}/auth/verify-otp`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ phone, otp })
+        });
+
+        const data = await res.json();
+
+        if (data.success) {
+            console.log('✅ OTP verified successfully');
+            otpVerified = true;
+            stopOTPCountdown();
+            closeDriverOTPModal();
+
+            // Now proceed to the pending step
+            if (pendingStep) {
+                actuallyMoveToStep(pendingStep);
+            }
+        } else {
+            alert('Invalid OTP. Please try again.');
+            verifyBtn.disabled = false;
+            verifyText.textContent = 'Verify OTP';
+            verifyIcon.className = 'fas fa-check';
+        }
+    } catch (err) {
+        console.error('OTP verify error:', err);
+        alert('Error verifying OTP. Please try again.');
+        verifyBtn.disabled = false;
+        verifyText.textContent = 'Verify OTP';
+        verifyIcon.className = 'fas fa-check';
+    }
+}
+
+function resendDriverOTP() {
+    document.getElementById('driver-otp-input').value = '';
+    stopOTPCountdown();
+    sendDriverOTP();
+}
+
+function closeDriverOTPModal() {
+    document.getElementById('driver-otp-modal').style.display = 'none';
+    document.getElementById('driver-otp-input').value = '';
+    document.getElementById('otp-dev-info').style.display = 'none';
+    stopOTPCountdown();
+}
+
+function startOTPCountdown() {
+    let timeLeft = 300; // 5 minutes
+    const countdownEl = document.getElementById('otp-countdown');
+
+    otpCountdownTimer = setInterval(() => {
+        const minutes = Math.floor(timeLeft / 60);
+        const seconds = timeLeft % 60;
+        countdownEl.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+
+        if (timeLeft <= 0) {
+            stopOTPCountdown();
+            alert('OTP expired. Please request a new one.');
+            closeDriverOTPModal();
+        }
+
+        timeLeft--;
+    }, 1000);
+}
+
+function stopOTPCountdown() {
+    if (otpCountdownTimer) {
+        clearInterval(otpCountdownTimer);
+        otpCountdownTimer = null;
+    }
+}
+
+// Helper function to actually move to next step (after OTP verified)
+function actuallyMoveToStep(step) {
+    console.log('✅ Moving to step', step);
+    saveStepData(currentStep);
+    document.getElementById(`step-${currentStep}`).classList.remove('active');
+    currentStep = step;
+    document.getElementById(`step-${currentStep}`).classList.add('active');
+    document.querySelector(`[data-step="${step - 1}"]`).classList.add('completed');
+    document.querySelector(`[data-step="${step - 1}"]`).classList.remove('active');
+    document.querySelector(`[data-step="${step}"]`).classList.add('active');
+    updateProgressSteps();
+    scrollRegistrationToTop();
+}
 
 function startRegistrationWithScroll() {
     startRegistration();
@@ -332,10 +499,22 @@ function cancelRegistration() {
 }
 
 function nextStep(step) {
+    console.log('nextStep called - going to step:', step, 'from current step:', currentStep);
+
     if (!validateStep(currentStep)) {
+        console.log('❌ Validation failed, staying on step', currentStep);
         return;
     }
 
+    // Require OTP verification before Step 2
+    if (currentStep === 1 && step === 2 && !otpVerified) {
+        console.log('🔐 OTP verification required');
+        pendingStep = step;
+        sendDriverOTP();
+        return;
+    }
+
+    console.log('✅ Validation passed, moving to step', step);
     saveStepData(currentStep);
     document.getElementById(`step-${currentStep}`).classList.remove('active');
     currentStep = step;
@@ -399,29 +578,35 @@ function updateProgressSteps() {
 }
 
 function validateStep(step) {
+    console.log('=== VALIDATING STEP:', step, '===');
     if (step === 1) {
         const name = document.getElementById('reg-name').value.trim();
         const phone = document.getElementById('reg-phone').value.trim();
         const password = document.getElementById('reg-password').value;
         const confirmPassword = document.getElementById('reg-confirm-password').value;
 
-        if (!name) { alert('Please enter your full name'); return false; }
-        if (!phone || phone.length < 10) { alert('Please enter a valid phone number'); return false; }
+        console.log('Step 1 data:', { name, phone, password: password ? '***' : 'empty', token: token ? 'exists' : 'null' });
+
+        if (!name) { alert('Please enter your full name'); console.log('FAILED: no name'); return false; }
+        if (!phone || phone.length < 10) { alert('Please enter a valid phone number'); console.log('FAILED: invalid phone'); return false; }
 
         // Validate password only if not logged in
         if (!token) {
-            if (!password) { alert('Please enter a password'); return false; }
-            if (password.length < 6) { alert('Password must be at least 6 characters'); return false; }
-            if (password !== confirmPassword) { alert('Passwords do not match'); return false; }
+            if (!password) { alert('Please enter a password'); console.log('FAILED: no password'); return false; }
+            if (password.length < 6) { alert('Password must be at least 6 characters'); console.log('FAILED: password too short'); return false; }
+            if (password !== confirmPassword) { alert('Passwords do not match'); console.log('FAILED: passwords dont match'); return false; }
         }
 
+        console.log('✅ Step 1 validation PASSED');
         return true;
     } else if (step === 2) {
+        const vehicleCategory = document.getElementById('reg-vehicle-category').value;
         const vehicleType = document.getElementById('reg-vehicle-type').value;
         const vehicleNumber = document.getElementById('reg-vehicle-number').value.trim();
         const vehicleModel = document.getElementById('reg-vehicle-model').value.trim();
         const vehicleColor = document.getElementById('reg-vehicle-color').value.trim();
 
+        if (!vehicleCategory) { alert('Please select vehicle category (Normal or Electric)'); return false; }
         if (!vehicleType) { alert('Please select vehicle type'); return false; }
         if (!vehicleNumber) { alert('Please enter vehicle number'); return false; }
         if (!vehicleModel) { alert('Please enter vehicle model'); return false; }
@@ -438,6 +623,7 @@ function saveStepData(step) {
         registrationData.email = document.getElementById('reg-email').value.trim();
         registrationData.password = document.getElementById('reg-password').value;
     } else if (step === 2) {
+        registrationData.vehicleCategory = document.getElementById('reg-vehicle-category').value;
         registrationData.vehicleType = document.getElementById('reg-vehicle-type').value;
         registrationData.vehicleNumber = document.getElementById('reg-vehicle-number').value.trim().toUpperCase().replace(/\s/g, '');
         registrationData.vehicleModel = document.getElementById('reg-vehicle-model').value.trim();
@@ -474,6 +660,33 @@ function resetRegistrationForm() {
     currentStep = 1;
     updateProgressSteps();
 }
+
+// Update vehicle type options based on category
+function updateVehicleTypeOptions() {
+    const category = document.getElementById('reg-vehicle-category').value;
+    const typeSelect = document.getElementById('reg-vehicle-type');
+
+    if (category === 'electric') {
+        typeSelect.innerHTML = `
+            <option value="">Select Vehicle Type</option>
+            <option value="bike">EV Bike</option>
+            <option value="auto">EV Auto</option>
+            <option value="car">EV Car</option>
+        `;
+    } else if (category === 'normal') {
+        typeSelect.innerHTML = `
+            <option value="">Select Vehicle Type</option>
+            <option value="bike">Bike</option>
+            <option value="auto">Auto</option>
+            <option value="car">Car</option>
+        `;
+    } else {
+        typeSelect.innerHTML = '<option value="">Select Vehicle Type</option>';
+    }
+}
+
+// Make it global so HTML can access it
+window.updateVehicleTypeOptions = updateVehicleTypeOptions;
 
 // Initialize file upload handlers
 document.addEventListener('DOMContentLoaded', () => {
@@ -529,6 +742,7 @@ async function submitRegistration() {
                 phone: registrationData.phone,
                 email: registrationData.email || undefined,
                 password: registrationData.password,
+                vehicleCategory: registrationData.vehicleCategory,
                 vehicleType: registrationData.vehicleType,
                 vehicleNumber: registrationData.vehicleNumber,
                 vehicleModel: registrationData.vehicleModel,
@@ -552,6 +766,7 @@ async function submitRegistration() {
             console.log('Using existing user session for driver onboarding');
 
             const payload = {
+                vehicleCategory: registrationData.vehicleCategory,
                 vehicleType: registrationData.vehicleType,
                 vehicleNumber: registrationData.vehicleNumber,
                 vehicleModel: registrationData.vehicleModel,

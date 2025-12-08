@@ -560,3 +560,48 @@
 {"level":"error","message":"User validation failed: password: Path `password` is required.","timestamp":"2025-12-08T09:53:57.687Z"}
 {"level":"error","message":"User validation failed: password: Path `password` is required.","timestamp":"2025-12-08T09:54:01.129Z"}
 {"level":"error","message":"Auth error: jwt expired","timestamp":"2025-12-08T13:38:47.544Z"}
+{"level":"error","message":"Auth error: jwt expired","timestamp":"2025-12-08T13:38:51.975Z"}
+{"level":"error","message":"Auth error: jwt expired","timestamp":"2025-12-08T13:38:57.862Z"}
+{"level":"error","message":"Surge pricing calculation error: $geoNear, $near, and $nearSphere are not allowed in this context, as these operators require sorting geospatial data. If you do not need sort, consider using $geoWithin instead. Check out https://dochub.mongodb.org/core/near-sort-operation and https://dochub.mongodb.org/core/nearSphere-sort-operationfor more details.","timestamp":"2025-12-08T13:39:08.426Z"}
+{"level":"error","message":"Auth error: jwt expired","timestamp":"2025-12-08T13:56:14.043Z"}
+{"level":"error","message":"Surge pricing calculation error: $geoNear, $near, and $nearSphere are not allowed in this context, as these operators require sorting geospatial data. If you do not need sort, consider using $geoWithin instead. Check out https://dochub.mongodb.org/core/near-sort-operation and https://dochub.mongodb.org/core/nearSphere-sort-operationfor more details.","timestamp":"2025-12-08T13:56:30.023Z"}
+{"level":"error","message":"Surge pricing calculation error: $geoNear, $near, and $nearSphere are not allowed in this context, as these operators require sorting geospatial data. If you do not need sort, consider using $geoWithin instead. Check out https://dochub.mongodb.org/core/near-sort-operation and https://dochub.mongodb.org/core/nearSphere-sort-operationfor more details.","timestamp":"2025-12-08T14:02:38.425Z"}
+{"level":"error","message":"Auth error: jwt expired","timestamp":"2025-12-08T14:11:51.226Z"}
+{"level":"error","message":"Auth error: jwt expired","timestamp":"2025-12-08T14:25:26.102Z"}
+{"level":"error","message":"Auth error: jwt expired","timestamp":"2025-12-08T14:32:47.785Z"}
+{"level":"error","message":"Surge pricing calculation error: $geoNear, $near, and $nearSphere are not allowed in this context, as these operators require sorting geospatial data. If you do not need sort, consider using $geoWithin instead. Check out https://dochub.mongodb.org/core/near-sort-operation and https://dochub.mongodb.org/core/nearSphere-sort-operationfor more details.","timestamp":"2025-12-08T14:41:47.859Z"}
+{"level":"error","message":"Auth error: jwt expired","timestamp":"2025-12-08T14:53:17.365Z"}
+{"level":"error","message":"Auth error: jwt expired","timestamp":"2025-12-08T14:53:19.389Z"}
+{"level":"error","message":"Auth error: jwt expired","timestamp":"2025-12-08T14:53:22.527Z"}
+{"level":"error","message":"Auth error: jwt expired","timestamp":"2025-12-08T14:55:57.878Z"}
+{"level":"error","message":"Error sending OTP email: connect ETIMEDOUT 172.217.194.108:465","timestamp":"2025-12-08T15:05:51.208Z"}
+{"level":"error","message":"Error sending OTP email: connect ETIMEDOUT 172.217.194.108:465","timestamp":"2025-12-08T15:05:51.210Z"}
+{"level":"error","message":"Auth error: jwt expired","timestamp":"2025-12-08T15:13:43.488Z"}
+{"level":"error","message":"Error storing OTP: Connection is closed.","timestamp":"2025-12-08T15:31:58.018Z"}
+{"level":"error","message":"Error storing OTP: Connection is closed.","timestamp":"2025-12-08T15:31:59.251Z"}
+{"level":"error","message":"Error storing OTP: Connection is closed.","timestamp":"2025-12-08T15:31:59.649Z"}
+{"level":"error","message":"Error storing OTP: Connection is closed.","timestamp":"2025-12-08T15:31:59.864Z"}
+{"level":"error","message":"Error storing OTP: Connection is closed.","timestamp":"2025-12-08T15:32:00.151Z"}
+{"level":"error","message":"Error verifying OTP: Connection is closed.","timestamp":"2025-12-08T15:32:15.157Z"}
+{"level":"error","message":"Error verifying OTP: Connection is closed.","timestamp":"2025-12-08T15:32:18.200Z"}
+{"level":"error","message":"Error verifying OTP: Connection is closed.","timestamp":"2025-12-08T15:32:18.846Z"}
+{"level":"error","message":"Error verifying OTP: Connection is closed.","timestamp":"2025-12-08T15:32:19.160Z"}
+{"level":"error","message":"Error verifying OTP: Connection is closed.","timestamp":"2025-12-08T15:32:19.403Z"}
+{"level":"error","message":"Error verifying OTP: Connection is closed.","timestamp":"2025-12-08T15:32:19.645Z"}
+{"level":"error","message":"Error verifying OTP: Connection is closed.","timestamp":"2025-12-08T15:32:19.883Z"}
+{"level":"error","message":"Error verifying OTP: Connection is closed.","timestamp":"2025-12-08T15:32:20.159Z"}
+{"level":"error","message":"Error verifying OTP: Connection is closed.","timestamp":"2025-12-08T15:32:20.582Z"}
+{"level":"error","message":"Error verifying OTP: Connection is closed.","timestamp":"2025-12-08T15:32:22.652Z"}
+{"level":"error","message":"Error verifying OTP: Connection is closed.","timestamp":"2025-12-08T15:32:34.971Z"}
+{"level":"error","message":"Error verifying OTP: Connection is closed.","timestamp":"2025-12-08T15:32:35.528Z"}
+{"level":"error","message":"Error verifying OTP: Connection is closed.","timestamp":"2025-12-08T15:32:35.876Z"}
+{"level":"error","message":"Error verifying OTP: Connection is closed.","timestamp":"2025-12-08T15:32:44.209Z"}
+{"level":"error","message":"Error verifying OTP: Connection is closed.","timestamp":"2025-12-08T15:32:52.653Z"}
+{"level":"error","message":"Error verifying OTP: Connection is closed.","timestamp":"2025-12-08T15:32:54.458Z"}
+{"level":"error","message":"Error verifying OTP: Connection is closed.","timestamp":"2025-12-08T15:32:56.392Z"}
+{"level":"error","message":"Error verifying OTP: Connection is closed.","timestamp":"2025-12-08T15:33:19.830Z"}
+{"level":"error","message":"Error verifying OTP: Connection is closed.","timestamp":"2025-12-08T15:33:39.644Z"}
+{"level":"error","message":"Error verifying OTP: Connection is closed.","timestamp":"2025-12-08T15:33:44.799Z"}
+{"level":"error","message":"Error verifying OTP: Connection is closed.","timestamp":"2025-12-08T15:33:47.464Z"}
+{"level":"error","message":"Error storing OTP: Connection is closed.","timestamp":"2025-12-08T15:40:17.024Z"}
+{"level":"error","message":"Error verifying OTP: Connection is closed.","timestamp":"2025-12-08T15:40:40.276Z"}

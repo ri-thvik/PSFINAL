@@ -34,6 +34,14 @@ exports.sendOTP = async (req, res) => {
         // In development, return OTP for testing
         if (process.env.NODE_ENV === 'development') {
             logger.info(`OTP for ${phone}: ${otp}`);
+            console.log('\n' + '='.repeat(60));
+            console.log('🔐 OTP GENERATED FOR DEVELOPMENT');
+            console.log('='.repeat(60));
+            console.log(`📧 Email: ${email || 'N/A'}`);
+            console.log(`📱 Phone: ${phone}`);
+            console.log(`🔢 OTP CODE: ${otp}`);
+            console.log(`⏰ Valid for: 5 minutes`);
+            console.log('='.repeat(60) + '\n');
             return res.status(200).json({
                 success: true,
                 message: 'OTP sent successfully',
@@ -128,11 +136,11 @@ exports.register = async (req, res) => {
             phone,
             role: role || 'rider'
         };
-        
+
         if (email && email.trim() !== '') {
             userData.email = email.trim();
         }
-        
+
         user = await User.create(userData);
 
         // Send welcome email if email provided
@@ -148,7 +156,7 @@ exports.register = async (req, res) => {
         sendTokenResponse(user, 201, res);
     } catch (err) {
         logger.error(err.message);
-        
+
         // Handle duplicate key errors more gracefully
         if (err.code === 11000) {
             const field = Object.keys(err.keyPattern || {})[0];
@@ -159,13 +167,13 @@ exports.register = async (req, res) => {
             }
             return res.status(400).json({ success: false, message: 'Duplicate entry error' });
         }
-        
+
         // Handle validation errors
         if (err.name === 'ValidationError') {
             const messages = Object.values(err.errors).map(e => e.message).join(', ');
             return res.status(400).json({ success: false, message: messages });
         }
-        
+
         res.status(500).json({ success: false, message: 'Server Error' });
     }
 };
@@ -244,14 +252,14 @@ exports.updateProfile = async (req, res) => {
         });
     } catch (err) {
         logger.error(`Update profile error: ${err.message}`);
-        
+
         if (err.code === 11000) {
             return res.status(400).json({
                 success: false,
                 message: 'Email already in use'
             });
         }
-        
+
         res.status(500).json({
             success: false,
             message: 'Error updating profile'
@@ -274,7 +282,7 @@ exports.addAddress = async (req, res) => {
         }
 
         const user = await User.findById(req.user.id);
-        
+
         // Check if label already exists
         const existingAddress = user.savedAddresses.find(addr => addr.label === label);
         if (existingAddress) {

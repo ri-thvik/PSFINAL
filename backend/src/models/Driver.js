@@ -7,6 +7,12 @@ const DriverSchema = new mongoose.Schema({
         enum: ['bike', 'auto', 'car'],
         required: true
     },
+    vehicleCategory: {
+        type: String,
+        enum: ['normal', 'electric'],
+        required: true,
+        default: 'normal'
+    },
     vehicleNumber: { type: String, required: true, unique: true },
     vehicleModel: String,
     vehicleColor: String,

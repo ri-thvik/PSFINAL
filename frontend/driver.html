@@ -7,6 +7,7 @@
     <title>RapidRide Driver</title>
     <link rel="stylesheet" href="css/driver.css">
     <link rel="stylesheet" href="css/driver-map.css">
+    <link rel="stylesheet" href="css/driver-otp.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
@@ -50,6 +51,12 @@
                         <i class="fas fa-envelope"></i>
                     </div>
                     <input type="email" id="auth-email" placeholder="Email (optional)">
+                </div>
+                <div class="input-group">
+                    <div class="input-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <input type="password" id="auth-password" placeholder="Password" required>
                 </div>
 
                 <button class="btn-primary" id="auth-btn" onclick="handleLogin()">
@@ -136,6 +143,16 @@
                     <p>Tell us about your vehicle</p>
                 </div>
                 <div class="step-content">
+                    <div class="input-group">
+                        <div class="input-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <select id="reg-vehicle-category" required onchange="updateVehicleTypeOptions()">
+                            <option value="">Select Vehicle Category</option>
+                            <option value="normal">Normal</option>
+                            <option value="electric">Electric (EV)</option>
+                        </select>
+                    </div>
                     <div class="input-group">
                         <div class="input-icon">
                             <i class="fas fa-car"></i>
@@ -260,6 +277,46 @@
                         <i class="fas fa-check" id="submit-btn-icon"></i>
                     </button>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- OTP Verification Modal -->
+    <div id="driver-otp-modal" class="otp-verification-modal" style="display: none;">
+        <div class="otp-modal-content">
+            <div class="otp-header">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Verify Your Contact</h3>
+                <p>We've sent a 6-digit OTP to</p>
+                <p class="otp-contact" id="otp-contact-display"></p>
+            </div>
+
+            <div class="otp-input-container">
+                <input type="text" id="driver-otp-input" class="otp-input" placeholder="Enter 6-digit OTP" maxlength="6"
+                    autocomplete="off">
+            </div>
+
+            <div class="otp-timer" id="otp-timer">
+                <i class="fas fa-clock"></i>
+                <span>Expires in <span id="otp-countdown">5:00</span></span>
+            </div>
+
+            <div class="otp-actions">
+                <button class="btn-primary otp-verify-btn" onclick="verifyDriverOTP()">
+                    <span id="verify-btn-text">Verify OTP</span>
+                    <i class="fas fa-check" id="verify-btn-icon"></i>
+                </button>
+                <button class="btn-secondary otp-resend-btn" onclick="resendDriverOTP()">
+                    <i class="fas fa-redo"></i> Resend OTP
+                </button>
+                <button class="btn-text otp-cancel-btn" onclick="closeDriverOTPModal()">
+                    Cancel
+                </button>
+            </div>
+
+            <div class="otp-dev-info" id="otp-dev-info" style="display: none;">
+                <p><strong>Development Mode:</strong></p>
+                <p id="otp-dev-code"></p>
             </div>
         </div>
     </div>
@@ -936,8 +993,8 @@
         </div>
     </div>
 
-    <script src="js/utils.js?v=5"></script>
-    <script src="js/driver.js?v=5"></script>
+    <script src="js/utils.js?v=6"></script>
+    <script src="js/driver.js?v=6"></script>
     <link rel="stylesheet" href="css/utils.css">
 </body>
 
