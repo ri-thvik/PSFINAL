@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - RapidRide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+
+<body>
+    <div class="auth-wrapper">
+        <div class="auth-container">
+            <div class="auth-header">
+                <div class="auth-logo">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h1>Welcome Back</h1>
+                <p>Login to continue your ride</p>
+            </div>
+
+            <!-- Login Tabs -->
+            <div class="auth-tabs">
+                <div class="auth-tab active" onclick="switchTab('gmail')">
+                    <i class="fas fa-envelope"></i>
+                    <span>Gmail Login</span>
+                </div>
+                <div class="auth-tab" onclick="switchTab('phone')">
+                    <i class="fas fa-phone"></i>
+                    <span>Phone Login</span>
+                </div>
+            </div>
+
+            <!-- Gmail Login Form -->
+            <div id="gmail-login-form" class="auth-form active">
+                <div class="input-group">
+                    <label for="gmail-email">Email</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="gmail-email" placeholder="your.email@gmail.com" autocomplete="email">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="gmail-password">Password</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="gmail-password" placeholder="Enter your password"
+                            autocomplete="current-password">
+                        <button type="button" class="toggle-password"
+                            onclick="togglePasswordVisibility('gmail-password')">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <button class="btn-primary" id="gmail-login-btn" onclick="handleLogin('gmail')">
+                    <span>Login</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+
+                <div class="auth-footer">
+                    <p>Don't have an account? <a href="signup.html">Signup</a></p>
+                </div>
+            </div>
+
+            <!-- Phone Login Form -->
+            <div id="phone-login-form" class="auth-form">
+                <div class="input-group">
+                    <label for="phone-number">Phone Number</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-phone"></i>
+                        <input type="tel" id="phone-number" placeholder="9876543210" maxlength="10" autocomplete="tel">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="phone-password">Password</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="phone-password" placeholder="Enter your password"
+                            autocomplete="current-password">
+                        <button type="button" class="toggle-password"
+                            onclick="togglePasswordVisibility('phone-password')">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <button class="btn-primary" id="phone-login-btn" onclick="handleLogin('phone')">
+                    <span>Login</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+
+                <div class="auth-footer">
+                    <p>Don't have an account? <a href="signup.html">Signup</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div id="notification" class="notification"></div>
+
+    <script src="js/auth.js"></script>
+</body>
+
+</html>

@@ -4,6 +4,7 @@ const http = require('http');
 const socketIo = require('socket.io');
 const cors = require('cors');
 const helmet = require('helmet');
+const session = require('express-session');
 const connectDB = require('./src/config/database');
 const redis = require('./src/config/redis');
 const logger = require('./src/utils/logger');
@@ -23,10 +24,25 @@ const io = socketIo(server, {
 require('./src/socket/socketHandler')(io);
 
 // Middleware
-app.use(cors());
+app.use(cors({
+    origin: 'http://localhost:3000',
+    credentials: true
+}));
 app.use(helmet());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+// Session middleware for OTP storage
+app.use(session({
+    secret: process.env.SESSION_SECRET || 'rapidride_session_secret',
+    resave: false,
+    saveUninitialized: false,
+    cookie: {
+        secure: process.env.NODE_ENV === 'production',
+        httpOnly: true,
+        maxAge: 10 * 60 * 1000 // 10 minutes
+    }
+}));
 
 // Apply general rate limiting
 const { apiLimiter } = require('./src/middleware/rateLimiter');

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup - RapidRide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+
+<body>
+    <div class="auth-wrapper">
+        <div class="auth-container">
+            <div class="auth-header">
+                <div class="auth-logo">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h1>Create Account</h1>
+                <p>Join RapidRide today</p>
+            </div>
+
+            <!-- Signup Form -->
+            <div class="auth-form active">
+                <div class="input-group">
+                    <label for="signup-name">Full Name</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="signup-name" placeholder="John Doe" autocomplete="name">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="signup-phone">Phone Number</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-phone"></i>
+                        <input type="tel" id="signup-phone" placeholder="9876543210" maxlength="10" autocomplete="tel">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="signup-email">Email</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="signup-email" placeholder="your.email@gmail.com" autocomplete="email">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="signup-password">Password</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="signup-password" placeholder="At least 6 characters"
+                            autocomplete="new-password">
+                        <button type="button" class="toggle-password"
+                            onclick="togglePasswordVisibility('signup-password')">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="signup-confirm-password">Confirm Password</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="signup-confirm-password" placeholder="Re-enter your password"
+                            autocomplete="new-password">
+                        <button type="button" class="toggle-password"
+                            onclick="togglePasswordVisibility('signup-confirm-password')">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <button class="btn-primary" id="signup-btn" onclick="handleSignup()">
+                    <span>Send OTP</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+
+                <div class="auth-footer">
+                    <p>Already have an account? <a href="login.html">Login</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- OTP Verification Modal -->
+    <div id="otp-modal" class="modal">
+        <div class="modal-content">
+            <div class="otp-header">
+                <h3>Verify Your Email</h3>
+                <p>We've sent a 6-digit OTP to <span id="otp-email-display"></span></p>
+            </div>
+
+            <div class="otp-input-container">
+                <input type="text" id="otp-input" placeholder="Enter 6-digit OTP" maxlength="6"
+                    autocomplete="one-time-code">
+            </div>
+
+            <div class="otp-timer" id="otp-timer">
+                <i class="fas fa-clock"></i>
+                <span id="timer-text">Expires in 5:00</span>
+            </div>
+
+            <button class="btn-primary" id="verify-otp-btn" onclick="handleVerifyOTP()">
+                <span>Verify OTP</span>
+                <i class="fas fa-check-circle"></i>
+            </button>
+
+            <div class="resend-container">
+                <button class="btn-text" id="resend-btn" onclick="handleResendOTP()" disabled>
+                    Resend OTP
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div id="notification" class="notification"></div>
+
+    <script src="js/auth.js"></script>
+</body>
+
+</html>

@@ -40,8 +40,8 @@ const authLimiter = rateLimit({
 
 // OTP rate limiter
 const otpLimiter = rateLimit({
-    windowMs: 60 * 1000, // 1 minute
-    max: 1, // Limit each IP to 1 OTP request per minute
+    windowMs: 5 * 60 * 1000, // 5 minutes
+    max: 5, // Limit each IP to 5 OTP requests per 5 minutes
     message: {
         success: false,
         message: 'Please wait before requesting another OTP.'

@@ -47,20 +47,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // ==================== AUTH FUNCTIONS ====================
 function showAuthScreen() {
-    document.getElementById('auth-screen').style.display = 'block';
-}
-
-function showMainScreen() {
-    document.getElementById('auth-screen').style.display = 'none';
-    document.getElementById('main-screen').style.display = 'block';
-    initSocket();
-
-    // Initialize map
-    setTimeout(() => {
-        if (window.mapFunctions) {
-            window.mapFunctions.initMap();
-        }
-    }, 100);
+    // Redirect to login page instead of showing inline auth
+    window.location.href = 'login.html';
 }
 
 async function verifyToken() {
@@ -85,99 +73,23 @@ async function verifyToken() {
     }
 }
 
-async function handleAuth() {
-    const phone = document.getElementById('phone').value;
-    const nameInput = document.getElementById('name');
-    const nameGroup = document.getElementById('name-group');
-    const authBtn = document.getElementById('auth-btn');
-
-    if (!phone || phone.length < 10) {
-        alert('Please enter a valid phone number');
-        return;
-    }
-
-    // Try login first
-    try {
-        const res = await fetch(`${API_URL}/auth/login`, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ phone })
-        });
-        const data = await res.json();
-
-        if (data.success) {
-            handleLoginSuccess(data);
-        } else {
-            // Show name field for registration
-            nameGroup.style.display = 'block';
-            authBtn.innerHTML = '<span>Register</span><i class="fas fa-arrow-right"></i>';
-            authBtn.onclick = () => register(phone);
-        }
-    } catch (err) {
-        console.error(err);
-        alert('Error connecting to server');
-    }
-}
-
-async function register(phone) {
-    const name = document.getElementById('name').value;
-
-    if (!name) {
-        alert('Please enter your name');
-        return;
-    }
-
-    try {
-        const res = await fetch(`${API_URL}/auth/register`, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ phone, name, role: 'rider' })
-        });
-        const data = await res.json();
-
-        if (data.success) {
-            handleLoginSuccess(data);
-        } else {
-            alert(data.message);
-        }
-    } catch (err) {
-        console.error(err);
-        alert('Error connecting to server');
-    }
-}
-
-async function handleLoginSuccess(data) {
-    token = data.token;
-    localStorage.setItem('token', token);
-
-    // Fetch complete user profile
-    try {
-        const userRes = await fetch(`${API_URL}/auth/me`, {
-            headers: { 'Authorization': `Bearer ${token}` }
-        });
-        const userData = await userRes.json();
-
-        if (userData.success && userData.data) {
-            user = userData.data;
-            console.log('User loaded:', user);
-        } else {
-            user = { name: 'User', _id: Date.now().toString() };
-        }
-    } catch (err) {
-        console.error('Error fetching user:', err);
-        user = { name: 'User', _id: Date.now().toString() };
-    }
-
-    updateUserInfo();
-    showMainScreen();
+function showMainScreen() {
+    document.getElementById('main-screen').style.display = 'block';
     initSocket();
+
+    // Initialize map
+    setTimeout(() => {
+        if (window.mapFunctions) {
+            window.mapFunctions.initMap();
+        }
+    }, 100);
 }
 
 function updateUserInfo() {
     if (user) {
         document.getElementById('user-name').textContent = user.name;
         document.getElementById('menu-user-name').textContent = user.name;
-        document.getElementById('menu-user-phone').textContent = user.phone || '+91 XXXXXXXXXX';
+        document.getElementById('menu-user-phone').textContent = user.phone || user.email || 'User';
     }
 }
 

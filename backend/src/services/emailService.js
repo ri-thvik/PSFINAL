@@ -6,13 +6,13 @@ const createTransporter = () => {
     // Use environment variables for email configuration
     // For development, you can use Gmail or other SMTP services
     // For production, use services like SendGrid, AWS SES, etc.
-    
+
     if (process.env.EMAIL_SERVICE === 'gmail') {
         return nodemailer.createTransport({
             service: 'gmail',
             auth: {
                 user: process.env.EMAIL_USER,
-                pass: process.env.EMAIL_PASSWORD
+                pass: process.env.EMAIL_PASS
             }
         });
     } else if (process.env.EMAIL_SERVICE === 'smtp') {

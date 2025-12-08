@@ -1,0 +1,104 @@
+/* ==================== AUTH TABS ==================== */
+.auth-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.auth-tab {
+    padding-bottom: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.auth-tab.active {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.auth-tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--primary-color);
+}
+
+/* ==================== OTP UI ==================== */
+.otp-header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.otp-header h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.otp-header p {
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.otp-input-container {
+    margin-bottom: 24px;
+}
+
+.otp-input-container input {
+    text-align: center;
+    letter-spacing: 8px;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 16px;
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius-md);
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.otp-input-container input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.otp-timer {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 14px;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.resend-container {
+    text-align: center;
+    margin-top: 16px;
+}
+
+.btn-text {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.btn-text:hover {
+    color: var(--primary-color);
+}
+
+.btn-text:disabled {
+    color: var(--text-light);
+    cursor: not-allowed;
+    text-decoration: none;
+}

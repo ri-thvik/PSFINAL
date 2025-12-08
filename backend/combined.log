@@ -9132,3 +9132,113 @@
 {"level":"info","message":"Client disconnected: aR_s8ssPPmb4tB7rAAAH","timestamp":"2025-12-08T05:43:48.756Z"}
 {"level":"info","message":"New client connected: oqjMWCrfqFARiJBiAAAJ","timestamp":"2025-12-08T05:43:49.217Z"}
 {"level":"info","message":"Socket oqjMWCrfqFARiJBiAAAJ joined room rider:693284309aaaca8639152072","timestamp":"2025-12-08T05:43:49.238Z"}
+{"level":"warn","message":"Razorpay credentials not configured - payment gateway disabled","timestamp":"2025-12-08T09:09:40.819Z"}
+{"level":"info","message":"Server running in development mode on port 5000","timestamp":"2025-12-08T09:09:40.871Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T09:09:40.895Z"}
+{"level":"info","message":"MongoDB Connected: localhost","timestamp":"2025-12-08T09:09:40.915Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T09:09:40.972Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T09:09:41.080Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T09:09:41.235Z"}
+{"level":"warn","message":"Redis connection failed - running without cache","timestamp":"2025-12-08T09:09:41.236Z"}
+{"level":"info","message":"New client connected: 1q3hVDCBFq0ceRUgAAAC","timestamp":"2025-12-08T09:10:02.434Z"}
+{"level":"info","message":"New client connected: kO3hw6URZLjPbI66AAAD","timestamp":"2025-12-08T09:10:02.453Z"}
+{"level":"info","message":"Socket kO3hw6URZLjPbI66AAAD joined room rider:692fd054c55890799debc9a9","timestamp":"2025-12-08T09:10:02.468Z"}
+{"level":"info","message":"Socket kO3hw6URZLjPbI66AAAD joined room rider:692fd054c55890799debc9a9","timestamp":"2025-12-08T09:10:02.647Z"}
+{"level":"info","message":"Client disconnected: kO3hw6URZLjPbI66AAAD","timestamp":"2025-12-08T09:10:08.198Z"}
+{"level":"info","message":"Client disconnected: 1q3hVDCBFq0ceRUgAAAC","timestamp":"2025-12-08T09:10:08.209Z"}
+{"level":"warn","message":"Razorpay credentials not configured - payment gateway disabled","timestamp":"2025-12-08T09:22:46.088Z"}
+{"level":"info","message":"Server running in development mode on port 5000","timestamp":"2025-12-08T09:22:46.122Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T09:22:46.150Z"}
+{"level":"info","message":"MongoDB Connected: localhost","timestamp":"2025-12-08T09:22:46.167Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T09:22:46.228Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T09:22:46.341Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T09:22:46.494Z"}
+{"level":"warn","message":"Redis connection failed - running without cache","timestamp":"2025-12-08T09:22:46.496Z"}
+{"level":"warn","message":"Razorpay credentials not configured - payment gateway disabled","timestamp":"2025-12-08T09:23:11.384Z"}
+{"level":"info","message":"Server running in development mode on port 5000","timestamp":"2025-12-08T09:23:11.418Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T09:23:11.440Z"}
+{"level":"info","message":"MongoDB Connected: localhost","timestamp":"2025-12-08T09:23:11.466Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T09:23:11.513Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T09:23:11.622Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T09:23:11.775Z"}
+{"level":"warn","message":"Redis connection failed - running without cache","timestamp":"2025-12-08T09:23:11.776Z"}
+{"level":"warn","message":"Razorpay credentials not configured - payment gateway disabled","timestamp":"2025-12-08T09:23:15.754Z"}
+{"level":"info","message":"Server running in development mode on port 5000","timestamp":"2025-12-08T09:23:15.796Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T09:23:15.812Z"}
+{"level":"info","message":"MongoDB Connected: localhost","timestamp":"2025-12-08T09:23:15.825Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T09:23:15.881Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T09:23:16.002Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T09:23:16.159Z"}
+{"level":"warn","message":"Redis connection failed - running without cache","timestamp":"2025-12-08T09:23:16.160Z"}
+{"level":"warn","message":"Razorpay credentials not configured - payment gateway disabled","timestamp":"2025-12-08T09:23:28.037Z"}
+{"level":"info","message":"Server running in development mode on port 5000","timestamp":"2025-12-08T09:23:28.072Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T09:23:28.102Z"}
+{"level":"info","message":"MongoDB Connected: localhost","timestamp":"2025-12-08T09:23:28.120Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T09:23:28.172Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T09:23:28.283Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T09:23:28.438Z"}
+{"level":"warn","message":"Redis connection failed - running without cache","timestamp":"2025-12-08T09:23:28.439Z"}
+{"level":"warn","message":"Razorpay credentials not configured - payment gateway disabled","timestamp":"2025-12-08T09:24:04.951Z"}
+{"level":"info","message":"Server running in development mode on port 5000","timestamp":"2025-12-08T09:24:05.018Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T09:24:05.037Z"}
+{"level":"info","message":"MongoDB Connected: localhost","timestamp":"2025-12-08T09:24:05.054Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T09:24:05.110Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T09:24:05.226Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T09:24:05.379Z"}
+{"level":"warn","message":"Redis connection failed - running without cache","timestamp":"2025-12-08T09:24:05.381Z"}
+{"level":"warn","message":"Razorpay credentials not configured - payment gateway disabled","timestamp":"2025-12-08T09:24:22.800Z"}
+{"level":"info","message":"Server running in development mode on port 5000","timestamp":"2025-12-08T09:24:22.832Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T09:24:22.855Z"}
+{"level":"info","message":"MongoDB Connected: localhost","timestamp":"2025-12-08T09:24:22.871Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T09:24:22.927Z"}
+{"level":"warn","message":"Razorpay credentials not configured - payment gateway disabled","timestamp":"2025-12-08T09:24:24.631Z"}
+{"level":"info","message":"Server running in development mode on port 5000","timestamp":"2025-12-08T09:24:24.662Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T09:24:24.689Z"}
+{"level":"info","message":"MongoDB Connected: localhost","timestamp":"2025-12-08T09:24:24.709Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T09:24:24.764Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T09:24:24.875Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T09:24:25.029Z"}
+{"level":"warn","message":"Redis connection failed - running without cache","timestamp":"2025-12-08T09:24:25.031Z"}
+{"level":"warn","message":"Razorpay credentials not configured - payment gateway disabled","timestamp":"2025-12-08T09:24:34.570Z"}
+{"level":"info","message":"Server running in development mode on port 5000","timestamp":"2025-12-08T09:24:34.607Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T09:24:34.630Z"}
+{"level":"info","message":"MongoDB Connected: localhost","timestamp":"2025-12-08T09:24:34.648Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T09:24:34.701Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T09:24:34.816Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T09:24:34.974Z"}
+{"level":"warn","message":"Redis connection failed - running without cache","timestamp":"2025-12-08T09:24:34.977Z"}
+{"level":"info","message":"OTP email sent to maheshbob123456789@gmail.com: <fccf4f1c-33b9-4b17-888e-36dd0a9c5885@gmail.com>","timestamp":"2025-12-08T09:30:08.109Z"}
+{"level":"info","message":"Signup OTP sent to maheshbob123456789@gmail.com","timestamp":"2025-12-08T09:30:08.117Z"}
+{"level":"warn","message":"OTP rate limit exceeded for IP: ::1","timestamp":"2025-12-08T09:30:27.029Z"}
+{"level":"warn","message":"OTP rate limit exceeded for IP: ::1","timestamp":"2025-12-08T09:30:35.627Z"}
+{"level":"warn","message":"OTP rate limit exceeded for IP: ::1","timestamp":"2025-12-08T09:30:43.251Z"}
+{"level":"warn","message":"OTP rate limit exceeded for IP: ::1","timestamp":"2025-12-08T09:32:01.250Z"}
+{"level":"warn","message":"Razorpay credentials not configured - payment gateway disabled","timestamp":"2025-12-08T09:32:49.570Z"}
+{"level":"info","message":"Server running in development mode on port 5000","timestamp":"2025-12-08T09:32:49.599Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T09:32:49.614Z"}
+{"level":"info","message":"MongoDB Connected: localhost","timestamp":"2025-12-08T09:32:49.626Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T09:32:49.692Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T09:32:49.800Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T09:32:49.956Z"}
+{"level":"warn","message":"Redis connection failed - running without cache","timestamp":"2025-12-08T09:32:49.958Z"}
+{"level":"warn","message":"OTP rate limit exceeded for IP: ::1","timestamp":"2025-12-08T09:36:19.260Z"}
+{"level":"warn","message":"OTP rate limit exceeded for IP: ::1","timestamp":"2025-12-08T09:36:46.594Z"}
+{"level":"warn","message":"OTP rate limit exceeded for IP: ::1","timestamp":"2025-12-08T09:37:05.235Z"}
+{"level":"warn","message":"Razorpay credentials not configured - payment gateway disabled","timestamp":"2025-12-08T09:38:05.958Z"}
+{"level":"info","message":"Server running in development mode on port 5000","timestamp":"2025-12-08T09:38:06.001Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T09:38:06.017Z"}
+{"level":"info","message":"MongoDB Connected: localhost","timestamp":"2025-12-08T09:38:06.028Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T09:38:06.092Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T09:38:06.200Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T09:38:06.355Z"}
+{"level":"warn","message":"Redis connection failed - running without cache","timestamp":"2025-12-08T09:38:06.357Z"}
+{"level":"info","message":"OTP email sent to rithvikreddysurukanti@gmail.com: <a3deeba4-d1a7-39b1-543a-8d4233d8705e@gmail.com>","timestamp":"2025-12-08T09:38:39.166Z"}
+{"level":"info","message":"Signup OTP sent to rithvikreddysurukanti@gmail.com","timestamp":"2025-12-08T09:38:39.170Z"}
+{"level":"warn","message":"Razorpay credentials not configured - payment gateway disabled","timestamp":"2025-12-08T09:40:05.826Z"}
+{"level":"info","message":"Server running in development mode on port 5000","timestamp":"2025-12-08T09:40:05.865Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T09:40:05.897Z"}
+{"level":"info","message":"MongoDB Connected: localhost","timestamp":"2025-12-08T09:40:05.920Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T09:40:05.966Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T09:40:06.086Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T09:40:06.241Z"}
+{"level":"warn","message":"Redis connection failed - running without cache","timestamp":"2025-12-08T09:40:06.243Z"}

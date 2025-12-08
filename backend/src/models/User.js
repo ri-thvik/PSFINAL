@@ -3,9 +3,10 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
 const UserSchema = new mongoose.Schema({
-    phone: { type: String, required: true, unique: true, index: true },
+    phone: { type: String, sparse: true, unique: true, index: true },
     email: { type: String, sparse: true, unique: true },
     name: { type: String, required: true },
+    password: { type: String, required: true, select: false },
     role: { type: String, enum: ['rider', 'driver', 'admin'], default: 'rider' },
     profilePhoto: String,
     isVerified: { type: Boolean, default: false },
@@ -39,10 +40,28 @@ UserSchema.index({ 'savedAddresses.location': '2dsphere' });
 // This will drop and recreate the index if it exists
 UserSchema.index({ email: 1 }, { sparse: true, unique: true });
 
-// Encrypt password (if we were using passwords, but we are using OTP mostly. 
-// However, for admin or email login, we might need it. 
-// The doc says "Email/Phone signup with OTP verification".
-// I'll add a password field just in case, or rely on OTP verification logic in controller.)
+// Hash password before saving
+UserSchema.pre('save', async function (next) {
+    if (!this.isModified('password')) {
+        return next();
+    }
+    try {
+        const salt = await bcrypt.genSalt(10);
+        this.password = await bcrypt.hash(this.password, salt);
+        next();
+    } catch (error) {
+        next(error);
+    }
+});
+
+// Compare password for login
+UserSchema.methods.comparePassword = async function (candidatePassword) {
+    try {
+        return await bcrypt.compare(candidatePassword, this.password);
+    } catch (error) {
+        return false;
+    }
+};
 
 // Sign JWT
 UserSchema.methods.getSignedJwtToken = function () {
