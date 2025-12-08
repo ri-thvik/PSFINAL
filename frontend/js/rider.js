@@ -13,6 +13,19 @@ let tripHistory = [];
 let selectedPaymentMethod = null;
 let currentPaymentTripId = null;
 
+// ==================== HOURLY RENTAL STATE ====================
+let selectedRideMode = 'normal'; // 'normal' | 'electric'
+let selectedBookingType = 'point-to-point'; // 'point-to-point' | 'hourly'  
+let selectedHours = null;
+
+const HOURLY_RATES = {
+    bike: { normal: 80, electric: 60 },
+    auto: { normal: 150, electric: 120 },
+    car: { normal: 250, electric: 200 }
+};
+
+const INCLUDED_KM_PER_HOUR = 10;
+
 // ==================== INITIALIZATION ====================
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize Theme
@@ -383,6 +396,23 @@ function checkIfReadyToShowVehicles() {
     if (pickupLocation && dropLocation) {
         showVehicleSheet();
     }
+}
+
+// ==================== Get Fare Button ====================
+function showVehicleSelection() {
+    // Check if pickup and drop locations are set
+    if (!pickupLocation || !pickupLocation.lat) {
+        alert('Please select a pickup location');
+        return;
+    }
+
+    if (!dropLocation || !dropLocation.lat) {
+        alert('Please select a drop location');
+        return;
+    }
+
+    // Show vehicle selection sheet
+    showVehicleSheet();
 }
 
 // ==================== VEHICLE SELECTION ====================

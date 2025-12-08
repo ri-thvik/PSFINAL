@@ -779,16 +779,6 @@ body {
     font-weight: 700;
 }
 
-.btn-book {
-    margin-top: 0;
-}
-
-/* ==================== SEARCHING SHEET ==================== */
-.searching-content {
-    text-align: center;
-    padding: 40px 0;
-}
-
 .searching-animation {
     position: relative;
     width: 80px;

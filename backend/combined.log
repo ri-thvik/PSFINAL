@@ -9285,3 +9285,59 @@
 {"level":"info","message":"Socket 8HM9CZ3HOgEVwz1DAAAD joined room rider:69369d8a6f5b028293d03871","timestamp":"2025-12-08T09:52:15.418Z"}
 {"level":"error","message":"User validation failed: password: Path `password` is required.","timestamp":"2025-12-08T09:53:57.687Z"}
 {"level":"error","message":"User validation failed: password: Path `password` is required.","timestamp":"2025-12-08T09:54:01.129Z"}
+{"level":"warn","message":"Razorpay credentials not configured - payment gateway disabled","timestamp":"2025-12-08T10:10:18.447Z"}
+{"level":"info","message":"Server running in development mode on port 5000","timestamp":"2025-12-08T10:10:18.578Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T10:10:18.648Z"}
+{"level":"info","message":"MongoDB Connected: localhost","timestamp":"2025-12-08T10:10:18.702Z"}
+{"level":"info","message":"New client connected: UxVfXQ3j6Nup7-dZAAAB","timestamp":"2025-12-08T10:10:18.806Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T10:10:18.816Z"}
+{"level":"info","message":"Socket UxVfXQ3j6Nup7-dZAAAB joined room rider:69369d8a6f5b028293d03871","timestamp":"2025-12-08T10:10:18.952Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T10:10:19.159Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T10:10:19.331Z"}
+{"level":"warn","message":"Redis connection failed - running without cache","timestamp":"2025-12-08T10:10:19.334Z"}
+{"level":"info","message":"New client connected: WtmsVGch1gSQatyIAAAD","timestamp":"2025-12-08T10:10:22.374Z"}
+{"level":"info","message":"Socket WtmsVGch1gSQatyIAAAD joined room rider:69369d8a6f5b028293d03871","timestamp":"2025-12-08T10:10:22.432Z"}
+{"level":"info","message":"User logged in: rithvikreddysurukanti@gmail.com","timestamp":"2025-12-08T10:11:08.715Z"}
+{"level":"info","message":"New client connected: 5-4Ici9LUH5v7prXAAAF","timestamp":"2025-12-08T10:11:12.038Z"}
+{"level":"info","message":"Socket 5-4Ici9LUH5v7prXAAAF joined room rider:69369d8a6f5b028293d03871","timestamp":"2025-12-08T10:11:12.145Z"}
+{"level":"info","message":"Client disconnected: 5-4Ici9LUH5v7prXAAAF","timestamp":"2025-12-08T10:11:21.752Z"}
+{"level":"info","message":"OTP email sent to shubhaminnnai30@gmail.com: <1c281428-46df-19ef-078e-8da598c29135@gmail.com>","timestamp":"2025-12-08T10:12:10.612Z"}
+{"level":"info","message":"Signup OTP sent to shubhaminnnai30@gmail.com","timestamp":"2025-12-08T10:12:10.615Z"}
+{"level":"info","message":"Welcome email sent to shubhaminnnai30@gmail.com","timestamp":"2025-12-08T10:12:36.740Z"}
+{"level":"info","message":"User registered successfully: shubhaminnnai30@gmail.com","timestamp":"2025-12-08T10:12:36.742Z"}
+{"level":"info","message":"User logged in: shubhaminnnai30@gmail.com","timestamp":"2025-12-08T10:12:49.338Z"}
+{"level":"info","message":"New client connected: zfrZ5ISii8f2ywv0AAAH","timestamp":"2025-12-08T10:12:52.435Z"}
+{"level":"info","message":"Socket zfrZ5ISii8f2ywv0AAAH joined room rider:6936a49142e82861d6516f3a","timestamp":"2025-12-08T10:12:52.466Z"}
+{"level":"warn","message":"Razorpay credentials not configured - payment gateway disabled","timestamp":"2025-12-08T10:26:23.865Z"}
+{"level":"info","message":"Server running in development mode on port 5000","timestamp":"2025-12-08T10:26:23.948Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T10:26:23.994Z"}
+{"level":"info","message":"MongoDB Connected: localhost","timestamp":"2025-12-08T10:26:24.022Z"}
+{"level":"info","message":"New client connected: cWmCqtYnROA_GcdpAAAB","timestamp":"2025-12-08T10:26:24.092Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T10:26:24.158Z"}
+{"level":"info","message":"Socket cWmCqtYnROA_GcdpAAAB joined room rider:69369d8a6f5b028293d03871","timestamp":"2025-12-08T10:26:24.221Z"}
+{"level":"info","message":"New client connected: pamNTQooHHPN7vAHAAAE","timestamp":"2025-12-08T10:26:24.254Z"}
+{"level":"info","message":"New client connected: -U-UxtFUSylf_U3OAAAF","timestamp":"2025-12-08T10:26:24.287Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T10:26:24.344Z"}
+{"level":"info","message":"Socket pamNTQooHHPN7vAHAAAE joined room rider:6936a49142e82861d6516f3a","timestamp":"2025-12-08T10:26:24.346Z"}
+{"level":"info","message":"Socket -U-UxtFUSylf_U3OAAAF joined room rider:69369d8a6f5b028293d03871","timestamp":"2025-12-08T10:26:24.369Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-08T10:26:24.518Z"}
+{"level":"warn","message":"Redis connection failed - running without cache","timestamp":"2025-12-08T10:26:24.519Z"}
+{"level":"info","message":"User logged in: shubhaminnnai30@gmail.com","timestamp":"2025-12-08T10:26:44.441Z"}
+{"level":"info","message":"New client connected: 4PM1HOy6NmmpkYjoAAAH","timestamp":"2025-12-08T10:26:47.743Z"}
+{"level":"info","message":"Socket 4PM1HOy6NmmpkYjoAAAH joined room rider:6936a49142e82861d6516f3a","timestamp":"2025-12-08T10:26:48.057Z"}
+{"level":"info","message":"Client disconnected: 4PM1HOy6NmmpkYjoAAAH","timestamp":"2025-12-08T10:26:58.361Z"}
+{"level":"info","message":"User logged in: rithvikreddysurukanti@gmail.com","timestamp":"2025-12-08T10:27:10.879Z"}
+{"level":"info","message":"New client connected: 6Q1FFCllVgk1NGDXAAAJ","timestamp":"2025-12-08T10:27:14.048Z"}
+{"level":"info","message":"Socket 6Q1FFCllVgk1NGDXAAAJ joined room rider:69369d8a6f5b028293d03871","timestamp":"2025-12-08T10:27:14.083Z"}
+{"level":"info","message":"Client disconnected: cWmCqtYnROA_GcdpAAAB","timestamp":"2025-12-08T10:45:53.769Z"}
+{"level":"info","message":"User logged in: rithvikreddysurukanti@gmail.com","timestamp":"2025-12-08T10:46:53.242Z"}
+{"level":"info","message":"New client connected: 5UXg1iICJ8lco_muAAAL","timestamp":"2025-12-08T10:46:56.032Z"}
+{"level":"info","message":"Socket 5UXg1iICJ8lco_muAAAL joined room rider:69369d8a6f5b028293d03871","timestamp":"2025-12-08T10:46:56.048Z"}
+{"level":"info","message":"Client disconnected: -U-UxtFUSylf_U3OAAAF","timestamp":"2025-12-08T10:49:39.982Z"}
+{"level":"info","message":"Client disconnected: 6Q1FFCllVgk1NGDXAAAJ","timestamp":"2025-12-08T11:00:30.368Z"}
+{"level":"info","message":"Client disconnected: pamNTQooHHPN7vAHAAAE","timestamp":"2025-12-08T11:00:30.475Z"}
+{"level":"info","message":"Client disconnected: 5UXg1iICJ8lco_muAAAL","timestamp":"2025-12-08T12:04:24.570Z"}
+{"level":"info","message":"New client connected: m4wdYqfYnmVyhFUaAAAN","timestamp":"2025-12-08T13:27:45.061Z"}
+{"level":"info","message":"Socket m4wdYqfYnmVyhFUaAAAN joined room rider:69369d8a6f5b028293d03871","timestamp":"2025-12-08T13:27:45.075Z"}
+{"level":"info","message":"New client connected: NW8K4WnfQ6BFKpcBAAAP","timestamp":"2025-12-08T13:27:52.140Z"}
+{"level":"info","message":"Socket NW8K4WnfQ6BFKpcBAAAP joined room rider:69369d8a6f5b028293d03871","timestamp":"2025-12-08T13:27:52.155Z"}

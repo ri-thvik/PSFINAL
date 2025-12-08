@@ -7,11 +7,13 @@
     <title>RapidRide - Book Your Ride</title>
     <link rel="stylesheet" href="css/rider.css">
     <link rel="stylesheet" href="css/map-styles.css">
+    <link rel="stylesheet" href="css/hourly-rental.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="https://cdn.socket.io/4.6.0/socket.io.min.js"></script>
+    <script src="js/hourly-rental.js"></script>
 </head>
 
 <body>
@@ -125,6 +127,12 @@
                 </div>
             </div>
 
+            <!-- Get Fare Button -->
+            <button class="btn-primary btn-get-fare" onclick="showVehicleSelection()" style="margin-top: 16px;">
+                <span>Get Fare</span>
+                <i class="fas fa-arrow-right"></i>
+            </button>
+
             <!-- Saved Places -->
             <div class="saved-places">
                 <div class="saved-place" onclick="selectSavedPlace('home')">
@@ -153,6 +161,28 @@
             <div class="sheet-handle"></div>
 
             <h3 class="sheet-title">Choose a ride</h3>
+
+            <!-- Mode Toggle -->
+            <div class="mode-toggle">
+                <button class="mode-btn active" data-mode="normal" onclick="setRideMode('normal')">
+                    <i class="fas fa-gas-pump"></i> Normal
+                </button>
+                <button class="mode-btn" data-mode="electric" onclick="setRideMode('electric')">
+                    <i class="fas fa-bolt"></i> Electric
+                    <span class="ev-badge">Save ₹</span>
+                </button>
+            </div>
+
+            <!-- Booking Type Toggle -->
+            <div class="booking-type-toggle">
+                <button class="booking-type-btn active" data-type="point-to-point"
+                    onclick="setBookingType('point-to-point')">
+                    <i class="fas fa-route"></i> Point-to-Point
+                </button>
+                <button class="booking-type-btn" data-type="hourly" onclick="setBookingType('hourly')">
+                    <i class="fas fa-clock"></i> Hourly Rental
+                </button>
+            </div>
 
             <div class="vehicle-options">
                 <div class="vehicle-option" data-type="bike" onclick="selectVehicle('bike')">
@@ -196,6 +226,20 @@
                         <span class="price">₹<span class="price-amount">125</span></span>
                     </div>
                 </div>
+            </div>
+
+            <!-- Hour Selector (initially hidden) -->
+            <div class="hour-selector" id="hour-selector" style="display: none;">
+                <h4><i class="fas fa-clock"></i> Select Duration</h4>
+                <div class="hour-options">
+                    <button class="hour-btn" data-hours="1" onclick="selectHours(1)">1 hr</button>
+                    <button class="hour-btn" data-hours="2" onclick="selectHours(2)">2 hrs</button>
+                    <button class="hour-btn" data-hours="3" onclick="selectHours(3)">3 hrs</button>
+                    <button class="hour-btn" data-hours="4" onclick="selectHours(4)">4 hrs</button>
+                    <button class="hour-btn" data-hours="6" onclick="selectHours(6)">6 hrs</button>
+                    <button class="hour-btn" data-hours="8" onclick="selectHours(8)">8 hrs</button>
+                </div>
+                <p class="hour-note"><i class="fas fa-info-circle"></i> Up to 10km per hour included</p>
             </div>
 
             <button class="btn-primary btn-book" onclick="confirmBooking()">

@@ -1,0 +1,177 @@
+/* Get Fare Button */
+.btn-get-fare {
+    width: 100%;
+    margin-top: 16px;
+}
+
+/* ==================== HOURLY RENTAL STYLES ==================== */
+/* Mode Toggle */
+.mode-toggle {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    padding: 0 20px;
+}
+
+.mode-btn {
+    flex: 1;
+    padding: 12px 16px;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.mode-btn:hover {
+    border-color: #d1d5db;
+    background: #f9fafb;
+}
+
+.mode-btn.active {
+    border-color: #000;
+    background: #000;
+    color: white;
+}
+
+.mode-btn[data-mode="electric"].active {
+    background: #10b981;
+    border-color: #10b981;
+}
+
+.ev-badge {
+    font-size: 11px;
+    background: #d1fae5;
+    color: #065f46;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.mode-btn.active .ev-badge {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+/* Booking Type Toggle */
+.booking-type-toggle {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.booking-type-btn {
+    flex: 1;
+    padding: 12px 16px;
+    border: 2px solid #e5e7eb;
+    border-radius: 10px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.booking-type-btn:hover {
+    border-color: #d1d5db;
+    background: #f9fafb;
+}
+
+.booking-type-btn.active {
+    border-color: #000;
+    background: #f9fafb;
+    font-weight: 600;
+}
+
+/* Hour Selector */
+.hour-selector {
+    padding: 20px;
+    background: #f9fafb;
+    border-radius: 12px;
+    margin: 0 20px 15px;
+    animation: slide Down 0.3s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hour-selector h4 {
+    margin: 0 0 12px;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.hour-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.hour-btn {
+    padding: 12px;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+.hour-btn:hover {
+    border-color: #d1d5db;
+    transform: translateY(-1px);
+}
+
+.hour-btn.active {
+    border-color: #000;
+    background: #000;
+    color: white;
+}
+
+.hour-note {
+    margin: 0;
+    font-size: 13px;
+    color: #6b7280;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Vehicle card price enhancement for hourly */
+.vehicle-option .price small {
+    font-size: 11px;
+    font-weight: 400;
+    opacity: 0.7;
+    margin-left: 2px;
+}
+
+/* Confirm button disabled state */
+.btn-book:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

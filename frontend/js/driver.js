@@ -402,14 +402,26 @@ function validateStep(step) {
     if (step === 1) {
         const name = document.getElementById('reg-name').value.trim();
         const phone = document.getElementById('reg-phone').value.trim();
+        const password = document.getElementById('reg-password').value;
+        const confirmPassword = document.getElementById('reg-confirm-password').value;
+
         if (!name) { alert('Please enter your full name'); return false; }
         if (!phone || phone.length < 10) { alert('Please enter a valid phone number'); return false; }
+
+        // Validate password only if not logged in
+        if (!token) {
+            if (!password) { alert('Please enter a password'); return false; }
+            if (password.length < 6) { alert('Password must be at least 6 characters'); return false; }
+            if (password !== confirmPassword) { alert('Passwords do not match'); return false; }
+        }
+
         return true;
     } else if (step === 2) {
         const vehicleType = document.getElementById('reg-vehicle-type').value;
         const vehicleNumber = document.getElementById('reg-vehicle-number').value.trim();
         const vehicleModel = document.getElementById('reg-vehicle-model').value.trim();
         const vehicleColor = document.getElementById('reg-vehicle-color').value.trim();
+
         if (!vehicleType) { alert('Please select vehicle type'); return false; }
         if (!vehicleNumber) { alert('Please enter vehicle number'); return false; }
         if (!vehicleModel) { alert('Please enter vehicle model'); return false; }
@@ -424,6 +436,7 @@ function saveStepData(step) {
         registrationData.name = document.getElementById('reg-name').value.trim();
         registrationData.phone = document.getElementById('reg-phone').value.trim();
         registrationData.email = document.getElementById('reg-email').value.trim();
+        registrationData.password = document.getElementById('reg-password').value;
     } else if (step === 2) {
         registrationData.vehicleType = document.getElementById('reg-vehicle-type').value;
         registrationData.vehicleNumber = document.getElementById('reg-vehicle-number').value.trim().toUpperCase().replace(/\s/g, '');
@@ -440,6 +453,12 @@ function resetRegistrationForm() {
     document.getElementById('reg-vehicle-number').value = '';
     document.getElementById('reg-vehicle-model').value = '';
     document.getElementById('reg-vehicle-color').value = '';
+    // Reset password fields if they exist
+    const pwd = document.getElementById('reg-password');
+    const cpwd = document.getElementById('reg-confirm-password');
+    if (pwd) pwd.value = '';
+    if (cpwd) cpwd.value = '';
+
     document.getElementById('terms-accept').checked = false;
     ['license', 'rc', 'insurance', 'aadhar', 'photo'].forEach(doc => {
         const input = document.getElementById(`doc-${doc}`);
@@ -501,50 +520,61 @@ async function submitRegistration() {
     submitIcon.className = 'fas fa-spinner fa-spin';
 
     try {
-        // If user already logged in (came from login flow), skip creating user again
+        let driverData;
+
         if (!token) {
-            const userRes = await fetch(`${API_URL}/auth/register`, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    phone: registrationData.phone,
-                    name: registrationData.name,
-                    email: registrationData.email || undefined,
-                    role: 'driver'
-                })
-            });
-
-            const userData = await userRes.json();
-            if (!userData.success) {
-                throw new Error(userData.message || 'Registration failed');
-            }
-
-            token = userData.token;
-            localStorage.setItem('driverToken', token);
-        } else {
-            console.log('Using existing user session for driver onboarding');
-        }
-
-        const driverRes = await fetch(`${API_URL}/drivers/onboard`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': `Bearer ${token}`
-            },
-            body: JSON.stringify({
+            // New user registration - use /onboard endpoint (creates user + driver)
+            const payload = {
+                name: registrationData.name,
+                phone: registrationData.phone,
+                email: registrationData.email || undefined,
+                password: registrationData.password,
                 vehicleType: registrationData.vehicleType,
                 vehicleNumber: registrationData.vehicleNumber,
                 vehicleModel: registrationData.vehicleModel,
                 vehicleColor: registrationData.vehicleColor
-            })
-        });
+            };
 
-        const driverData = await driverRes.json();
+            const res = await fetch(`${API_URL}/drivers/onboard`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            });
+
+            driverData = await res.json();
+
+            if (driverData.success) {
+                token = driverData.token;
+                localStorage.setItem('driverToken', token);
+            }
+        } else {
+            // Existing user - use /onboard-existing endpoint
+            console.log('Using existing user session for driver onboarding');
+
+            const payload = {
+                vehicleType: registrationData.vehicleType,
+                vehicleNumber: registrationData.vehicleNumber,
+                vehicleModel: registrationData.vehicleModel,
+                vehicleColor: registrationData.vehicleColor
+            };
+
+            const res = await fetch(`${API_URL}/drivers/onboard-existing`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${token}`
+                },
+                body: JSON.stringify(payload)
+            });
+
+            driverData = await res.json();
+        }
+
         if (!driverData.success) {
             throw new Error(driverData.message || 'Driver onboarding failed');
         }
 
-        driver = driverData.data;
+        driver = driverData.data.driver || driverData.data; // Handle potential structure difference
         alert('Registration successful! Your account is pending verification.');
         updateDriverInfo();
         setRegistrationVisibility(false);

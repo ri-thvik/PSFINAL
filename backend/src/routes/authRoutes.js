@@ -17,6 +17,10 @@ const {
     resendSignupOTP,
     loginWithPassword
 } = require('../controllers/authControllerNew');
+const {
+    sendPasswordResetOTP,
+    resetPasswordComplete
+} = require('../controllers/passwordResetController');
 const { protect } = require('../middleware/auth');
 const { authLimiter, otpLimiter } = require('../middleware/rateLimiter');
 const { phoneValidation, emailValidation, nameValidation, otpValidation, loginValidation, handleValidationErrors } = require('../middleware/validator');
@@ -34,6 +38,10 @@ router.post('/signup/send-otp', otpLimiter, sendSignupOTP);
 router.post('/signup/verify-complete', verifySignupOTP);  // No rate limiter for verification
 router.post('/signup/resend-otp', otpLimiter, resendSignupOTP);
 router.post('/login/password', authLimiter, loginWithPassword);
+
+// Password reset routes
+router.post('/password/reset-otp', otpLimiter, sendPasswordResetOTP);
+router.post('/password/reset-complete', resetPasswordComplete);
 
 // Protected routes
 router.get('/me', protect, getMe);
