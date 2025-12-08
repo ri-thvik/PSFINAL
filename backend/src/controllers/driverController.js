@@ -84,6 +84,7 @@ exports.onboardDriver = async (req, res) => {
         // Create driver profile
         const driver = await Driver.create({
             userId: user._id,
+            vehicleCategory,
             vehicleType,
             vehicleNumber: vehicleNumber.toUpperCase().replace(/\s/g, ''),
             vehicleModel: vehicleModel || '',
@@ -196,6 +197,7 @@ exports.onboardExistingUser = async (req, res) => {
 
         driver = await Driver.create({
             userId: req.user.id,
+            vehicleCategory,
             vehicleType,
             vehicleNumber: vehicleNumber.toUpperCase().replace(/\s/g, ''), // Normalize vehicle number
             vehicleModel,

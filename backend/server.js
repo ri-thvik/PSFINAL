@@ -1,4 +1,4 @@
-require('dotenv').config();
+require('dotenv').config(); // Load env vars - updated logic
 const express = require('express');
 const http = require('http');
 const socketIo = require('socket.io');
@@ -25,7 +25,7 @@ require('./src/socket/socketHandler')(io);
 
 // Middleware
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: ['http://localhost:3000', 'http://localhost:3001'],
     credentials: true
 }));
 app.use(helmet());

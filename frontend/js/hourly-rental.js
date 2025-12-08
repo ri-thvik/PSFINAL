@@ -4,7 +4,7 @@
  * Set ride mode (Normal/Electric)
  */
 function setRideMode(mode) {
-    selectedRideMode = mode;
+    window.selectedRideMode = mode;
 
     // Update button active states
     document.querySelectorAll('.mode-btn').forEach(btn => {
@@ -108,7 +108,7 @@ function selectHours(hours) {
 function updateVehicleCardsForHourly() {
     document.querySelectorAll('.vehicle-option').forEach(card => {
         const type = card.dataset.type;
-        const rate = HOURLY_RATES[type][selectedRideMode];
+        const rate = HOURLY_RATES[type][window.selectedRideMode];
         const priceElement = card.querySelector('.price-amount');
         const priceLabel = card.querySelector('.price');
 
@@ -125,11 +125,11 @@ function updateVehicleCardsForHourly() {
 function updateHourlyFareDisplay() {
     if (!selectedVehicleType || !selectedHours) return;
 
-    const hourlyRate = HOURLY_RATES[selectedVehicleType][selectedRideMode];
+    const hourlyRate = HOURLY_RATES[selectedVehicleType][window.selectedRideMode];
     const totalFare = hourlyRate * selectedHours;
 
     // Calculate savings if EV mode
-    const savings = selectedRideMode === 'electric' ?
+    const savings = window.selectedRideMode === 'electric' ?
         (HOURLY_RATES[selectedVehicleType].normal - HOURLY_RATES[selectedVehicleType].electric) * selectedHours : 0;
 
     // Update selected vehicle card

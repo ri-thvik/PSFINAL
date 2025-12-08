@@ -345,8 +345,8 @@ async function sendDriverOTP() {
             // Show OTP in dev mode
             if (data.otp) {
                 console.log('🔐 DEV MODE OTP:', data.otp);
-                document.getElementById('otp-dev-info').style.display = 'block';
-                document.getElementById('otp-dev-code').textContent = data.otp;
+                // document.getElementById('otp-dev-info').style.display = 'block';
+                // document.getElementById('otp-dev-code').textContent = data.otp;
             }
 
             document.getElementById('otp-contact-display').textContent = email || phone;
@@ -817,11 +817,21 @@ function updateDriverInfo() {
         if (vehicleDesc) {
             const parts = [];
             // Check top-level properties first
-            const type = driver.vehicleType || (driver.vehicle && driver.vehicle.type);
+            let type = driver.vehicleType || (driver.vehicle && driver.vehicle.type);
             const model = driver.vehicleModel || (driver.vehicle && driver.vehicle.model);
             const color = driver.vehicleColor || (driver.vehicle && driver.vehicle.color);
+            const category = driver.vehicleCategory || (driver.vehicle && driver.vehicle.category);
 
-            if (type) parts.push(type);
+            if (type) {
+                // Capitalize first letter
+                type = type.charAt(0).toUpperCase() + type.slice(1);
+
+                // Add EV prefix if category is electric
+                if (category === 'electric') {
+                    type = 'EV ' + type;
+                }
+                parts.push(type);
+            }
             if (model) parts.push(model);
             if (color) parts.push(color);
 

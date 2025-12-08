@@ -302,8 +302,19 @@ function calculateFare(distanceKm) {
         car: 18
     };
 
+    // Store for recalculation when toggling modes
+    window.lastCalculatedDistance = distanceKm;
+
+    // Check for electric mode
+    const isElectric = (typeof window.selectedRideMode !== 'undefined' && window.selectedRideMode === 'electric');
+    const discountFactor = isElectric ? 0.8 : 1.0; // 20% discount for EV
+
     Object.keys(baseFares).forEach(type => {
-        const fare = Math.round(baseFares[type] + (distanceKm * perKmRates[type]));
+        let fare = Math.round(baseFares[type] + (distanceKm * perKmRates[type]));
+
+        // Apply EV discount
+        fare = Math.round(fare * discountFactor);
+
         const element = document.querySelector(`[data-type="${type}"] .price-amount`);
         if (element) {
             element.textContent = fare;
@@ -355,5 +366,6 @@ window.mapFunctions = {
     addMarker,
     drawRoute,
     updateDriverMarker,
-    reverseGeocode
+    reverseGeocode,
+    calculateFare
 };

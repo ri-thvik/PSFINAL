@@ -84,6 +84,7 @@ module.exports = (io) => {
                 const nearbyDrivers = await Driver.find({
                     status: 'online',
                     vehicleType: data.vehicleType || 'auto',
+                    vehicleCategory: data.vehicleCategory || 'normal',
                     location: {
                         $near: {
                             $geometry: {
@@ -172,6 +173,7 @@ module.exports = (io) => {
                         _id: { $nin: rejectedDriverIds },
                         status: 'online',
                         vehicleType: trip.vehicleType,
+                        vehicleCategory: trip.vehicleCategory || 'normal',
                         location: {
                             $near: {
                                 $geometry: trip.pickup.location,

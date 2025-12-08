@@ -7,7 +7,7 @@ const logger = require('../utils/logger');
 // @access  Private
 exports.createTrip = async (req, res) => {
     try {
-        const { vehicleType, pickup, drop, fare, stops, isScheduled, scheduledTime, promoCode } = req.body;
+        const { vehicleType, vehicleCategory, pickup, drop, fare, stops, isScheduled, scheduledTime, promoCode } = req.body;
 
         // Calculate distance and duration (simplified)
         const distance = calculateDistance(
@@ -24,7 +24,7 @@ exports.createTrip = async (req, res) => {
 
         // Calculate fare with surge
         const fareBreakdown = surgePricingService.calculateFare(
-            distance, duration, vehicleType, surgeMultiplier
+            distance, duration, vehicleType, surgeMultiplier, vehicleCategory
         );
 
         // Apply promo code if provided
@@ -52,6 +52,7 @@ exports.createTrip = async (req, res) => {
         const tripData = {
             riderId: req.user.id,
             vehicleType,
+            vehicleCategory: vehicleCategory || 'normal',
             pickup: {
                 address: pickup.address,
                 location: {
@@ -102,8 +103,8 @@ exports.createTrip = async (req, res) => {
 
         logger.info(`Trip created: ${trip._id}`);
 
-        res.status(201).json({ 
-            success: true, 
+        res.status(201).json({
+            success: true,
             data: trip,
             appliedPromo: appliedPromo
         });
@@ -118,7 +119,7 @@ function calculateDistance(lat1, lon1, lat2, lon2) {
     const R = 6371; // Radius of the Earth in km
     const dLat = (lat2 - lat1) * Math.PI / 180;
     const dLon = (lon2 - lon1) * Math.PI / 180;
-    const a = 
+    const a =
         Math.sin(dLat / 2) * Math.sin(dLat / 2) +
         Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
         Math.sin(dLon / 2) * Math.sin(dLon / 2);

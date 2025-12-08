@@ -8,6 +8,12 @@ const TripSchema = new mongoose.Schema({
         enum: ['bike', 'auto', 'car'],
         required: true
     },
+    vehicleCategory: {
+        type: String,
+        enum: ['normal', 'electric'],
+        default: 'normal',
+        required: true
+    },
     status: {
         type: String,
         enum: [

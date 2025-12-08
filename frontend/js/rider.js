@@ -14,7 +14,7 @@ let selectedPaymentMethod = null;
 let currentPaymentTripId = null;
 
 // ==================== HOURLY RENTAL STATE ====================
-let selectedRideMode = 'normal'; // 'normal' | 'electric'
+window.selectedRideMode = 'normal'; // 'normal' | 'electric'
 let selectedBookingType = 'point-to-point'; // 'point-to-point' | 'hourly'  
 let selectedHours = null;
 
@@ -472,6 +472,7 @@ async function confirmBooking() {
             },
             body: JSON.stringify({
                 vehicleType: selectedVehicleType,
+                vehicleCategory: window.selectedRideMode,
                 pickup: {
                     address: pickupLocation.address,
                     lat: pickupLocation.lat,
@@ -504,6 +505,7 @@ async function confirmBooking() {
                 socket.emit('ride:request', {
                     tripId: currentTrip._id,
                     vehicleType: selectedVehicleType,
+                    vehicleCategory: window.selectedRideMode,
                     pickup: {
                         lat: pickupLocation.lat,
                         lng: pickupLocation.lng,

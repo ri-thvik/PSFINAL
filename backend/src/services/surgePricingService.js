@@ -45,8 +45,8 @@ const calculateSurgeMultiplier = async (lat, lng, vehicleType) => {
         });
 
         // Calculate demand-to-supply ratio
-        const demandSupplyRatio = nearbyDrivers > 0 
-            ? activeRequests / nearbyDrivers 
+        const demandSupplyRatio = nearbyDrivers > 0
+            ? activeRequests / nearbyDrivers
             : activeRequests;
 
         // Time-based surge (rush hours: 7-10 AM, 5-8 PM)
@@ -92,7 +92,7 @@ const calculateSurgeMultiplier = async (lat, lng, vehicleType) => {
  * @param {Number} surgeMultiplier - Surge multiplier
  * @returns {Object} Fare breakdown
  */
-const calculateFare = (distanceKm, durationMinutes, vehicleType, surgeMultiplier = 1.0) => {
+const calculateFare = (distanceKm, durationMinutes, vehicleType, surgeMultiplier = 1.0, vehicleCategory = 'normal') => {
     // Base fares per vehicle type
     const baseFares = {
         bike: 20,
@@ -118,7 +118,14 @@ const calculateFare = (distanceKm, durationMinutes, vehicleType, surgeMultiplier
     const distanceFare = distanceKm * (perKmRates[vehicleType] || 12);
     const timeFare = durationMinutes * (perMinuteRates[vehicleType] || 0.8);
 
-    const subtotal = baseFare + distanceFare + timeFare;
+    let subtotal = baseFare + distanceFare + timeFare;
+
+    // Apply EV Discount (20%)
+    if (vehicleCategory === 'electric') {
+        const discountFactor = 0.8;
+        subtotal = subtotal * discountFactor;
+    }
+
     const surgeAmount = subtotal * (surgeMultiplier - 1);
     const totalFare = subtotal * surgeMultiplier;
 
