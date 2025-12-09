@@ -28,7 +28,8 @@ exports.createTrip = async (req, res) => {
         );
 
         // Apply promo code if provided
-        let finalFare = fareBreakdown.totalFare;
+        // Use provided fare if available to match frontend, otherwise use calculated
+        let finalFare = fare ? parseFloat(fare) : fareBreakdown.totalFare;
         let appliedPromo = null;
         if (promoCode) {
             const PromoCode = require('../models/PromoCode');

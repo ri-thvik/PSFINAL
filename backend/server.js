@@ -10,7 +10,7 @@ const redis = require('./src/config/redis');
 const logger = require('./src/utils/logger');
 const authRoutes = require('./src/routes/authRoutes');
 
-// Initialize App
+// Initialize App (Restart Triggered)
 const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
@@ -22,6 +22,7 @@ const io = socketIo(server, {
 
 // Socket.io Connection
 require('./src/socket/socketHandler')(io);
+app.set('io', io);
 
 // Middleware
 app.use(cors({

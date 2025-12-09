@@ -234,7 +234,7 @@ async function drawRoute(pickup, drop) {
             const coordinates = decodePolyline(route.geometry);
 
             routeLayer = L.polyline(coordinates, {
-                color: '#000000',
+                color: '#4CAF50',
                 weight: 4,
                 opacity: 0.8
             }).addTo(map);

@@ -53,6 +53,11 @@ exports.createOrder = async (req, res) => {
             return processWalletPayment(req, res, amount, tripId, user);
         }
 
+        // Test Payment Method (for development)
+        if (paymentMethod === 'test_card' || paymentMethod === 'cash' || paymentMethod === 'card' || paymentMethod === 'upi') {
+            return processTestPayment(req, res, amount, tripId, user, paymentMethod);
+        }
+
         // Create Razorpay order
         if (!razorpay) {
             return res.status(503).json({
@@ -168,6 +173,16 @@ exports.verifyPayment = async (req, res) => {
             if (trip) {
                 trip.fare.paid = true;
                 await trip.save();
+
+                // Notify driver
+                const io = req.app.get('io');
+                if (io && trip.driverId) {
+                    io.to(`driver:${trip.driverId}`).emit('payment:received', {
+                        tripId: trip._id,
+                        amount: payment.amount,
+                        method: payment.paymentMethod
+                    });
+                }
             }
         }
 
@@ -225,6 +240,16 @@ const processWalletPayment = async (req, res, amount, tripId, user) => {
             if (trip) {
                 trip.fare.paid = true;
                 await trip.save();
+
+                // Notify driver
+                const io = req.app.get('io');
+                if (io && trip.driverId) {
+                    io.to(`driver:${trip.driverId}`).emit('payment:received', {
+                        tripId: trip._id,
+                        amount: amount,
+                        method: 'wallet'
+                    });
+                }
             }
         }
 
@@ -306,3 +331,63 @@ exports.getWalletBalance = async (req, res) => {
     }
 };
 
+
+// Process test/cash payment
+const processTestPayment = async (req, res, amount, tripId, user, method) => {
+    try {
+        // Create payment record
+        const payment = await Payment.create({
+            userId: req.user.id,
+            tripId: tripId || null,
+            type: tripId ? 'trip_payment' : 'test_credit',
+            amount: amount,
+            status: 'completed',
+            paymentMethod: method,
+            completedAt: Date.now()
+        });
+
+        // Create transaction record
+        await Transaction.create({
+            userId: req.user.id,
+            type: 'credit',
+            category: tripId ? 'trip_payment' : 'test',
+            amount: amount,
+            balance: user.wallet.balance,
+            description: `Payment via ${method}`,
+            referenceId: payment._id.toString(),
+            referenceType: 'payment',
+            status: 'completed'
+        });
+
+        // Update trip if applicable
+        if (tripId) {
+            const trip = await Trip.findById(tripId);
+            if (trip) {
+                trip.fare.paid = true;
+                await trip.save();
+
+                // Notify driver
+                const io = req.app.get('io');
+                if (io && trip.driverId) {
+                    io.to(`driver:${trip.driverId}`).emit('payment:received', {
+                        tripId: trip._id,
+                        amount: amount,
+                        method: method
+                    });
+                }
+            }
+        }
+
+        res.status(200).json({
+            success: true,
+            message: 'Payment processed successfully',
+            data: payment
+        });
+    } catch (err) {
+        logger.error(`Test payment error: ${err.message}`);
+        res.status(500).json({
+            success: false,
+            message: 'Error processing test payment'
+        });
+    }
+};

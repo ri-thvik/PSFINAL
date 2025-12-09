@@ -2811,11 +2811,137 @@ select {
     }
 }
 
-/* @media (min-width: 768px) {
-    #online-sheet > *:not(.sheet-handle) {
-        height: calc(100vh - 60px) !important;
-        overflow-y: auto !important;
-        padding-right: 10px;
-        box-sizing: border-box;
-    }
-} */
+/* ==================== DRIVER LOGIN STYLING ==================== */
+#auth-screen {
+    background: url('../images/driver_login_bg_final.jpg') no-repeat center bottom;
+    background-size: cover;
+    position: relative;
+    /* Ensure car is visible by anchoring bottom and covering */
+}
+
+/* Overlay to ensure text readability if needed, or just let image show */
+#auth-screen::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.4) 100%);
+    /* Subtle overlay */
+    pointer-events: none;
+    z-index: 0;
+}
+
+#auth-screen .auth-container {
+    background: transparent !important;
+    box-shadow: none !important;
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    justify-content: center;
+    padding-bottom: 10vh;
+    /* Push up slightly to avoid car */
+    max-width: 380px;
+    margin: 0 auto;
+}
+
+#auth-screen .auth-header {
+    margin-bottom: 24px;
+}
+
+#auth-screen .auth-header h1 {
+    color: #000000;
+    font-size: 32px;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+#auth-screen .auth-header p {
+    color: #333333;
+    font-weight: 500;
+}
+
+/* Logo Styling */
+#auth-screen .auth-logo {
+    background: #00C853;
+    /* Bright Green */
+    width: 72px;
+    height: 72px;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0, 200, 83, 0.3);
+    margin-bottom: 12px;
+}
+
+#auth-screen .auth-logo i {
+    color: white;
+    font-size: 36px;
+}
+
+/* Input Fields */
+#auth-screen .input-group {
+    background: #FFFFFF;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    /* Floating effect */
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    /* Subtle border */
+    overflow: hidden;
+}
+
+#auth-screen .input-group:focus-within {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+#auth-screen .input-group input {
+    background: transparent !important;
+    border: none !important;
+    color: #333333 !important;
+    font-weight: 500;
+    padding: 16px 16px 16px 46px;
+    /* Space for icon */
+}
+
+#auth-screen .input-group input::placeholder {
+    color: #888888;
+}
+
+#auth-screen .input-icon {
+    color: #888888;
+}
+
+/* Login Button */
+#auth-screen .btn-primary {
+    background: #000000;
+    /* Black button */
+    color: white;
+    border-radius: 12px;
+    padding: 18px;
+    font-size: 16px;
+    font-weight: 700;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    margin-top: 24px;
+}
+
+#auth-screen .btn-primary:active,
+#auth-screen .btn-primary:focus {
+    background: #000000;
+}
+
+#auth-screen .btn-primary:hover {
+    background: #222222;
+    transform: translateY(-2px);
+}
+
+/* Footer Link */
+#auth-screen .auth-footer {
+    color: #444444;
+}
+
+#auth-screen .auth-footer a {
+    color: #00C853;
+    /* Match logo green */
+    font-weight: 600;
+}

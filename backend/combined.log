@@ -14743,3 +14743,1750 @@
 {"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-08T19:44:37.056Z"}
 {"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-08T19:44:38.061Z"}
 {"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-08T19:44:38.062Z"}
+{"level":"warn","message":"Razorpay credentials not configured - payment gateway disabled","timestamp":"2025-12-09T05:58:30.542Z"}
+{"level":"info","message":"Server running in development mode on port 5000","timestamp":"2025-12-09T05:58:30.570Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T05:58:30.603Z"}
+{"level":"info","message":"MongoDB Connected: localhost","timestamp":"2025-12-09T05:58:30.625Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T05:58:30.684Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T05:58:30.799Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T05:58:30.954Z"}
+{"level":"warn","message":"Redis connection failed - running without cache","timestamp":"2025-12-09T05:58:30.955Z"}
+{"level":"error","message":"Auth error: jwt expired","timestamp":"2025-12-09T06:00:31.787Z"}
+{"level":"info","message":"User logged in: shubhaminnnai30@gmail.com","timestamp":"2025-12-09T06:00:34.675Z"}
+{"level":"info","message":"New client connected: b4lqkTgYiP6zauEsAAAB","timestamp":"2025-12-09T06:00:37.415Z"}
+{"level":"info","message":"Socket b4lqkTgYiP6zauEsAAAB joined room rider:6936aa0377ed6007caf78137","timestamp":"2025-12-09T06:00:37.441Z"}
+{"level":"info","message":"Client disconnected: b4lqkTgYiP6zauEsAAAB","timestamp":"2025-12-09T06:01:05.784Z"}
+{"level":"info","message":"User logged in: shubhaminnnai30@gmail.com","timestamp":"2025-12-09T06:01:08.741Z"}
+{"level":"info","message":"New client connected: ZsHkiWsST4x_CNpKAAAD","timestamp":"2025-12-09T06:01:11.423Z"}
+{"level":"info","message":"Socket ZsHkiWsST4x_CNpKAAAD joined room rider:6936aa0377ed6007caf78137","timestamp":"2025-12-09T06:01:11.440Z"}
+{"level":"info","message":"Client disconnected: ZsHkiWsST4x_CNpKAAAD","timestamp":"2025-12-09T06:01:45.554Z"}
+{"level":"warn","message":"Razorpay credentials not configured - payment gateway disabled","timestamp":"2025-12-09T06:03:09.593Z"}
+{"level":"info","message":"Server running in development mode on port 5000","timestamp":"2025-12-09T06:03:09.644Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T06:03:09.673Z"}
+{"level":"info","message":"MongoDB Connected: localhost","timestamp":"2025-12-09T06:03:09.703Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T06:03:09.759Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T06:03:09.877Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T06:03:10.031Z"}
+{"level":"warn","message":"Redis connection failed - running without cache","timestamp":"2025-12-09T06:03:10.032Z"}
+{"level":"info","message":"New client connected: DC-JKh9Xe9Lk2EfGAAAB","timestamp":"2025-12-09T06:03:29.224Z"}
+{"level":"info","message":"Socket DC-JKh9Xe9Lk2EfGAAAB joined room rider:6936aa0377ed6007caf78137","timestamp":"2025-12-09T06:03:29.255Z"}
+{"level":"error","message":"Auth error: jwt expired","timestamp":"2025-12-09T06:04:13.922Z"}
+{"level":"info","message":"User logged in: shubhaminnnai30@gmail.com","timestamp":"2025-12-09T06:04:20.045Z"}
+{"level":"info","message":"New client connected: 5lgIbZeVyYV5JxLzAAAD","timestamp":"2025-12-09T06:04:20.216Z"}
+{"level":"info","message":"Socket 5lgIbZeVyYV5JxLzAAAD joined room driver:6937197cb0a56702ebac6e56","timestamp":"2025-12-09T06:04:20.238Z"}
+{"level":"info","message":"Socket 5lgIbZeVyYV5JxLzAAAD joined room driver:6937197cb0a56702ebac6e56","timestamp":"2025-12-09T06:04:26.351Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:04:30.136Z"}
+{"level":"error","message":"Surge pricing calculation error: $geoNear, $near, and $nearSphere are not allowed in this context, as these operators require sorting geospatial data. If you do not need sort, consider using $geoWithin instead. Check out https://dochub.mongodb.org/core/near-sort-operation and https://dochub.mongodb.org/core/nearSphere-sort-operationfor more details.","timestamp":"2025-12-09T06:04:32.221Z"}
+{"level":"info","message":"Trip created: 6937bbf04e40a61cc1cd1013","timestamp":"2025-12-09T06:04:32.270Z"}
+{"level":"info","message":"Socket DC-JKh9Xe9Lk2EfGAAAB joined room rider:6936aa0377ed6007caf78137","timestamp":"2025-12-09T06:04:32.278Z"}
+{"level":"info","message":"Ride requested: 6937bbf04e40a61cc1cd1013","timestamp":"2025-12-09T06:04:32.282Z"}
+{"level":"info","message":"Found 1 nearby drivers for vehicle type: bike","timestamp":"2025-12-09T06:04:32.303Z"}
+{"level":"info","message":"Sent request to driver 693724b83d9c4057ad951391","timestamp":"2025-12-09T06:04:32.309Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:04:33.114Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:04:35.526Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:04:39.108Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:04:42.163Z"}
+{"level":"error","message":"Surge pricing calculation error: $geoNear, $near, and $nearSphere are not allowed in this context, as these operators require sorting geospatial data. If you do not need sort, consider using $geoWithin instead. Check out https://dochub.mongodb.org/core/near-sort-operation and https://dochub.mongodb.org/core/nearSphere-sort-operationfor more details.","timestamp":"2025-12-09T06:04:44.239Z"}
+{"level":"info","message":"Trip created: 6937bbfc4e40a61cc1cd1021","timestamp":"2025-12-09T06:04:44.262Z"}
+{"level":"info","message":"Socket DC-JKh9Xe9Lk2EfGAAAB joined room rider:6936aa0377ed6007caf78137","timestamp":"2025-12-09T06:04:44.272Z"}
+{"level":"info","message":"Ride requested: 6937bbfc4e40a61cc1cd1021","timestamp":"2025-12-09T06:04:44.273Z"}
+{"level":"info","message":"Found 1 nearby drivers for vehicle type: bike","timestamp":"2025-12-09T06:04:44.287Z"}
+{"level":"info","message":"Sent request to driver 6937197cb0a56702ebac6e56","timestamp":"2025-12-09T06:04:44.292Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:04:45.137Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:04:47.457Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:04:50.481Z"}
+{"level":"info","message":"Driver 6937197cb0a56702ebac6e56 rejected trip 6937bbfc4e40a61cc1cd1021","timestamp":"2025-12-09T06:04:50.520Z"}
+{"level":"info","message":"No more drivers available for trip 6937bbfc4e40a61cc1cd1021","timestamp":"2025-12-09T06:04:50.541Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:04:53.580Z"}
+{"level":"info","message":"Ride requested: 6937bbfc4e40a61cc1cd1021","timestamp":"2025-12-09T06:05:00.973Z"}
+{"level":"info","message":"Found 1 nearby drivers for vehicle type: bike","timestamp":"2025-12-09T06:05:00.983Z"}
+{"level":"info","message":"Sent request to driver 693724b83d9c4057ad951391","timestamp":"2025-12-09T06:05:00.986Z"}
+{"level":"info","message":"New client connected: fpxm4ba1ZTCoUfRLAAAF","timestamp":"2025-12-09T06:05:01.288Z"}
+{"level":"info","message":"Socket fpxm4ba1ZTCoUfRLAAAF joined room driver:6937197cb0a56702ebac6e56","timestamp":"2025-12-09T06:05:01.306Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:05:02.207Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:05:02.213Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:05:03.101Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:05:05.765Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:05:06.056Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:05:07.875Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:05:09.227Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:05:10.922Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:05:12.157Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:05:14.006Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:05:15.088Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:05:16.912Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:05:18.098Z"}
+{"level":"info","message":"Socket fpxm4ba1ZTCoUfRLAAAF joined room driver:6937197cb0a56702ebac6e56","timestamp":"2025-12-09T06:05:19.106Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:05:21.097Z"}
+{"level":"info","message":"Client disconnected: fpxm4ba1ZTCoUfRLAAAF","timestamp":"2025-12-09T06:05:22.117Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:05:24.059Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:05:27.047Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:05:30.052Z"}
+{"level":"info","message":"User logged in: shubhaminnnai30@gmail.com","timestamp":"2025-12-09T06:05:38.398Z"}
+{"level":"info","message":"New client connected: -GUC8RQgJbt_vonMAAAH","timestamp":"2025-12-09T06:05:38.465Z"}
+{"level":"info","message":"Socket -GUC8RQgJbt_vonMAAAH joined room driver:6937197cb0a56702ebac6e56","timestamp":"2025-12-09T06:05:38.485Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:05:45.097Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:05:45.102Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:05:45.103Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:05:45.104Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:05:45.105Z"}
+{"level":"info","message":"Client disconnected: -GUC8RQgJbt_vonMAAAH","timestamp":"2025-12-09T06:05:45.535Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:05:48.072Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:05:51.062Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:05:54.062Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:05:57.083Z"}
+{"level":"info","message":"User logged in: shubhaminnnai30@gmail.com","timestamp":"2025-12-09T06:05:59.485Z"}
+{"level":"info","message":"New client connected: jMIaOeqa0_biXIExAAAJ","timestamp":"2025-12-09T06:05:59.552Z"}
+{"level":"info","message":"Socket jMIaOeqa0_biXIExAAAJ joined room driver:6937197cb0a56702ebac6e56","timestamp":"2025-12-09T06:05:59.577Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:05:59.985Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:06:03.062Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:06:06.080Z"}
+{"level":"info","message":"Client disconnected: jMIaOeqa0_biXIExAAAJ","timestamp":"2025-12-09T06:06:06.894Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:06:09.095Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:06:12.083Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:06:20.867Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:06:20.872Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:06:21.079Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:06:24.073Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:06:27.065Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:06:30.070Z"}
+{"level":"info","message":"User logged in: 8500850058","timestamp":"2025-12-09T06:06:32.087Z"}
+{"level":"info","message":"New client connected: QKqA3E0Ld6uUxIEvAAAL","timestamp":"2025-12-09T06:06:32.150Z"}
+{"level":"info","message":"Socket QKqA3E0Ld6uUxIEvAAAL joined room driver:693723c13d9c4057ad9512ef","timestamp":"2025-12-09T06:06:32.177Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:06:33.088Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:06:36.092Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:06:39.115Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:06:42.079Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:06:44.469Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:06:48.092Z"}
+{"level":"error","message":"Surge pricing calculation error: $geoNear, $near, and $nearSphere are not allowed in this context, as these operators require sorting geospatial data. If you do not need sort, consider using $geoWithin instead. Check out https://dochub.mongodb.org/core/near-sort-operation and https://dochub.mongodb.org/core/nearSphere-sort-operationfor more details.","timestamp":"2025-12-09T06:06:56.548Z"}
+{"level":"info","message":"Trip created: 6937bc804e40a61cc1cd10ab","timestamp":"2025-12-09T06:06:56.567Z"}
+{"level":"info","message":"Socket DC-JKh9Xe9Lk2EfGAAAB joined room rider:6936aa0377ed6007caf78137","timestamp":"2025-12-09T06:06:56.576Z"}
+{"level":"info","message":"Ride requested: 6937bc804e40a61cc1cd10ab","timestamp":"2025-12-09T06:06:56.579Z"}
+{"level":"info","message":"Found 1 nearby drivers for vehicle type: auto","timestamp":"2025-12-09T06:06:56.592Z"}
+{"level":"info","message":"Sent request to driver 693723c13d9c4057ad9512ef","timestamp":"2025-12-09T06:06:56.595Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:06:57.254Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:06:57.259Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:06:57.261Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:07:00.094Z"}
+{"level":"info","message":"Socket QKqA3E0Ld6uUxIEvAAAL joined room driver:693723c13d9c4057ad9512ef","timestamp":"2025-12-09T06:07:00.943Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:07:03.090Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:07:04.085Z"}
+{"level":"error","message":"Surge pricing calculation error: $geoNear, $near, and $nearSphere are not allowed in this context, as these operators require sorting geospatial data. If you do not need sort, consider using $geoWithin instead. Check out https://dochub.mongodb.org/core/near-sort-operation and https://dochub.mongodb.org/core/nearSphere-sort-operationfor more details.","timestamp":"2025-12-09T06:07:05.545Z"}
+{"level":"info","message":"Trip created: 6937bc894e40a61cc1cd10c0","timestamp":"2025-12-09T06:07:05.567Z"}
+{"level":"info","message":"Socket DC-JKh9Xe9Lk2EfGAAAB joined room rider:6936aa0377ed6007caf78137","timestamp":"2025-12-09T06:07:05.575Z"}
+{"level":"info","message":"Ride requested: 6937bc894e40a61cc1cd10c0","timestamp":"2025-12-09T06:07:05.577Z"}
+{"level":"info","message":"Found 1 nearby drivers for vehicle type: auto","timestamp":"2025-12-09T06:07:05.591Z"}
+{"level":"info","message":"Sent request to driver 693723c13d9c4057ad9512ef","timestamp":"2025-12-09T06:07:05.593Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:07:06.103Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:07:07.163Z"}
+{"level":"info","message":"Driver 693723c13d9c4057ad9512ef rejected trip 6937bc894e40a61cc1cd10c0","timestamp":"2025-12-09T06:07:08.703Z"}
+{"level":"info","message":"No more drivers available for trip 6937bc894e40a61cc1cd10c0","timestamp":"2025-12-09T06:07:08.723Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:07:09.180Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:07:10.095Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:07:12.157Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:07:13.090Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:07:15.095Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:07:16.096Z"}
+{"level":"error","message":"Surge pricing calculation error: $geoNear, $near, and $nearSphere are not allowed in this context, as these operators require sorting geospatial data. If you do not need sort, consider using $geoWithin instead. Check out https://dochub.mongodb.org/core/near-sort-operation and https://dochub.mongodb.org/core/nearSphere-sort-operationfor more details.","timestamp":"2025-12-09T06:07:16.216Z"}
+{"level":"info","message":"Trip created: 6937bc944e40a61cc1cd10d8","timestamp":"2025-12-09T06:07:16.235Z"}
+{"level":"info","message":"Socket DC-JKh9Xe9Lk2EfGAAAB joined room rider:6936aa0377ed6007caf78137","timestamp":"2025-12-09T06:07:16.242Z"}
+{"level":"info","message":"Ride requested: 6937bc944e40a61cc1cd10d8","timestamp":"2025-12-09T06:07:16.244Z"}
+{"level":"info","message":"Found 0 nearby drivers for vehicle type: auto","timestamp":"2025-12-09T06:07:16.251Z"}
+{"level":"info","message":"No drivers found for trip 6937bc944e40a61cc1cd10d8","timestamp":"2025-12-09T06:07:16.253Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:07:18.098Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:07:19.089Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:07:21.093Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:07:22.060Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:07:24.091Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:07:25.104Z"}
+{"level":"info","message":"Ride requested: 6937bc944e40a61cc1cd10d8","timestamp":"2025-12-09T06:07:26.268Z"}
+{"level":"info","message":"Found 0 nearby drivers for vehicle type: auto","timestamp":"2025-12-09T06:07:26.280Z"}
+{"level":"info","message":"No drivers found for trip 6937bc944e40a61cc1cd10d8","timestamp":"2025-12-09T06:07:26.282Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:07:27.142Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:07:33.788Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:07:33.793Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:07:33.798Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:07:33.799Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:07:34.094Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:07:36.080Z"}
+{"level":"info","message":"Ride requested: 6937bc944e40a61cc1cd10d8","timestamp":"2025-12-09T06:07:36.289Z"}
+{"level":"info","message":"Found 0 nearby drivers for vehicle type: auto","timestamp":"2025-12-09T06:07:36.298Z"}
+{"level":"info","message":"No drivers found for trip 6937bc944e40a61cc1cd10d8","timestamp":"2025-12-09T06:07:36.300Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:07:37.075Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:07:39.086Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:07:40.082Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:07:42.106Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:07:43.090Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:07:46.109Z"}
+{"level":"info","message":"Ride requested: 6937bc944e40a61cc1cd10d8","timestamp":"2025-12-09T06:07:46.303Z"}
+{"level":"info","message":"Found 0 nearby drivers for vehicle type: auto","timestamp":"2025-12-09T06:07:46.314Z"}
+{"level":"info","message":"No drivers found for trip 6937bc944e40a61cc1cd10d8","timestamp":"2025-12-09T06:07:46.317Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:07:49.096Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:07:52.074Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:07:55.110Z"}
+{"level":"info","message":"Ride requested: 6937bc944e40a61cc1cd10d8","timestamp":"2025-12-09T06:07:56.325Z"}
+{"level":"info","message":"Found 0 nearby drivers for vehicle type: auto","timestamp":"2025-12-09T06:07:56.335Z"}
+{"level":"info","message":"No drivers found for trip 6937bc944e40a61cc1cd10d8","timestamp":"2025-12-09T06:07:56.337Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:07:58.108Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:08:01.156Z"}
+{"level":"info","message":"Ride requested: 6937bc944e40a61cc1cd10d8","timestamp":"2025-12-09T06:08:06.347Z"}
+{"level":"info","message":"Found 0 nearby drivers for vehicle type: auto","timestamp":"2025-12-09T06:08:06.357Z"}
+{"level":"info","message":"No drivers found for trip 6937bc944e40a61cc1cd10d8","timestamp":"2025-12-09T06:08:06.359Z"}
+{"level":"info","message":"Ride cancelled: 6937bc944e40a61cc1cd10d8, reason: No drivers available","timestamp":"2025-12-09T06:08:06.361Z"}
+{"level":"info","message":"Trip 6937bc944e40a61cc1cd10d8 cancelled successfully","timestamp":"2025-12-09T06:08:06.379Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:08:10.305Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:08:10.306Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:08:10.317Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:08:13.109Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:08:13.113Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:08:16.102Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:08:19.073Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:09:19.060Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:09:19.066Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:10:19.395Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:10:19.399Z"}
+{"level":"error","message":"Surge pricing calculation error: $geoNear, $near, and $nearSphere are not allowed in this context, as these operators require sorting geospatial data. If you do not need sort, consider using $geoWithin instead. Check out https://dochub.mongodb.org/core/near-sort-operation and https://dochub.mongodb.org/core/nearSphere-sort-operationfor more details.","timestamp":"2025-12-09T06:11:17.379Z"}
+{"level":"info","message":"Trip created: 6937bd854e40a61cc1cd112b","timestamp":"2025-12-09T06:11:17.397Z"}
+{"level":"info","message":"Socket DC-JKh9Xe9Lk2EfGAAAB joined room rider:6936aa0377ed6007caf78137","timestamp":"2025-12-09T06:11:17.407Z"}
+{"level":"info","message":"Ride requested: 6937bd854e40a61cc1cd112b","timestamp":"2025-12-09T06:11:17.409Z"}
+{"level":"info","message":"Found 1 nearby drivers for vehicle type: bike","timestamp":"2025-12-09T06:11:17.426Z"}
+{"level":"info","message":"Sent request to driver 693724b83d9c4057ad951391","timestamp":"2025-12-09T06:11:17.428Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:11:20.236Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:11:20.240Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:12:19.277Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:12:19.282Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:13:15.697Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:13:15.701Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:14:16.608Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:14:16.613Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:15:15.798Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:15:15.803Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:16:19.158Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:16:19.162Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:17:15.835Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:17:15.839Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:18:17.166Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:18:17.171Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:19:21.647Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:19:22.016Z"}
+{"level":"info","message":"Client disconnected: QKqA3E0Ld6uUxIEvAAAL","timestamp":"2025-12-09T06:19:22.456Z"}
+{"level":"info","message":"Client disconnected: DC-JKh9Xe9Lk2EfGAAAB","timestamp":"2025-12-09T06:19:22.468Z"}
+{"level":"info","message":"Client disconnected: 5lgIbZeVyYV5JxLzAAAD","timestamp":"2025-12-09T06:19:22.472Z"}
+{"level":"info","message":"New client connected: h-1rAIUhA9WruCUqAAAO","timestamp":"2025-12-09T06:22:06.397Z"}
+{"level":"info","message":"New client connected: _JIsIUQTPXKpd448AAAQ","timestamp":"2025-12-09T06:22:06.408Z"}
+{"level":"info","message":"New client connected: K0W_qI6kAO3Q4OyJAAAR","timestamp":"2025-12-09T06:22:06.462Z"}
+{"level":"info","message":"Socket h-1rAIUhA9WruCUqAAAO joined room driver:6937197cb0a56702ebac6e56","timestamp":"2025-12-09T06:22:06.463Z"}
+{"level":"info","message":"Socket _JIsIUQTPXKpd448AAAQ joined room driver:693723c13d9c4057ad9512ef","timestamp":"2025-12-09T06:22:06.474Z"}
+{"level":"info","message":"Socket K0W_qI6kAO3Q4OyJAAAR joined room rider:6936aa0377ed6007caf78137","timestamp":"2025-12-09T06:22:06.483Z"}
+{"level":"info","message":"Client disconnected: K0W_qI6kAO3Q4OyJAAAR","timestamp":"2025-12-09T06:22:08.176Z"}
+{"level":"info","message":"Client disconnected: h-1rAIUhA9WruCUqAAAO","timestamp":"2025-12-09T06:24:18.353Z"}
+{"level":"info","message":"Client disconnected: _JIsIUQTPXKpd448AAAQ","timestamp":"2025-12-09T06:24:18.382Z"}
+{"level":"info","message":"New client connected: aIRvzqcEq__AqFohAAAT","timestamp":"2025-12-09T06:24:20.098Z"}
+{"level":"info","message":"Socket aIRvzqcEq__AqFohAAAT joined room driver:693723c13d9c4057ad9512ef","timestamp":"2025-12-09T06:24:20.118Z"}
+{"level":"info","message":"New client connected: T7OgR29Ts32dYYIdAAAW","timestamp":"2025-12-09T06:24:21.087Z"}
+{"level":"info","message":"New client connected: O3GB_sl5Pet5qTgkAAAX","timestamp":"2025-12-09T06:24:21.094Z"}
+{"level":"info","message":"Socket O3GB_sl5Pet5qTgkAAAX joined room driver:6937197cb0a56702ebac6e56","timestamp":"2025-12-09T06:24:21.118Z"}
+{"level":"info","message":"Socket T7OgR29Ts32dYYIdAAAW joined room rider:6936aa0377ed6007caf78137","timestamp":"2025-12-09T06:24:21.123Z"}
+{"level":"info","message":"Client disconnected: T7OgR29Ts32dYYIdAAAW","timestamp":"2025-12-09T06:24:23.279Z"}
+{"level":"info","message":"Client disconnected: O3GB_sl5Pet5qTgkAAAX","timestamp":"2025-12-09T06:34:38.061Z"}
+{"level":"info","message":"Client disconnected: aIRvzqcEq__AqFohAAAT","timestamp":"2025-12-09T06:34:38.149Z"}
+{"level":"info","message":"New client connected: qw5nhzytlNd_APAuAAAb","timestamp":"2025-12-09T06:34:38.452Z"}
+{"level":"info","message":"New client connected: To57qbq9BxTzwJchAAAc","timestamp":"2025-12-09T06:34:38.454Z"}
+{"level":"info","message":"New client connected: zv7IwM3EYLMnRG_IAAAd","timestamp":"2025-12-09T06:34:38.461Z"}
+{"level":"info","message":"Socket zv7IwM3EYLMnRG_IAAAd joined room driver:693723c13d9c4057ad9512ef","timestamp":"2025-12-09T06:34:38.473Z"}
+{"level":"info","message":"Socket qw5nhzytlNd_APAuAAAb joined room rider:6936aa0377ed6007caf78137","timestamp":"2025-12-09T06:34:38.482Z"}
+{"level":"info","message":"Socket To57qbq9BxTzwJchAAAc joined room driver:6937197cb0a56702ebac6e56","timestamp":"2025-12-09T06:34:38.808Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:35:51.087Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:35:51.093Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:35:51.094Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:35:51.095Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:35:51.096Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:35:51.098Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:35:51.098Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:35:51.099Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:35:51.118Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:35:51.119Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:35:51.120Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:35:51.121Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:35:51.122Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:35:51.123Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:35:51.124Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:35:52.162Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:35:54.142Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:35:55.173Z"}
+{"level":"error","message":"Auth error: jwt expired","timestamp":"2025-12-09T06:35:57.067Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:35:57.312Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:35:58.208Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:36:00.255Z"}
+{"level":"info","message":"Client disconnected: qw5nhzytlNd_APAuAAAb","timestamp":"2025-12-09T06:36:01.187Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:36:01.211Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:36:03.198Z"}
+{"level":"error","message":"Auth error: jwt expired","timestamp":"2025-12-09T06:36:03.354Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:36:04.195Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:36:06.299Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:36:07.216Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:36:09.201Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:36:10.171Z"}
+{"level":"info","message":"User logged in: shubhaminnnai30@gmail.com","timestamp":"2025-12-09T06:36:10.673Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:36:12.182Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:36:13.193Z"}
+{"level":"info","message":"New client connected: UDkhg5uYm0JnGwIvAAAf","timestamp":"2025-12-09T06:36:13.562Z"}
+{"level":"info","message":"Socket UDkhg5uYm0JnGwIvAAAf joined room rider:6936aa0377ed6007caf78137","timestamp":"2025-12-09T06:36:13.574Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:36:15.028Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:36:16.183Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:36:18.437Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:36:19.369Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:36:27.909Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:36:27.916Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:36:27.932Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:36:27.935Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:36:27.939Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:36:28.314Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:36:30.325Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:36:31.397Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:36:33.355Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:36:34.344Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:36:36.325Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:36:37.372Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:36:39.429Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:36:40.344Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:36:42.325Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:36:43.383Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:36:45.436Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:36:46.477Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:36:48.433Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:36:51.376Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:36:54.316Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:36:57.326Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:37:06.101Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:37:06.108Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:37:06.116Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:37:09.248Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:37:12.222Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:37:13.184Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:37:15.176Z"}
+{"level":"error","message":"Surge pricing calculation error: $geoNear, $near, and $nearSphere are not allowed in this context, as these operators require sorting geospatial data. If you do not need sort, consider using $geoWithin instead. Check out https://dochub.mongodb.org/core/near-sort-operation and https://dochub.mongodb.org/core/nearSphere-sort-operationfor more details.","timestamp":"2025-12-09T06:37:27.135Z"}
+{"level":"info","message":"Trip created: 6937c3a74e40a61cc1cd11d7","timestamp":"2025-12-09T06:37:27.153Z"}
+{"level":"info","message":"Socket UDkhg5uYm0JnGwIvAAAf joined room rider:6936aa0377ed6007caf78137","timestamp":"2025-12-09T06:37:27.161Z"}
+{"level":"info","message":"Ride requested: 6937c3a74e40a61cc1cd11d7","timestamp":"2025-12-09T06:37:27.162Z"}
+{"level":"info","message":"Found 0 nearby drivers for vehicle type: bike","timestamp":"2025-12-09T06:37:27.172Z"}
+{"level":"info","message":"No drivers found for trip 6937c3a74e40a61cc1cd11d7","timestamp":"2025-12-09T06:37:27.174Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:37:28.867Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:37:29.613Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:37:32.559Z"}
+{"level":"info","message":"Client disconnected: To57qbq9BxTzwJchAAAc","timestamp":"2025-12-09T06:37:33.883Z"}
+{"level":"error","message":"Auth error: jwt expired","timestamp":"2025-12-09T06:37:36.092Z"}
+{"level":"info","message":"Ride requested: 6937c3a74e40a61cc1cd11d7","timestamp":"2025-12-09T06:37:38.066Z"}
+{"level":"info","message":"Found 1 nearby drivers for vehicle type: bike","timestamp":"2025-12-09T06:37:38.077Z"}
+{"level":"info","message":"Sent request to driver 693724b83d9c4057ad951391","timestamp":"2025-12-09T06:37:38.080Z"}
+{"level":"info","message":"User logged in: shubhaminnnai30@gmail.com","timestamp":"2025-12-09T06:37:41.413Z"}
+{"level":"info","message":"New client connected: goi5uGzzM1_vxxEWAAAh","timestamp":"2025-12-09T06:37:41.469Z"}
+{"level":"info","message":"Socket goi5uGzzM1_vxxEWAAAh joined room driver:6937197cb0a56702ebac6e56","timestamp":"2025-12-09T06:37:41.492Z"}
+{"level":"info","message":"Socket goi5uGzzM1_vxxEWAAAh joined room driver:6937197cb0a56702ebac6e56","timestamp":"2025-12-09T06:37:43.123Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:37:47.628Z"}
+{"level":"error","message":"Surge pricing calculation error: $geoNear, $near, and $nearSphere are not allowed in this context, as these operators require sorting geospatial data. If you do not need sort, consider using $geoWithin instead. Check out https://dochub.mongodb.org/core/near-sort-operation and https://dochub.mongodb.org/core/nearSphere-sort-operationfor more details.","timestamp":"2025-12-09T06:37:49.307Z"}
+{"level":"info","message":"Trip created: 6937c3bd4e40a61cc1cd11f1","timestamp":"2025-12-09T06:37:49.322Z"}
+{"level":"info","message":"Socket UDkhg5uYm0JnGwIvAAAf joined room rider:6936aa0377ed6007caf78137","timestamp":"2025-12-09T06:37:49.329Z"}
+{"level":"info","message":"Ride requested: 6937c3bd4e40a61cc1cd11f1","timestamp":"2025-12-09T06:37:49.330Z"}
+{"level":"info","message":"Found 1 nearby drivers for vehicle type: bike","timestamp":"2025-12-09T06:37:49.340Z"}
+{"level":"info","message":"Sent request to driver 6937197cb0a56702ebac6e56","timestamp":"2025-12-09T06:37:49.344Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:37:50.171Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:37:52.230Z"}
+{"level":"info","message":"Trip 6937c3bd4e40a61cc1cd11f1 current status: searching","timestamp":"2025-12-09T06:37:53.720Z"}
+{"level":"info","message":"Driver 6937197cb0a56702ebac6e56 accepted trip 6937c3bd4e40a61cc1cd11f1","timestamp":"2025-12-09T06:37:53.753Z"}
+{"level":"info","message":"Driver 6937197cb0a56702ebac6e56 accepted trip 6937c3bd4e40a61cc1cd11f1","timestamp":"2025-12-09T06:37:53.762Z"}
+{"level":"info","message":"Notified rider 6936aa0377ed6007caf78137 of driver assignment","timestamp":"2025-12-09T06:37:53.783Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:37:55.240Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:37:58.222Z"}
+{"level":"info","message":"Trip 6937c3bd4e40a61cc1cd11f1 status updated to driver_arrived","timestamp":"2025-12-09T06:37:58.399Z"}
+{"level":"info","message":"Trip 6937c3bd4e40a61cc1cd11f1 status updated to driver_arrived","timestamp":"2025-12-09T06:37:58.413Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:38:02.174Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:38:04.201Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:38:07.224Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:38:10.226Z"}
+{"level":"info","message":"Trip 6937c3bd4e40a61cc1cd11f1 status updated to trip_started","timestamp":"2025-12-09T06:38:12.024Z"}
+{"level":"info","message":"Trip 6937c3bd4e40a61cc1cd11f1 status updated to trip_started","timestamp":"2025-12-09T06:38:12.038Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:38:13.171Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:38:13.175Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:38:16.295Z"}
+{"level":"info","message":"Trip 6937c3bd4e40a61cc1cd11f1 status updated to trip_completed","timestamp":"2025-12-09T06:38:17.590Z"}
+{"level":"info","message":"Trip 6937c3bd4e40a61cc1cd11f1 status updated to trip_completed","timestamp":"2025-12-09T06:38:17.601Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:38:25.590Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:38:25.599Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:38:26.412Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:38:29.305Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:38:32.309Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:38:35.341Z"}
+{"level":"info","message":"Rating submitted for trip 6937c3bd4e40a61cc1cd11f1 by rider","timestamp":"2025-12-09T06:38:36.989Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:38:38.468Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:38:41.338Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:38:43.536Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:38:44.208Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:38:46.151Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:38:47.196Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:38:49.141Z"}
+{"level":"info","message":"Client disconnected: zv7IwM3EYLMnRG_IAAAd","timestamp":"2025-12-09T06:38:49.880Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:38:50.237Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:38:52.211Z"}
+{"level":"info","message":"New client connected: p5_q1rZAU8Z50i1DAAAj","timestamp":"2025-12-09T06:38:53.155Z"}
+{"level":"info","message":"Socket p5_q1rZAU8Z50i1DAAAj joined room driver:6937197cb0a56702ebac6e56","timestamp":"2025-12-09T06:38:53.167Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:38:55.206Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:39:03.387Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:39:03.390Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:39:03.395Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:39:03.399Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:39:03.401Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:39:05.174Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:39:06.160Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:39:08.177Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:39:09.157Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:39:11.193Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:39:12.170Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:39:14.179Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:39:15.174Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:39:16.653Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:39:18.170Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:39:19.256Z"}
+{"level":"info","message":"Client disconnected: goi5uGzzM1_vxxEWAAAh","timestamp":"2025-12-09T06:39:20.237Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:39:21.165Z"}
+{"level":"info","message":"New client connected: efSgNbCdZ-Cs6cR8AAAl","timestamp":"2025-12-09T06:39:22.420Z"}
+{"level":"info","message":"Socket efSgNbCdZ-Cs6cR8AAAl joined room driver:6937197cb0a56702ebac6e56","timestamp":"2025-12-09T06:39:22.435Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:39:24.183Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:39:26.015Z"}
+{"level":"info","message":"Client disconnected: efSgNbCdZ-Cs6cR8AAAl","timestamp":"2025-12-09T06:39:26.861Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:39:27.181Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:39:30.154Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:39:33.182Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:39:41.804Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:39:41.809Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:39:42.403Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:39:45.436Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:39:48.460Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:39:51.363Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:39:54.439Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:39:57.309Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:40:00.389Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:40:03.402Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:40:06.379Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:40:09.391Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:40:18.183Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:40:18.184Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:40:18.191Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:40:21.383Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:40:24.410Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:40:27.398Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:40:30.403Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T06:40:33.374Z"}
+{"level":"info","message":"Client disconnected: p5_q1rZAU8Z50i1DAAAj","timestamp":"2025-12-09T06:40:52.727Z"}
+{"level":"info","message":"Client disconnected: UDkhg5uYm0JnGwIvAAAf","timestamp":"2025-12-09T07:11:46.427Z"}
+{"level":"info","message":"New client connected: SGhUI5pFrT1QiEXMAAAn","timestamp":"2025-12-09T07:13:56.089Z"}
+{"level":"info","message":"Socket SGhUI5pFrT1QiEXMAAAn joined room driver:6937197cb0a56702ebac6e56","timestamp":"2025-12-09T07:13:56.116Z"}
+{"level":"info","message":"New client connected: ykaMT2WWLAkpQ_2VAAAp","timestamp":"2025-12-09T07:13:57.209Z"}
+{"level":"info","message":"Socket ykaMT2WWLAkpQ_2VAAAp joined room rider:6936aa0377ed6007caf78137","timestamp":"2025-12-09T07:13:57.229Z"}
+{"level":"info","message":"Client disconnected: ykaMT2WWLAkpQ_2VAAAp","timestamp":"2025-12-09T07:14:33.675Z"}
+{"level":"info","message":"User logged in: shubhaminnnai30@gmail.com","timestamp":"2025-12-09T07:14:41.536Z"}
+{"level":"info","message":"New client connected: oj7X4yyFgwDplxBfAAAr","timestamp":"2025-12-09T07:14:44.251Z"}
+{"level":"info","message":"Socket oj7X4yyFgwDplxBfAAAr joined room rider:6936aa0377ed6007caf78137","timestamp":"2025-12-09T07:14:44.266Z"}
+{"level":"error","message":"Surge pricing calculation error: $geoNear, $near, and $nearSphere are not allowed in this context, as these operators require sorting geospatial data. If you do not need sort, consider using $geoWithin instead. Check out https://dochub.mongodb.org/core/near-sort-operation and https://dochub.mongodb.org/core/nearSphere-sort-operationfor more details.","timestamp":"2025-12-09T07:18:15.095Z"}
+{"level":"info","message":"Trip created: 6937cd374e40a61cc1cd12ca","timestamp":"2025-12-09T07:18:15.114Z"}
+{"level":"info","message":"Socket oj7X4yyFgwDplxBfAAAr joined room rider:6936aa0377ed6007caf78137","timestamp":"2025-12-09T07:18:15.122Z"}
+{"level":"info","message":"Ride requested: 6937cd374e40a61cc1cd12ca","timestamp":"2025-12-09T07:18:15.124Z"}
+{"level":"info","message":"Found 0 nearby drivers for vehicle type: car","timestamp":"2025-12-09T07:18:15.134Z"}
+{"level":"info","message":"No drivers found for trip 6937cd374e40a61cc1cd12ca","timestamp":"2025-12-09T07:18:15.136Z"}
+{"level":"info","message":"Ride requested: 6937cd374e40a61cc1cd12ca","timestamp":"2025-12-09T07:18:25.141Z"}
+{"level":"info","message":"Found 0 nearby drivers for vehicle type: car","timestamp":"2025-12-09T07:18:25.150Z"}
+{"level":"info","message":"No drivers found for trip 6937cd374e40a61cc1cd12ca","timestamp":"2025-12-09T07:18:25.153Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:18:27.271Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:18:27.278Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:18:27.280Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:18:27.282Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:18:27.294Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:18:27.295Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:18:27.298Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:18:27.299Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:18:27.300Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:18:27.301Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:18:27.302Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:18:27.303Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:18:27.323Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:18:27.326Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:18:27.327Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:18:27.328Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:18:27.329Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:18:27.330Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:18:27.331Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:18:27.332Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:18:27.334Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:18:27.335Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:18:27.336Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:18:27.338Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:18:27.339Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:18:27.341Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:18:27.343Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:18:27.344Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:18:27.345Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:18:27.346Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:18:27.347Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:18:27.348Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:18:27.350Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:18:30.196Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:18:33.317Z"}
+{"level":"info","message":"Ride requested: 6937cd374e40a61cc1cd12ca","timestamp":"2025-12-09T07:18:36.090Z"}
+{"level":"info","message":"Found 0 nearby drivers for vehicle type: car","timestamp":"2025-12-09T07:18:36.098Z"}
+{"level":"info","message":"No drivers found for trip 6937cd374e40a61cc1cd12ca","timestamp":"2025-12-09T07:18:36.100Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:18:36.203Z"}
+{"level":"error","message":"Auth error: jwt expired","timestamp":"2025-12-09T07:18:38.040Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:18:39.188Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:18:42.190Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:18:45.214Z"}
+{"level":"info","message":"Ride requested: 6937cd374e40a61cc1cd12ca","timestamp":"2025-12-09T07:18:47.092Z"}
+{"level":"info","message":"Found 0 nearby drivers for vehicle type: car","timestamp":"2025-12-09T07:18:47.101Z"}
+{"level":"info","message":"No drivers found for trip 6937cd374e40a61cc1cd12ca","timestamp":"2025-12-09T07:18:47.103Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:18:48.224Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:18:51.253Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:18:54.198Z"}
+{"level":"info","message":"Ride requested: 6937cd374e40a61cc1cd12ca","timestamp":"2025-12-09T07:18:58.084Z"}
+{"level":"info","message":"Found 0 nearby drivers for vehicle type: car","timestamp":"2025-12-09T07:18:58.091Z"}
+{"level":"info","message":"No drivers found for trip 6937cd374e40a61cc1cd12ca","timestamp":"2025-12-09T07:18:58.092Z"}
+{"level":"info","message":"User logged in: 8500850058","timestamp":"2025-12-09T07:18:58.587Z"}
+{"level":"info","message":"New client connected: oDIt3mRCvYqGg_pdAAAt","timestamp":"2025-12-09T07:18:58.682Z"}
+{"level":"info","message":"Socket oDIt3mRCvYqGg_pdAAAt joined room driver:693723c13d9c4057ad9512ef","timestamp":"2025-12-09T07:18:58.714Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:19:03.927Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:19:03.932Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:19:03.934Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:19:06.299Z"}
+{"level":"info","message":"Socket oDIt3mRCvYqGg_pdAAAt joined room driver:693723c13d9c4057ad9512ef","timestamp":"2025-12-09T07:19:07.063Z"}
+{"level":"info","message":"Ride requested: 6937cd374e40a61cc1cd12ca","timestamp":"2025-12-09T07:19:08.244Z"}
+{"level":"info","message":"Found 0 nearby drivers for vehicle type: car","timestamp":"2025-12-09T07:19:08.252Z"}
+{"level":"info","message":"No drivers found for trip 6937cd374e40a61cc1cd12ca","timestamp":"2025-12-09T07:19:08.254Z"}
+{"level":"info","message":"Ride cancelled: 6937cd374e40a61cc1cd12ca, reason: No drivers available","timestamp":"2025-12-09T07:19:08.256Z"}
+{"level":"info","message":"Trip 6937cd374e40a61cc1cd12ca cancelled successfully","timestamp":"2025-12-09T07:19:08.271Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:19:09.205Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:19:10.201Z"}
+{"level":"error","message":"Surge pricing calculation error: $geoNear, $near, and $nearSphere are not allowed in this context, as these operators require sorting geospatial data. If you do not need sort, consider using $geoWithin instead. Check out https://dochub.mongodb.org/core/near-sort-operation and https://dochub.mongodb.org/core/nearSphere-sort-operationfor more details.","timestamp":"2025-12-09T07:19:11.011Z"}
+{"level":"info","message":"Trip created: 6937cd6f4e40a61cc1cd1342","timestamp":"2025-12-09T07:19:11.041Z"}
+{"level":"info","message":"Socket oj7X4yyFgwDplxBfAAAr joined room rider:6936aa0377ed6007caf78137","timestamp":"2025-12-09T07:19:11.049Z"}
+{"level":"info","message":"Ride requested: 6937cd6f4e40a61cc1cd1342","timestamp":"2025-12-09T07:19:11.050Z"}
+{"level":"info","message":"Found 0 nearby drivers for vehicle type: car","timestamp":"2025-12-09T07:19:11.060Z"}
+{"level":"info","message":"No drivers found for trip 6937cd6f4e40a61cc1cd1342","timestamp":"2025-12-09T07:19:11.061Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:19:12.220Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:19:13.242Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:19:15.209Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:19:16.210Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:19:18.217Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:19:19.267Z"}
+{"level":"info","message":"Ride requested: 6937cd6f4e40a61cc1cd1342","timestamp":"2025-12-09T07:19:21.090Z"}
+{"level":"info","message":"Found 0 nearby drivers for vehicle type: car","timestamp":"2025-12-09T07:19:21.102Z"}
+{"level":"info","message":"No drivers found for trip 6937cd6f4e40a61cc1cd1342","timestamp":"2025-12-09T07:19:21.105Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:19:21.227Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:19:22.276Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:19:24.212Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:19:25.202Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:19:27.234Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:19:28.205Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:19:30.228Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:19:31.236Z"}
+{"level":"info","message":"Ride requested: 6937cd6f4e40a61cc1cd1342","timestamp":"2025-12-09T07:19:32.095Z"}
+{"level":"info","message":"Found 0 nearby drivers for vehicle type: car","timestamp":"2025-12-09T07:19:32.105Z"}
+{"level":"info","message":"No drivers found for trip 6937cd6f4e40a61cc1cd1342","timestamp":"2025-12-09T07:19:32.106Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:19:33.197Z"}
+{"level":"info","message":"New client connected: 0-7MZ8tgH1y93ZzNAAAv","timestamp":"2025-12-09T07:19:36.461Z"}
+{"level":"info","message":"Socket 0-7MZ8tgH1y93ZzNAAAv joined room driver:693723c13d9c4057ad9512ef","timestamp":"2025-12-09T07:19:36.480Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:19:41.332Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:19:41.336Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:19:41.347Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:19:41.348Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:19:41.349Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:19:41.377Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:19:42.212Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:19:43.045Z"}
+{"level":"info","message":"Ride requested: 6937cd6f4e40a61cc1cd1342","timestamp":"2025-12-09T07:19:43.085Z"}
+{"level":"info","message":"Found 0 nearby drivers for vehicle type: car","timestamp":"2025-12-09T07:19:43.094Z"}
+{"level":"info","message":"No drivers found for trip 6937cd6f4e40a61cc1cd1342","timestamp":"2025-12-09T07:19:43.096Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:19:43.220Z"}
+{"level":"info","message":"Socket 0-7MZ8tgH1y93ZzNAAAv joined room driver:693723c13d9c4057ad9512ef","timestamp":"2025-12-09T07:19:44.322Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:19:45.276Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:19:46.342Z"}
+{"level":"info","message":"Client disconnected: 0-7MZ8tgH1y93ZzNAAAv","timestamp":"2025-12-09T07:19:47.092Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:19:48.219Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:19:49.226Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:19:51.225Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:19:52.260Z"}
+{"level":"info","message":"Ride requested: 6937cd6f4e40a61cc1cd1342","timestamp":"2025-12-09T07:19:54.085Z"}
+{"level":"info","message":"Found 0 nearby drivers for vehicle type: car","timestamp":"2025-12-09T07:19:54.093Z"}
+{"level":"info","message":"No drivers found for trip 6937cd6f4e40a61cc1cd1342","timestamp":"2025-12-09T07:19:54.095Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:19:54.217Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:19:55.185Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:19:57.223Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:19:58.209Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:20:00.193Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:20:01.197Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:20:03.207Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:20:04.184Z"}
+{"level":"info","message":"Ride requested: 6937cd6f4e40a61cc1cd1342","timestamp":"2025-12-09T07:20:05.092Z"}
+{"level":"info","message":"Found 0 nearby drivers for vehicle type: car","timestamp":"2025-12-09T07:20:05.099Z"}
+{"level":"info","message":"No drivers found for trip 6937cd6f4e40a61cc1cd1342","timestamp":"2025-12-09T07:20:05.101Z"}
+{"level":"info","message":"Ride cancelled: 6937cd6f4e40a61cc1cd1342, reason: No drivers available","timestamp":"2025-12-09T07:20:05.103Z"}
+{"level":"info","message":"Trip 6937cd6f4e40a61cc1cd1342 cancelled successfully","timestamp":"2025-12-09T07:20:05.119Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:20:06.206Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:20:07.199Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:20:09.204Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:20:10.186Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:20:18.338Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:20:18.343Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:20:18.344Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:20:18.351Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:20:18.353Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:20:19.210Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:20:21.206Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:20:22.213Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:20:25.227Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:20:28.201Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:20:31.173Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:21:19.307Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:21:19.312Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:22:19.356Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:22:19.360Z"}
+{"level":"warn","message":"Redis error, falling back to memory:","timestamp":"2025-12-09T07:22:24.192Z"}
+{"level":"info","message":"OTP stored in memory for 8500581178","timestamp":"2025-12-09T07:22:24.195Z"}
+{"level":"info","message":"OTP email sent to shu1234bham1234@gmail.com: <9aaca7fa-05e6-05ad-30f0-589c458124d8@gmail.com>","timestamp":"2025-12-09T07:22:28.633Z"}
+{"level":"info","message":"OTP for 8500581178: 115489","timestamp":"2025-12-09T07:22:28.635Z"}
+{"level":"warn","message":"Redis read error:","timestamp":"2025-12-09T07:22:58.116Z"}
+{"level":"info","message":"OTP verified for 8500581178","timestamp":"2025-12-09T07:22:58.118Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:23:20.333Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:23:20.340Z"}
+{"level":"info","message":"Driver registered: 8500581178","timestamp":"2025-12-09T07:24:01.877Z"}
+{"level":"info","message":"New client connected: 48lW16mq457JCm9cAAAx","timestamp":"2025-12-09T07:24:04.146Z"}
+{"level":"info","message":"Socket 48lW16mq457JCm9cAAAx joined room driver:6937ce914e40a61cc1cd13d6","timestamp":"2025-12-09T07:24:04.160Z"}
+{"level":"info","message":"Socket 48lW16mq457JCm9cAAAx joined room driver:6937ce914e40a61cc1cd13d6","timestamp":"2025-12-09T07:24:06.280Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:24:11.529Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:24:14.707Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:24:14.711Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:24:16.226Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:24:16.238Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:24:19.213Z"}
+{"level":"error","message":"Surge pricing calculation error: $geoNear, $near, and $nearSphere are not allowed in this context, as these operators require sorting geospatial data. If you do not need sort, consider using $geoWithin instead. Check out https://dochub.mongodb.org/core/near-sort-operation and https://dochub.mongodb.org/core/nearSphere-sort-operationfor more details.","timestamp":"2025-12-09T07:24:21.233Z"}
+{"level":"info","message":"Trip created: 6937cea54e40a61cc1cd13eb","timestamp":"2025-12-09T07:24:21.248Z"}
+{"level":"info","message":"Socket oj7X4yyFgwDplxBfAAAr joined room rider:6936aa0377ed6007caf78137","timestamp":"2025-12-09T07:24:21.256Z"}
+{"level":"info","message":"Ride requested: 6937cea54e40a61cc1cd13eb","timestamp":"2025-12-09T07:24:21.259Z"}
+{"level":"info","message":"Found 2 nearby drivers for vehicle type: bike","timestamp":"2025-12-09T07:24:21.269Z"}
+{"level":"info","message":"Sent request to driver 6937ce914e40a61cc1cd13d6","timestamp":"2025-12-09T07:24:21.272Z"}
+{"level":"info","message":"Sent request to driver 693724b83d9c4057ad951391","timestamp":"2025-12-09T07:24:21.273Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:24:22.209Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:24:24.403Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:24:24.971Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:24:25.187Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:24:25.798Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:24:27.219Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:24:27.414Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:24:28.202Z"}
+{"level":"info","message":"Driver 6937ce914e40a61cc1cd13d6 rejected trip 6937cea54e40a61cc1cd13eb","timestamp":"2025-12-09T07:24:28.753Z"}
+{"level":"info","message":"Sent request to next driver 693724b83d9c4057ad951391","timestamp":"2025-12-09T07:24:28.767Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:24:30.230Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:24:30.400Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:24:31.218Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:24:33.250Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:24:34.224Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:24:34.230Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:24:36.233Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:24:36.640Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:24:37.302Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:24:39.233Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:24:39.395Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:24:40.220Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:24:42.236Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:24:43.213Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:24:51.431Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:24:51.437Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:24:51.438Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:24:51.449Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:24:51.450Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:24:51.461Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:24:51.463Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:24:51.466Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:24:52.273Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:24:54.209Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:24:55.206Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:24:55.798Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:24:57.243Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:24:57.417Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:24:58.212Z"}
+{"level":"info","message":"Socket 48lW16mq457JCm9cAAAx joined room driver:6937ce914e40a61cc1cd13d6","timestamp":"2025-12-09T07:24:59.312Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:25:00.252Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:25:01.267Z"}
+{"level":"info","message":"Client disconnected: 48lW16mq457JCm9cAAAx","timestamp":"2025-12-09T07:25:02.146Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:25:03.207Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:25:04.203Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:25:06.180Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:25:07.219Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:25:09.219Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:25:10.196Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:25:12.215Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:25:13.233Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:25:15.209Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:25:16.203Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:25:18.208Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:25:19.196Z"}
+{"level":"info","message":"User logged in: 8500581178","timestamp":"2025-12-09T07:25:20.596Z"}
+{"level":"info","message":"New client connected: N_Yh83lRw25ZVg7IAAAz","timestamp":"2025-12-09T07:25:20.657Z"}
+{"level":"info","message":"Socket N_Yh83lRw25ZVg7IAAAz joined room driver:6937ce914e40a61cc1cd13d6","timestamp":"2025-12-09T07:25:20.679Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:25:21.346Z"}
+{"level":"info","message":"Socket N_Yh83lRw25ZVg7IAAAz joined room driver:6937ce914e40a61cc1cd13d6","timestamp":"2025-12-09T07:25:27.202Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:25:28.302Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:25:28.308Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:25:28.314Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:25:28.316Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:25:28.317Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:25:30.223Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:25:31.270Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:25:32.767Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:25:33.220Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:25:34.183Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:25:34.187Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:25:36.204Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:25:36.316Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:25:37.223Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:25:39.386Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:25:40.385Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:25:40.389Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:25:42.375Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:25:43.410Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:25:43.415Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:25:45.448Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:25:46.443Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T07:25:46.448Z"}
+{"level":"warn","message":"Razorpay credentials not configured - payment gateway disabled","timestamp":"2025-12-09T08:57:02.639Z"}
+{"level":"info","message":"Server running in development mode on port 5000","timestamp":"2025-12-09T08:57:02.659Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T08:57:02.669Z"}
+{"level":"info","message":"MongoDB Connected: localhost","timestamp":"2025-12-09T08:57:02.684Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T08:57:02.730Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T08:57:02.845Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T08:57:03.000Z"}
+{"level":"warn","message":"Redis connection failed - running without cache","timestamp":"2025-12-09T08:57:03.000Z"}
+{"level":"error","message":"Auth error: jwt expired","timestamp":"2025-12-09T08:57:27.224Z"}
+{"level":"info","message":"User logged in: 8500850058","timestamp":"2025-12-09T09:52:44.131Z"}
+{"level":"info","message":"New client connected: QuudXz_xvwxhR9BbAAAB","timestamp":"2025-12-09T09:52:46.805Z"}
+{"level":"info","message":"Socket QuudXz_xvwxhR9BbAAAB joined room rider:693723c13d9c4057ad9512ed","timestamp":"2025-12-09T09:52:46.823Z"}
+{"level":"error","message":"Auth error: jwt expired","timestamp":"2025-12-09T09:54:17.673Z"}
+{"level":"info","message":"User logged in: 8500850058","timestamp":"2025-12-09T09:54:30.485Z"}
+{"level":"info","message":"New client connected: S0IRhWMzGmIY4Gs1AAAD","timestamp":"2025-12-09T09:54:30.553Z"}
+{"level":"info","message":"Socket S0IRhWMzGmIY4Gs1AAAD joined room driver:693723c13d9c4057ad9512ef","timestamp":"2025-12-09T09:54:30.563Z"}
+{"level":"info","message":"Socket S0IRhWMzGmIY4Gs1AAAD joined room driver:693723c13d9c4057ad9512ef","timestamp":"2025-12-09T09:54:58.589Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:55:01.771Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:55:04.847Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:55:14.936Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:55:14.953Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:55:14.956Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:55:16.812Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:55:19.753Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:55:22.739Z"}
+{"level":"error","message":"Surge pricing calculation error: $geoNear, $near, and $nearSphere are not allowed in this context, as these operators require sorting geospatial data. If you do not need sort, consider using $geoWithin instead. Check out https://dochub.mongodb.org/core/near-sort-operation and https://dochub.mongodb.org/core/nearSphere-sort-operationfor more details.","timestamp":"2025-12-09T09:55:24.457Z"}
+{"level":"info","message":"Trip created: 6937f20ce1a799a981c3feb7","timestamp":"2025-12-09T09:55:24.478Z"}
+{"level":"info","message":"Socket QuudXz_xvwxhR9BbAAAB joined room rider:693723c13d9c4057ad9512ed","timestamp":"2025-12-09T09:55:24.483Z"}
+{"level":"info","message":"Ride requested: 6937f20ce1a799a981c3feb7","timestamp":"2025-12-09T09:55:24.484Z"}
+{"level":"info","message":"Found 2 nearby drivers for vehicle type: bike","timestamp":"2025-12-09T09:55:24.497Z"}
+{"level":"info","message":"Sent request to driver 6937ce914e40a61cc1cd13d6","timestamp":"2025-12-09T09:55:24.502Z"}
+{"level":"info","message":"Sent request to driver 693724b83d9c4057ad951391","timestamp":"2025-12-09T09:55:24.503Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:55:25.692Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:55:28.669Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:55:31.757Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:55:34.744Z"}
+{"level":"error","message":"Surge pricing calculation error: $geoNear, $near, and $nearSphere are not allowed in this context, as these operators require sorting geospatial data. If you do not need sort, consider using $geoWithin instead. Check out https://dochub.mongodb.org/core/near-sort-operation and https://dochub.mongodb.org/core/nearSphere-sort-operationfor more details.","timestamp":"2025-12-09T09:55:35.445Z"}
+{"level":"info","message":"Trip created: 6937f217e1a799a981c3fec5","timestamp":"2025-12-09T09:55:35.456Z"}
+{"level":"info","message":"Socket QuudXz_xvwxhR9BbAAAB joined room rider:693723c13d9c4057ad9512ed","timestamp":"2025-12-09T09:55:35.460Z"}
+{"level":"info","message":"Ride requested: 6937f217e1a799a981c3fec5","timestamp":"2025-12-09T09:55:35.460Z"}
+{"level":"info","message":"Found 1 nearby drivers for vehicle type: auto","timestamp":"2025-12-09T09:55:35.470Z"}
+{"level":"info","message":"Sent request to driver 693723c13d9c4057ad9512ef","timestamp":"2025-12-09T09:55:35.471Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:55:37.647Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:55:40.645Z"}
+{"level":"info","message":"Trip 6937f217e1a799a981c3fec5 current status: searching","timestamp":"2025-12-09T09:55:41.558Z"}
+{"level":"info","message":"Driver 693723c13d9c4057ad9512ef accepted trip 6937f217e1a799a981c3fec5","timestamp":"2025-12-09T09:55:41.583Z"}
+{"level":"info","message":"Driver 693723c13d9c4057ad9512ef accepted trip 6937f217e1a799a981c3fec5","timestamp":"2025-12-09T09:55:41.588Z"}
+{"level":"info","message":"Notified rider 693723c13d9c4057ad9512ed of driver assignment","timestamp":"2025-12-09T09:55:41.599Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:55:43.648Z"}
+{"level":"info","message":"Trip 6937f217e1a799a981c3fec5 status updated to driver_arrived","timestamp":"2025-12-09T09:55:47.153Z"}
+{"level":"info","message":"Trip 6937f217e1a799a981c3fec5 status updated to driver_arrived","timestamp":"2025-12-09T09:55:47.161Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:55:52.320Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:55:52.320Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:55:52.642Z"}
+{"level":"info","message":"Trip 6937f217e1a799a981c3fec5 status updated to trip_started","timestamp":"2025-12-09T09:55:55.450Z"}
+{"level":"info","message":"Trip 6937f217e1a799a981c3fec5 status updated to trip_started","timestamp":"2025-12-09T09:55:55.465Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:55:55.650Z"}
+{"level":"info","message":"Trip 6937f217e1a799a981c3fec5 status updated to trip_completed","timestamp":"2025-12-09T09:55:56.950Z"}
+{"level":"info","message":"Trip 6937f217e1a799a981c3fec5 status updated to trip_completed","timestamp":"2025-12-09T09:55:56.961Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:55:58.657Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:56:01.924Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:56:04.928Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:56:07.961Z"}
+{"level":"info","message":"Rating submitted for trip 6937f217e1a799a981c3fec5 by rider","timestamp":"2025-12-09T09:56:10.228Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:56:10.941Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:56:13.695Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:56:16.651Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:56:19.892Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:56:28.563Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:56:28.565Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:56:28.881Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:56:31.854Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:56:34.846Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:56:37.835Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:56:40.844Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:56:43.829Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:56:46.748Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:56:49.750Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:56:52.749Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:56:55.827Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:57:05.057Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:57:05.063Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:57:05.068Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:57:07.740Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:57:10.751Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:57:13.746Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:57:16.739Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:57:19.740Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:57:22.755Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:57:25.743Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:57:28.779Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:57:31.745Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:57:34.743Z"}
+{"level":"info","message":"Client disconnected: QuudXz_xvwxhR9BbAAAB","timestamp":"2025-12-09T09:57:37.266Z"}
+{"level":"info","message":"User logged in: 8500850058","timestamp":"2025-12-09T09:57:39.146Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:57:40.648Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:57:40.747Z"}
+{"level":"info","message":"New client connected: LlbmlyNlUAufhfk5AAAF","timestamp":"2025-12-09T09:57:41.744Z"}
+{"level":"info","message":"Socket LlbmlyNlUAufhfk5AAAF joined room rider:693723c13d9c4057ad9512ed","timestamp":"2025-12-09T09:57:41.748Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:57:43.751Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:58:07.775Z"}
+{"level":"error","message":"Surge pricing calculation error: $geoNear, $near, and $nearSphere are not allowed in this context, as these operators require sorting geospatial data. If you do not need sort, consider using $geoWithin instead. Check out https://dochub.mongodb.org/core/near-sort-operation and https://dochub.mongodb.org/core/nearSphere-sort-operationfor more details.","timestamp":"2025-12-09T09:58:08.328Z"}
+{"level":"info","message":"Trip created: 6937f2b0e1a799a981c3ff5c","timestamp":"2025-12-09T09:58:08.340Z"}
+{"level":"info","message":"Socket LlbmlyNlUAufhfk5AAAF joined room rider:693723c13d9c4057ad9512ed","timestamp":"2025-12-09T09:58:08.343Z"}
+{"level":"info","message":"Ride requested: 6937f2b0e1a799a981c3ff5c","timestamp":"2025-12-09T09:58:08.344Z"}
+{"level":"info","message":"Found 1 nearby drivers for vehicle type: bike","timestamp":"2025-12-09T09:58:08.347Z"}
+{"level":"info","message":"Sent request to driver 6937197cb0a56702ebac6e56","timestamp":"2025-12-09T09:58:08.347Z"}
+{"level":"error","message":"Surge pricing calculation error: $geoNear, $near, and $nearSphere are not allowed in this context, as these operators require sorting geospatial data. If you do not need sort, consider using $geoWithin instead. Check out https://dochub.mongodb.org/core/near-sort-operation and https://dochub.mongodb.org/core/nearSphere-sort-operationfor more details.","timestamp":"2025-12-09T09:58:43.890Z"}
+{"level":"info","message":"Trip created: 6937f2d3e1a799a981c3ff62","timestamp":"2025-12-09T09:58:43.897Z"}
+{"level":"info","message":"Socket LlbmlyNlUAufhfk5AAAF joined room rider:693723c13d9c4057ad9512ed","timestamp":"2025-12-09T09:58:43.900Z"}
+{"level":"info","message":"Ride requested: 6937f2d3e1a799a981c3ff62","timestamp":"2025-12-09T09:58:43.901Z"}
+{"level":"info","message":"Found 2 nearby drivers for vehicle type: bike","timestamp":"2025-12-09T09:58:43.905Z"}
+{"level":"info","message":"Sent request to driver 6937ce914e40a61cc1cd13d6","timestamp":"2025-12-09T09:58:43.906Z"}
+{"level":"info","message":"Sent request to driver 693724b83d9c4057ad951391","timestamp":"2025-12-09T09:58:43.906Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:58:51.711Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:58:51.713Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:58:51.714Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:58:52.754Z"}
+{"level":"error","message":"Surge pricing calculation error: $geoNear, $near, and $nearSphere are not allowed in this context, as these operators require sorting geospatial data. If you do not need sort, consider using $geoWithin instead. Check out https://dochub.mongodb.org/core/near-sort-operation and https://dochub.mongodb.org/core/nearSphere-sort-operationfor more details.","timestamp":"2025-12-09T09:58:55.467Z"}
+{"level":"info","message":"Trip created: 6937f2dfe1a799a981c3ff70","timestamp":"2025-12-09T09:58:55.476Z"}
+{"level":"info","message":"Socket LlbmlyNlUAufhfk5AAAF joined room rider:693723c13d9c4057ad9512ed","timestamp":"2025-12-09T09:58:55.481Z"}
+{"level":"info","message":"Ride requested: 6937f2dfe1a799a981c3ff70","timestamp":"2025-12-09T09:58:55.483Z"}
+{"level":"info","message":"Found 0 nearby drivers for vehicle type: auto","timestamp":"2025-12-09T09:58:55.487Z"}
+{"level":"info","message":"No drivers found for trip 6937f2dfe1a799a981c3ff70","timestamp":"2025-12-09T09:58:55.489Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:58:55.766Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:58:58.653Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:59:01.742Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:59:04.740Z"}
+{"level":"info","message":"Ride requested: 6937f2dfe1a799a981c3ff70","timestamp":"2025-12-09T09:59:05.496Z"}
+{"level":"info","message":"Found 0 nearby drivers for vehicle type: auto","timestamp":"2025-12-09T09:59:05.499Z"}
+{"level":"info","message":"No drivers found for trip 6937f2dfe1a799a981c3ff70","timestamp":"2025-12-09T09:59:05.503Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:59:07.751Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:59:10.738Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:59:13.746Z"}
+{"level":"info","message":"Ride requested: 6937f2dfe1a799a981c3ff70","timestamp":"2025-12-09T09:59:15.507Z"}
+{"level":"info","message":"Found 0 nearby drivers for vehicle type: car","timestamp":"2025-12-09T09:59:15.510Z"}
+{"level":"info","message":"No drivers found for trip 6937f2dfe1a799a981c3ff70","timestamp":"2025-12-09T09:59:15.510Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:59:16.742Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:59:19.742Z"}
+{"level":"error","message":"Surge pricing calculation error: $geoNear, $near, and $nearSphere are not allowed in this context, as these operators require sorting geospatial data. If you do not need sort, consider using $geoWithin instead. Check out https://dochub.mongodb.org/core/near-sort-operation and https://dochub.mongodb.org/core/nearSphere-sort-operationfor more details.","timestamp":"2025-12-09T09:59:21.260Z"}
+{"level":"info","message":"Trip created: 6937f2f9e1a799a981c3ff8a","timestamp":"2025-12-09T09:59:21.270Z"}
+{"level":"info","message":"Socket LlbmlyNlUAufhfk5AAAF joined room rider:693723c13d9c4057ad9512ed","timestamp":"2025-12-09T09:59:21.273Z"}
+{"level":"info","message":"Ride requested: 6937f2f9e1a799a981c3ff8a","timestamp":"2025-12-09T09:59:21.274Z"}
+{"level":"info","message":"Found 1 nearby drivers for vehicle type: auto","timestamp":"2025-12-09T09:59:21.278Z"}
+{"level":"info","message":"Sent request to driver 693723c13d9c4057ad9512ef","timestamp":"2025-12-09T09:59:21.279Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:59:28.604Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:59:28.606Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:59:28.607Z"}
+{"level":"info","message":"Driver 693723c13d9c4057ad9512ef rejected trip 6937f2f9e1a799a981c3ff8a","timestamp":"2025-12-09T09:59:29.286Z"}
+{"level":"info","message":"No more drivers available for trip 6937f2f9e1a799a981c3ff8a","timestamp":"2025-12-09T09:59:29.303Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:59:31.658Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:59:34.743Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:59:37.762Z"}
+{"level":"info","message":"Ride requested: 6937f2f9e1a799a981c3ff8a","timestamp":"2025-12-09T09:59:39.307Z"}
+{"level":"info","message":"Found 0 nearby drivers for vehicle type: auto","timestamp":"2025-12-09T09:59:39.311Z"}
+{"level":"info","message":"No drivers found for trip 6937f2f9e1a799a981c3ff8a","timestamp":"2025-12-09T09:59:39.312Z"}
+{"level":"error","message":"Surge pricing calculation error: $geoNear, $near, and $nearSphere are not allowed in this context, as these operators require sorting geospatial data. If you do not need sort, consider using $geoWithin instead. Check out https://dochub.mongodb.org/core/near-sort-operation and https://dochub.mongodb.org/core/nearSphere-sort-operationfor more details.","timestamp":"2025-12-09T09:59:39.796Z"}
+{"level":"info","message":"Trip created: 6937f30be1a799a981c3ff9f","timestamp":"2025-12-09T09:59:39.805Z"}
+{"level":"info","message":"Socket LlbmlyNlUAufhfk5AAAF joined room rider:693723c13d9c4057ad9512ed","timestamp":"2025-12-09T09:59:39.809Z"}
+{"level":"info","message":"Ride requested: 6937f30be1a799a981c3ff9f","timestamp":"2025-12-09T09:59:39.809Z"}
+{"level":"info","message":"Found 1 nearby drivers for vehicle type: auto","timestamp":"2025-12-09T09:59:39.813Z"}
+{"level":"info","message":"Sent request to driver 693723c13d9c4057ad9512ef","timestamp":"2025-12-09T09:59:39.816Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:59:40.787Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:59:43.650Z"}
+{"level":"info","message":"Trip 6937f30be1a799a981c3ff9f current status: searching","timestamp":"2025-12-09T09:59:44.377Z"}
+{"level":"info","message":"Driver 693723c13d9c4057ad9512ef accepted trip 6937f30be1a799a981c3ff9f","timestamp":"2025-12-09T09:59:44.388Z"}
+{"level":"info","message":"Driver 693723c13d9c4057ad9512ef accepted trip 6937f30be1a799a981c3ff9f","timestamp":"2025-12-09T09:59:44.392Z"}
+{"level":"info","message":"Notified rider 693723c13d9c4057ad9512ed of driver assignment","timestamp":"2025-12-09T09:59:44.400Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:59:46.642Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:59:49.646Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:59:52.740Z"}
+{"level":"info","message":"Ride cancelled: 6937f30be1a799a981c3ff9f, reason: Unknown","timestamp":"2025-12-09T09:59:54.555Z"}
+{"level":"info","message":"Trip 6937f30be1a799a981c3ff9f cancelled successfully","timestamp":"2025-12-09T09:59:54.571Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T09:59:55.794Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T10:00:04.614Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T10:00:04.618Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T10:00:04.812Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T10:00:07.856Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T10:00:10.844Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T10:00:13.805Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T10:00:16.806Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T10:00:19.822Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T10:00:22.814Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T10:00:25.787Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T10:00:28.864Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T10:00:31.863Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T10:00:41.238Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T10:00:41.240Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T10:00:41.241Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T10:00:43.875Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T10:00:46.813Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T10:00:49.785Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T10:01:07.834Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T10:02:14.925Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T10:03:13.592Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T10:04:13.660Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T10:05:10.351Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T10:06:13.770Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T10:07:11.090Z"}
+{"level":"info","message":"Client disconnected: LlbmlyNlUAufhfk5AAAF","timestamp":"2025-12-09T10:07:11.176Z"}
+{"level":"info","message":"Client disconnected: S0IRhWMzGmIY4Gs1AAAD","timestamp":"2025-12-09T10:07:11.186Z"}
+{"level":"info","message":"New client connected: ow-BLvfXsvSeAXwFAAAI","timestamp":"2025-12-09T10:07:15.789Z"}
+{"level":"info","message":"New client connected: nlovhsrRGfmsCblwAAAJ","timestamp":"2025-12-09T10:07:15.799Z"}
+{"level":"info","message":"Socket ow-BLvfXsvSeAXwFAAAI joined room driver:693723c13d9c4057ad9512ef","timestamp":"2025-12-09T10:07:15.860Z"}
+{"level":"info","message":"Socket nlovhsrRGfmsCblwAAAJ joined room rider:693723c13d9c4057ad9512ed","timestamp":"2025-12-09T10:07:15.863Z"}
+{"level":"info","message":"Client disconnected: nlovhsrRGfmsCblwAAAJ","timestamp":"2025-12-09T10:07:55.333Z"}
+{"level":"info","message":"Client disconnected: ow-BLvfXsvSeAXwFAAAI","timestamp":"2025-12-09T10:09:36.676Z"}
+{"level":"info","message":"New client connected: 14nyzRpKf8CH4RvqAAAL","timestamp":"2025-12-09T10:09:38.779Z"}
+{"level":"info","message":"Socket 14nyzRpKf8CH4RvqAAAL joined room rider:693723c13d9c4057ad9512ed","timestamp":"2025-12-09T10:09:38.806Z"}
+{"level":"info","message":"New client connected: Ik8jGhelcFn4jKc9AAAN","timestamp":"2025-12-09T10:09:39.701Z"}
+{"level":"info","message":"Socket Ik8jGhelcFn4jKc9AAAN joined room driver:693723c13d9c4057ad9512ef","timestamp":"2025-12-09T10:09:39.717Z"}
+{"level":"warn","message":"Razorpay credentials not configured - payment gateway disabled","timestamp":"2025-12-09T16:47:21.732Z"}
+{"level":"info","message":"Server running in development mode on port 5000","timestamp":"2025-12-09T16:47:21.763Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T16:47:21.788Z"}
+{"level":"info","message":"MongoDB Connected: localhost","timestamp":"2025-12-09T16:47:21.834Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T16:47:21.851Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T16:47:21.960Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T16:47:22.126Z"}
+{"level":"warn","message":"Redis connection failed - running without cache","timestamp":"2025-12-09T16:47:22.128Z"}
+{"level":"error","message":"Auth error: jwt expired","timestamp":"2025-12-09T16:47:54.535Z"}
+{"level":"error","message":"Auth error: jwt expired","timestamp":"2025-12-09T16:49:58.241Z"}
+{"level":"warn","message":"Redis error, falling back to memory:","timestamp":"2025-12-09T16:51:05.382Z"}
+{"level":"info","message":"OTP stored in memory for 9030620026","timestamp":"2025-12-09T16:51:05.384Z"}
+{"level":"info","message":"OTP email sent to jhawarkrishna09@gmail.com: <20696bd3-ec25-c89f-652c-f0240882208d@gmail.com>","timestamp":"2025-12-09T16:51:11.417Z"}
+{"level":"info","message":"OTP for 9030620026: 820412","timestamp":"2025-12-09T16:51:11.419Z"}
+{"level":"warn","message":"Redis read error:","timestamp":"2025-12-09T16:51:29.477Z"}
+{"level":"info","message":"OTP verified for 9030620026","timestamp":"2025-12-09T16:51:29.480Z"}
+{"level":"error","message":"Auth error: jwt expired","timestamp":"2025-12-09T16:52:24.026Z"}
+{"level":"error","message":"Auth error: jwt expired","timestamp":"2025-12-09T16:52:30.259Z"}
+{"level":"error","message":"Auth error: jwt expired","timestamp":"2025-12-09T16:52:38.675Z"}
+{"level":"error","message":"Auth error: jwt expired","timestamp":"2025-12-09T16:53:28.210Z"}
+{"level":"error","message":"Auth error: jwt expired","timestamp":"2025-12-09T16:54:57.637Z"}
+{"level":"error","message":"Auth error: jwt expired","timestamp":"2025-12-09T16:55:14.812Z"}
+{"level":"error","message":"Auth error: jwt expired","timestamp":"2025-12-09T16:55:31.656Z"}
+{"level":"warn","message":"Redis error, falling back to memory:","timestamp":"2025-12-09T17:00:30.138Z"}
+{"level":"info","message":"OTP stored in memory for 9030620026","timestamp":"2025-12-09T17:00:30.139Z"}
+{"level":"info","message":"OTP email sent to jhawarkrishna09@gmail.com: <e4298978-1261-578e-5933-478b40ee08d0@gmail.com>","timestamp":"2025-12-09T17:00:37.989Z"}
+{"level":"info","message":"OTP for 9030620026: 167722","timestamp":"2025-12-09T17:00:37.991Z"}
+{"level":"warn","message":"Redis read error:","timestamp":"2025-12-09T17:01:14.806Z"}
+{"level":"info","message":"OTP verified for 9030620026","timestamp":"2025-12-09T17:01:14.808Z"}
+{"level":"info","message":"Driver registered: 9030620026","timestamp":"2025-12-09T17:01:29.136Z"}
+{"level":"info","message":"New client connected: GaBsF-Aj1rZssC6NAAAB","timestamp":"2025-12-09T17:01:31.186Z"}
+{"level":"info","message":"Socket GaBsF-Aj1rZssC6NAAAB joined room driver:693855e98ffc3f02f52bd515","timestamp":"2025-12-09T17:01:31.215Z"}
+{"level":"info","message":"Socket GaBsF-Aj1rZssC6NAAAB joined room driver:693855e98ffc3f02f52bd515","timestamp":"2025-12-09T17:01:36.472Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:01:40.461Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:01:43.463Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:01:46.467Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:01:49.471Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:01:52.484Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:01:55.494Z"}
+{"level":"info","message":"User logged in: 8500850058","timestamp":"2025-12-09T17:01:56.532Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:01:58.494Z"}
+{"level":"info","message":"New client connected: 9bKV0gChJGvq0oWkAAAD","timestamp":"2025-12-09T17:01:59.294Z"}
+{"level":"info","message":"Socket 9bKV0gChJGvq0oWkAAAD joined room rider:693723c13d9c4057ad9512ed","timestamp":"2025-12-09T17:01:59.311Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:02:01.508Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:02:04.466Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:02:07.550Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:02:17.730Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:02:17.743Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:02:17.746Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:02:19.474Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:02:22.475Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:02:24.559Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:02:28.478Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:02:31.461Z"}
+{"level":"error","message":"Surge pricing calculation error: $geoNear, $near, and $nearSphere are not allowed in this context, as these operators require sorting geospatial data. If you do not need sort, consider using $geoWithin instead. Check out https://dochub.mongodb.org/core/near-sort-operation and https://dochub.mongodb.org/core/nearSphere-sort-operationfor more details.","timestamp":"2025-12-09T17:02:31.762Z"}
+{"level":"info","message":"Trip created: 693856278ffc3f02f52bd546","timestamp":"2025-12-09T17:02:31.787Z"}
+{"level":"info","message":"Socket 9bKV0gChJGvq0oWkAAAD joined room rider:693723c13d9c4057ad9512ed","timestamp":"2025-12-09T17:02:31.796Z"}
+{"level":"info","message":"Ride requested: 693856278ffc3f02f52bd546","timestamp":"2025-12-09T17:02:31.798Z"}
+{"level":"info","message":"Found 1 nearby drivers for vehicle type: car","timestamp":"2025-12-09T17:02:31.812Z"}
+{"level":"info","message":"Sent request to driver 693855e98ffc3f02f52bd515","timestamp":"2025-12-09T17:02:31.818Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:02:33.641Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:02:36.565Z"}
+{"level":"info","message":"Driver 693855e98ffc3f02f52bd515 rejected trip 693856278ffc3f02f52bd546","timestamp":"2025-12-09T17:02:40.378Z"}
+{"level":"info","message":"No more drivers available for trip 693856278ffc3f02f52bd546","timestamp":"2025-12-09T17:02:40.398Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:02:43.628Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:02:43.640Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:02:45.587Z"}
+{"level":"error","message":"Surge pricing calculation error: $geoNear, $near, and $nearSphere are not allowed in this context, as these operators require sorting geospatial data. If you do not need sort, consider using $geoWithin instead. Check out https://dochub.mongodb.org/core/near-sort-operation and https://dochub.mongodb.org/core/nearSphere-sort-operationfor more details.","timestamp":"2025-12-09T17:02:50.297Z"}
+{"level":"info","message":"Trip created: 6938563a8ffc3f02f52bd558","timestamp":"2025-12-09T17:02:50.322Z"}
+{"level":"info","message":"Socket 9bKV0gChJGvq0oWkAAAD joined room rider:693723c13d9c4057ad9512ed","timestamp":"2025-12-09T17:02:50.329Z"}
+{"level":"info","message":"Ride requested: 6938563a8ffc3f02f52bd558","timestamp":"2025-12-09T17:02:50.331Z"}
+{"level":"info","message":"Found 0 nearby drivers for vehicle type: auto","timestamp":"2025-12-09T17:02:50.344Z"}
+{"level":"info","message":"No drivers found for trip 6938563a8ffc3f02f52bd558","timestamp":"2025-12-09T17:02:50.346Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:02:55.468Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:02:55.473Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:02:55.474Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:02:57.573Z"}
+{"level":"info","message":"Ride requested: 6938563a8ffc3f02f52bd558","timestamp":"2025-12-09T17:03:00.381Z"}
+{"level":"info","message":"Found 0 nearby drivers for vehicle type: auto","timestamp":"2025-12-09T17:03:00.397Z"}
+{"level":"info","message":"No drivers found for trip 6938563a8ffc3f02f52bd558","timestamp":"2025-12-09T17:03:00.400Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:03:00.570Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:03:03.588Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:03:07.493Z"}
+{"level":"info","message":"Ride requested: 6938563a8ffc3f02f52bd558","timestamp":"2025-12-09T17:03:10.410Z"}
+{"level":"info","message":"Found 0 nearby drivers for vehicle type: auto","timestamp":"2025-12-09T17:03:10.424Z"}
+{"level":"info","message":"No drivers found for trip 6938563a8ffc3f02f52bd558","timestamp":"2025-12-09T17:03:10.426Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:03:10.520Z"}
+{"level":"error","message":"Surge pricing calculation error: $geoNear, $near, and $nearSphere are not allowed in this context, as these operators require sorting geospatial data. If you do not need sort, consider using $geoWithin instead. Check out https://dochub.mongodb.org/core/near-sort-operation and https://dochub.mongodb.org/core/nearSphere-sort-operationfor more details.","timestamp":"2025-12-09T17:03:12.398Z"}
+{"level":"info","message":"Trip created: 693856508ffc3f02f52bd570","timestamp":"2025-12-09T17:03:12.419Z"}
+{"level":"info","message":"Socket 9bKV0gChJGvq0oWkAAAD joined room rider:693723c13d9c4057ad9512ed","timestamp":"2025-12-09T17:03:12.427Z"}
+{"level":"info","message":"Ride requested: 693856508ffc3f02f52bd570","timestamp":"2025-12-09T17:03:12.429Z"}
+{"level":"info","message":"Found 0 nearby drivers for vehicle type: car","timestamp":"2025-12-09T17:03:12.437Z"}
+{"level":"info","message":"No drivers found for trip 693856508ffc3f02f52bd570","timestamp":"2025-12-09T17:03:12.439Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:03:13.512Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:03:15.611Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:03:19.546Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:03:21.571Z"}
+{"level":"info","message":"Ride requested: 693856508ffc3f02f52bd570","timestamp":"2025-12-09T17:03:23.390Z"}
+{"level":"info","message":"Found 1 nearby drivers for vehicle type: car","timestamp":"2025-12-09T17:03:23.396Z"}
+{"level":"info","message":"Sent request to driver 693855e98ffc3f02f52bd515","timestamp":"2025-12-09T17:03:23.398Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:03:24.578Z"}
+{"level":"info","message":"Trip 693856508ffc3f02f52bd570 current status: searching","timestamp":"2025-12-09T17:03:25.525Z"}
+{"level":"info","message":"Driver 693855e98ffc3f02f52bd515 accepted trip 693856508ffc3f02f52bd570","timestamp":"2025-12-09T17:03:25.557Z"}
+{"level":"info","message":"Driver 693855e98ffc3f02f52bd515 accepted trip 693856508ffc3f02f52bd570","timestamp":"2025-12-09T17:03:25.565Z"}
+{"level":"info","message":"Notified rider 693723c13d9c4057ad9512ed of driver assignment","timestamp":"2025-12-09T17:03:25.586Z"}
+{"level":"info","message":"Trip 693856508ffc3f02f52bd570 status updated to driver_arrived","timestamp":"2025-12-09T17:03:32.219Z"}
+{"level":"info","message":"Trip 693856508ffc3f02f52bd570 status updated to driver_arrived","timestamp":"2025-12-09T17:03:32.234Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:03:33.441Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:03:33.445Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:03:37.390Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:03:37.395Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:03:40.481Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:03:43.474Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:03:45.845Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:03:48.570Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:03:51.551Z"}
+{"level":"info","message":"Trip 693856508ffc3f02f52bd570 status updated to trip_started","timestamp":"2025-12-09T17:03:53.756Z"}
+{"level":"info","message":"Trip 693856508ffc3f02f52bd570 status updated to trip_started","timestamp":"2025-12-09T17:03:53.771Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:03:54.556Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:03:58.160Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:04:00.562Z"}
+{"level":"info","message":"Trip 693856508ffc3f02f52bd570 status updated to trip_completed","timestamp":"2025-12-09T17:04:01.572Z"}
+{"level":"info","message":"Trip 693856508ffc3f02f52bd570 status updated to trip_completed","timestamp":"2025-12-09T17:04:01.586Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:04:13.850Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:04:13.862Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:04:13.864Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:04:13.866Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:04:16.569Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:04:19.581Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:04:22.557Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:04:25.572Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:04:28.547Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:04:31.590Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:04:34.577Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:04:37.673Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:04:39.945Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:04:42.584Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:04:51.584Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:04:51.585Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:04:51.592Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:04:54.576Z"}
+{"level":"error","message":"Surge pricing calculation error: $geoNear, $near, and $nearSphere are not allowed in this context, as these operators require sorting geospatial data. If you do not need sort, consider using $geoWithin instead. Check out https://dochub.mongodb.org/core/near-sort-operation and https://dochub.mongodb.org/core/nearSphere-sort-operationfor more details.","timestamp":"2025-12-09T17:04:57.692Z"}
+{"level":"info","message":"Trip created: 693856b98ffc3f02f52bd5db","timestamp":"2025-12-09T17:04:57.708Z"}
+{"level":"info","message":"Socket 9bKV0gChJGvq0oWkAAAD joined room rider:693723c13d9c4057ad9512ed","timestamp":"2025-12-09T17:04:57.716Z"}
+{"level":"info","message":"Ride requested: 693856b98ffc3f02f52bd5db","timestamp":"2025-12-09T17:04:57.717Z"}
+{"level":"info","message":"Found 0 nearby drivers for vehicle type: car","timestamp":"2025-12-09T17:04:57.724Z"}
+{"level":"info","message":"No drivers found for trip 693856b98ffc3f02f52bd5db","timestamp":"2025-12-09T17:04:57.727Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:04:58.527Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:05:00.574Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:05:03.609Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:05:07.489Z"}
+{"level":"info","message":"Ride requested: 693856b98ffc3f02f52bd5db","timestamp":"2025-12-09T17:05:07.733Z"}
+{"level":"info","message":"Found 1 nearby drivers for vehicle type: car","timestamp":"2025-12-09T17:05:07.742Z"}
+{"level":"info","message":"Sent request to driver 693855e98ffc3f02f52bd515","timestamp":"2025-12-09T17:05:07.743Z"}
+{"level":"error","message":"Surge pricing calculation error: $geoNear, $near, and $nearSphere are not allowed in this context, as these operators require sorting geospatial data. If you do not need sort, consider using $geoWithin instead. Check out https://dochub.mongodb.org/core/near-sort-operation and https://dochub.mongodb.org/core/nearSphere-sort-operationfor more details.","timestamp":"2025-12-09T17:05:08.569Z"}
+{"level":"info","message":"Trip created: 693856c48ffc3f02f52bd5ea","timestamp":"2025-12-09T17:05:08.589Z"}
+{"level":"info","message":"Socket 9bKV0gChJGvq0oWkAAAD joined room rider:693723c13d9c4057ad9512ed","timestamp":"2025-12-09T17:05:08.597Z"}
+{"level":"info","message":"Ride requested: 693856c48ffc3f02f52bd5ea","timestamp":"2025-12-09T17:05:08.598Z"}
+{"level":"info","message":"Found 1 nearby drivers for vehicle type: car","timestamp":"2025-12-09T17:05:08.608Z"}
+{"level":"info","message":"Sent request to driver 693855e98ffc3f02f52bd515","timestamp":"2025-12-09T17:05:08.611Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:05:09.675Z"}
+{"level":"info","message":"Trip 693856b98ffc3f02f52bd5db current status: searching","timestamp":"2025-12-09T17:05:10.903Z"}
+{"level":"info","message":"Driver 693855e98ffc3f02f52bd515 accepted trip 693856b98ffc3f02f52bd5db","timestamp":"2025-12-09T17:05:10.935Z"}
+{"level":"info","message":"Driver 693855e98ffc3f02f52bd515 accepted trip 693856b98ffc3f02f52bd5db","timestamp":"2025-12-09T17:05:10.942Z"}
+{"level":"info","message":"Notified rider 693723c13d9c4057ad9512ed of driver assignment","timestamp":"2025-12-09T17:05:10.966Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:05:12.676Z"}
+{"level":"info","message":"Trip 693856b98ffc3f02f52bd5db status updated to driver_arrived","timestamp":"2025-12-09T17:05:14.082Z"}
+{"level":"info","message":"Trip 693856b98ffc3f02f52bd5db status updated to driver_arrived","timestamp":"2025-12-09T17:05:14.098Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:05:15.630Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:05:18.574Z"}
+{"level":"info","message":"Trip 693856b98ffc3f02f52bd5db status updated to trip_started","timestamp":"2025-12-09T17:05:21.666Z"}
+{"level":"info","message":"Trip 693856b98ffc3f02f52bd5db status updated to trip_started","timestamp":"2025-12-09T17:05:21.678Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:05:27.512Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:05:27.517Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:05:28.455Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:05:30.559Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:05:33.551Z"}
+{"level":"info","message":"Trip 693856b98ffc3f02f52bd5db status updated to trip_completed","timestamp":"2025-12-09T17:05:35.372Z"}
+{"level":"info","message":"Trip 693856b98ffc3f02f52bd5db status updated to trip_completed","timestamp":"2025-12-09T17:05:35.385Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:05:36.585Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:05:39.561Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:05:42.546Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:05:45.710Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:05:48.584Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:05:51.685Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:05:56.021Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:06:00.753Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:06:01.830Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:06:04.644Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:06:07.792Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:06:10.671Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:06:13.725Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:06:17.307Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:06:19.761Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:06:22.745Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:06:25.712Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:06:28.681Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:06:37.354Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:06:37.357Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:06:37.726Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:06:40.708Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:06:43.685Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:06:46.681Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:06:49.680Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:06:52.674Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:07:03.716Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:07:37.972Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:07:37.978Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:07:37.979Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:07:40.478Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:07:43.491Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:07:46.489Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:07:49.565Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:07:51.572Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:07:55.686Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:07:58.692Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:08:01.667Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:08:04.704Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:08:07.688Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:08:12.366Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:08:13.683Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:08:16.674Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:08:19.692Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:08:22.677Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:08:25.635Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:08:28.663Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:08:31.683Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:08:34.686Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:08:37.748Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:08:40.662Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:08:49.237Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:08:49.239Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:08:49.660Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:08:52.683Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:09:03.714Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:10:09.040Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:11:08.875Z"}
+{"level":"warn","message":"Razorpay credentials not configured - payment gateway disabled","timestamp":"2025-12-09T17:11:50.349Z"}
+{"level":"info","message":"Server running in development mode on port 5000","timestamp":"2025-12-09T17:11:50.374Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T17:11:50.397Z"}
+{"level":"info","message":"MongoDB Connected: localhost","timestamp":"2025-12-09T17:11:50.409Z"}
+{"level":"info","message":"New client connected: B89anYFwcvffD7jcAAAC","timestamp":"2025-12-09T17:11:50.442Z"}
+{"level":"info","message":"New client connected: -n_22RFx4uK9pTrCAAAD","timestamp":"2025-12-09T17:11:50.446Z"}
+{"level":"info","message":"Socket B89anYFwcvffD7jcAAAC joined room rider:693723c13d9c4057ad9512ed","timestamp":"2025-12-09T17:11:50.473Z"}
+{"level":"info","message":"Socket -n_22RFx4uK9pTrCAAAD joined room driver:693855e98ffc3f02f52bd515","timestamp":"2025-12-09T17:11:50.477Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T17:11:50.485Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T17:11:50.606Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T17:11:50.777Z"}
+{"level":"warn","message":"Redis connection failed - running without cache","timestamp":"2025-12-09T17:11:50.778Z"}
+{"level":"warn","message":"Razorpay credentials not configured - payment gateway disabled","timestamp":"2025-12-09T17:12:10.860Z"}
+{"level":"info","message":"Server running in development mode on port 5000","timestamp":"2025-12-09T17:12:10.895Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T17:12:10.914Z"}
+{"level":"info","message":"MongoDB Connected: localhost","timestamp":"2025-12-09T17:12:10.929Z"}
+{"level":"info","message":"New client connected: nEGU-cb8C42UI8HhAAAC","timestamp":"2025-12-09T17:12:10.990Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T17:12:10.997Z"}
+{"level":"info","message":"New client connected: qU_bvP4ItqOinYJPAAAD","timestamp":"2025-12-09T17:12:11.001Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:12:11.024Z"}
+{"level":"info","message":"Socket nEGU-cb8C42UI8HhAAAC joined room rider:693723c13d9c4057ad9512ed","timestamp":"2025-12-09T17:12:11.038Z"}
+{"level":"info","message":"Socket qU_bvP4ItqOinYJPAAAD joined room driver:693855e98ffc3f02f52bd515","timestamp":"2025-12-09T17:12:11.042Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T17:12:11.114Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T17:12:11.269Z"}
+{"level":"warn","message":"Redis connection failed - running without cache","timestamp":"2025-12-09T17:12:11.270Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:13:05.700Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:14:09.559Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:15:05.807Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:16:05.479Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:17:05.325Z"}
+{"level":"warn","message":"Razorpay credentials not configured - payment gateway disabled","timestamp":"2025-12-09T17:17:21.749Z"}
+{"level":"info","message":"Server running in development mode on port 5000","timestamp":"2025-12-09T17:17:21.780Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T17:17:21.803Z"}
+{"level":"info","message":"MongoDB Connected: localhost","timestamp":"2025-12-09T17:17:21.821Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T17:17:21.871Z"}
+{"level":"info","message":"New client connected: 7_wiAZ52Cu_NguPlAAAC","timestamp":"2025-12-09T17:17:21.920Z"}
+{"level":"info","message":"New client connected: -x7whLUPUFp_8H5pAAAD","timestamp":"2025-12-09T17:17:21.935Z"}
+{"level":"info","message":"Socket 7_wiAZ52Cu_NguPlAAAC joined room rider:693723c13d9c4057ad9512ed","timestamp":"2025-12-09T17:17:21.952Z"}
+{"level":"info","message":"Socket -x7whLUPUFp_8H5pAAAD joined room driver:693855e98ffc3f02f52bd515","timestamp":"2025-12-09T17:17:21.956Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T17:17:21.984Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T17:17:22.154Z"}
+{"level":"warn","message":"Redis connection failed - running without cache","timestamp":"2025-12-09T17:17:22.155Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:18:05.542Z"}
+{"level":"warn","message":"Razorpay credentials not configured - payment gateway disabled","timestamp":"2025-12-09T17:18:21.457Z"}
+{"level":"info","message":"Server running in development mode on port 5000","timestamp":"2025-12-09T17:18:21.484Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T17:18:21.504Z"}
+{"level":"info","message":"MongoDB Connected: localhost","timestamp":"2025-12-09T17:18:21.522Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T17:18:21.569Z"}
+{"level":"info","message":"New client connected: T0qBEKwPK4bMKx00AAAC","timestamp":"2025-12-09T17:18:21.661Z"}
+{"level":"info","message":"New client connected: Rq3Hb-66CKk9Rb3eAAAD","timestamp":"2025-12-09T17:18:21.672Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T17:18:21.680Z"}
+{"level":"info","message":"Socket T0qBEKwPK4bMKx00AAAC joined room driver:693855e98ffc3f02f52bd515","timestamp":"2025-12-09T17:18:21.689Z"}
+{"level":"info","message":"Socket Rq3Hb-66CKk9Rb3eAAAD joined room rider:693723c13d9c4057ad9512ed","timestamp":"2025-12-09T17:18:21.692Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T17:18:21.844Z"}
+{"level":"warn","message":"Redis connection failed - running without cache","timestamp":"2025-12-09T17:18:21.844Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:19:05.541Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:20:05.431Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:21:05.595Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:22:05.483Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:23:05.434Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:24:05.368Z"}
+{"level":"info","message":"Client disconnected: T0qBEKwPK4bMKx00AAAC","timestamp":"2025-12-09T17:24:38.726Z"}
+{"level":"info","message":"Client disconnected: Rq3Hb-66CKk9Rb3eAAAD","timestamp":"2025-12-09T17:24:45.241Z"}
+{"level":"error","message":"Auth error: jwt expired","timestamp":"2025-12-09T17:24:47.611Z"}
+{"level":"info","message":"User logged in: 8500850058","timestamp":"2025-12-09T17:25:04.767Z"}
+{"level":"info","message":"New client connected: Llvvskpa5wW5ZyzcAAAF","timestamp":"2025-12-09T17:25:07.493Z"}
+{"level":"info","message":"Socket Llvvskpa5wW5ZyzcAAAF joined room rider:693723c13d9c4057ad9512ed","timestamp":"2025-12-09T17:25:07.511Z"}
+{"level":"error","message":"Auth error: jwt expired","timestamp":"2025-12-09T17:38:42.857Z"}
+{"level":"info","message":"User logged in: 8500850058","timestamp":"2025-12-09T17:39:08.210Z"}
+{"level":"info","message":"New client connected: F2g3k5r3WDhPZwawAAAH","timestamp":"2025-12-09T17:39:08.329Z"}
+{"level":"info","message":"Socket F2g3k5r3WDhPZwawAAAH joined room driver:693723c13d9c4057ad9512ef","timestamp":"2025-12-09T17:39:08.359Z"}
+{"level":"info","message":"Socket F2g3k5r3WDhPZwawAAAH joined room driver:693723c13d9c4057ad9512ef","timestamp":"2025-12-09T17:40:01.446Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:40:12.781Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:40:12.798Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:40:12.805Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:40:14.708Z"}
+{"level":"info","message":"Client disconnected: Llvvskpa5wW5ZyzcAAAF","timestamp":"2025-12-09T17:40:15.617Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:40:17.503Z"}
+{"level":"error","message":"Auth error: jwt expired","timestamp":"2025-12-09T17:40:18.024Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:40:20.513Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:40:23.466Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:40:26.464Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:40:29.467Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:40:32.476Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:40:35.470Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:40:38.482Z"}
+{"level":"info","message":"User logged in: 8500850058","timestamp":"2025-12-09T17:40:40.007Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:40:41.532Z"}
+{"level":"info","message":"New client connected: nHc2P4C-dLMWyUJSAAAJ","timestamp":"2025-12-09T17:40:43.387Z"}
+{"level":"info","message":"Socket nHc2P4C-dLMWyUJSAAAJ joined room rider:693723c13d9c4057ad9512ed","timestamp":"2025-12-09T17:40:43.405Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:40:49.533Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:40:49.540Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:40:50.520Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:40:53.702Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:40:56.689Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:40:59.521Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:41:02.539Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:41:05.606Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:41:08.497Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:41:11.505Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:41:14.468Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:41:17.573Z"}
+{"level":"error","message":"Surge pricing calculation error: $geoNear, $near, and $nearSphere are not allowed in this context, as these operators require sorting geospatial data. If you do not need sort, consider using $geoWithin instead. Check out https://dochub.mongodb.org/core/near-sort-operation and https://dochub.mongodb.org/core/nearSphere-sort-operationfor more details.","timestamp":"2025-12-09T17:41:21.377Z"}
+{"level":"info","message":"Trip created: 69385f41cea8540c54a48bb2","timestamp":"2025-12-09T17:41:21.412Z"}
+{"level":"info","message":"Socket nHc2P4C-dLMWyUJSAAAJ joined room rider:693723c13d9c4057ad9512ed","timestamp":"2025-12-09T17:41:21.420Z"}
+{"level":"info","message":"Ride requested: 69385f41cea8540c54a48bb2","timestamp":"2025-12-09T17:41:21.421Z"}
+{"level":"info","message":"Found 2 nearby drivers for vehicle type: bike","timestamp":"2025-12-09T17:41:21.443Z"}
+{"level":"info","message":"Sent request to driver 693724b83d9c4057ad951391","timestamp":"2025-12-09T17:41:21.448Z"}
+{"level":"info","message":"Sent request to driver 6937ce914e40a61cc1cd13d6","timestamp":"2025-12-09T17:41:21.449Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:41:26.532Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:41:26.537Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:41:26.538Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:41:29.485Z"}
+{"level":"error","message":"Surge pricing calculation error: $geoNear, $near, and $nearSphere are not allowed in this context, as these operators require sorting geospatial data. If you do not need sort, consider using $geoWithin instead. Check out https://dochub.mongodb.org/core/near-sort-operation and https://dochub.mongodb.org/core/nearSphere-sort-operationfor more details.","timestamp":"2025-12-09T17:41:29.579Z"}
+{"level":"info","message":"Trip created: 69385f49cea8540c54a48bc0","timestamp":"2025-12-09T17:41:29.599Z"}
+{"level":"info","message":"Socket nHc2P4C-dLMWyUJSAAAJ joined room rider:693723c13d9c4057ad9512ed","timestamp":"2025-12-09T17:41:29.606Z"}
+{"level":"info","message":"Ride requested: 69385f49cea8540c54a48bc0","timestamp":"2025-12-09T17:41:29.607Z"}
+{"level":"info","message":"Found 1 nearby drivers for vehicle type: auto","timestamp":"2025-12-09T17:41:29.616Z"}
+{"level":"info","message":"Sent request to driver 693723c13d9c4057ad9512ef","timestamp":"2025-12-09T17:41:29.620Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:41:31.648Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:41:34.534Z"}
+{"level":"info","message":"Trip 69385f49cea8540c54a48bc0 current status: searching","timestamp":"2025-12-09T17:41:35.759Z"}
+{"level":"info","message":"Driver 693723c13d9c4057ad9512ef accepted trip 69385f49cea8540c54a48bc0","timestamp":"2025-12-09T17:41:35.803Z"}
+{"level":"info","message":"Driver 693723c13d9c4057ad9512ef accepted trip 69385f49cea8540c54a48bc0","timestamp":"2025-12-09T17:41:35.813Z"}
+{"level":"info","message":"Notified rider 693723c13d9c4057ad9512ed of driver assignment","timestamp":"2025-12-09T17:41:35.834Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:41:37.575Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:41:40.696Z"}
+{"level":"info","message":"Trip 69385f49cea8540c54a48bc0 status updated to driver_arrived","timestamp":"2025-12-09T17:41:42.053Z"}
+{"level":"info","message":"Trip 69385f49cea8540c54a48bc0 status updated to driver_arrived","timestamp":"2025-12-09T17:41:42.069Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:41:44.483Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:41:46.587Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:41:49.645Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:41:52.556Z"}
+{"level":"info","message":"Trip 69385f49cea8540c54a48bc0 status updated to trip_started","timestamp":"2025-12-09T17:41:53.512Z"}
+{"level":"info","message":"Trip 69385f49cea8540c54a48bc0 status updated to trip_started","timestamp":"2025-12-09T17:41:53.527Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:41:56.217Z"}
+{"level":"info","message":"Trip 69385f49cea8540c54a48bc0 status updated to trip_completed","timestamp":"2025-12-09T17:41:57.567Z"}
+{"level":"info","message":"Trip 69385f49cea8540c54a48bc0 status updated to trip_completed","timestamp":"2025-12-09T17:41:57.580Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:42:04.273Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:42:04.277Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:42:08.405Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:42:08.421Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:42:11.650Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:42:14.755Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:42:17.686Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:42:19.573Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:42:22.581Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:42:26.641Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:42:28.570Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:42:32.750Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:42:42.992Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:42:43.002Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:42:43.011Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:42:44.813Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:42:48.037Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:42:50.070Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:42:53.719Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:42:56.686Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:42:59.693Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:43:02.662Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:43:05.671Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:43:08.689Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:43:11.680Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:43:17.021Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:43:17.694Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:43:20.669Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:43:23.742Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:43:26.655Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:43:29.689Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:43:32.676Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:43:35.683Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:43:38.690Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:43:41.668Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:43:44.679Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:43:56.917Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:43:56.929Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:43:56.932Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:43:56.956Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:43:59.848Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:44:02.232Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:44:06.041Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:44:08.706Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:44:11.705Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:44:14.699Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:44:17.670Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:44:20.657Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:44:25.522Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:44:27.413Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:44:29.737Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:44:32.714Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:44:36.287Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:44:38.674Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:44:41.776Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:44:44.688Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:44:47.621Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:44:50.635Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:44:53.609Z"}
+{"level":"warn","message":"Razorpay credentials not configured - payment gateway disabled","timestamp":"2025-12-09T17:45:04.038Z"}
+{"level":"info","message":"Server running in development mode on port 5000","timestamp":"2025-12-09T17:45:04.068Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T17:45:04.084Z"}
+{"level":"info","message":"MongoDB Connected: localhost","timestamp":"2025-12-09T17:45:04.097Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T17:45:04.151Z"}
+{"level":"info","message":"New client connected: NKwuJMxXnpq5lHT3AAAC","timestamp":"2025-12-09T17:45:04.187Z"}
+{"level":"info","message":"New client connected: -SVjGGSdx8T3zEfGAAAD","timestamp":"2025-12-09T17:45:04.196Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:45:04.208Z"}
+{"level":"info","message":"Socket -SVjGGSdx8T3zEfGAAAD joined room rider:693723c13d9c4057ad9512ed","timestamp":"2025-12-09T17:45:04.221Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T17:45:04.259Z"}
+{"level":"info","message":"Socket NKwuJMxXnpq5lHT3AAAC joined room driver:693723c13d9c4057ad9512ef","timestamp":"2025-12-09T17:45:04.324Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:45:04.325Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:45:04.325Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T17:45:04.412Z"}
+{"level":"warn","message":"Redis connection failed - running without cache","timestamp":"2025-12-09T17:45:04.413Z"}
+{"level":"warn","message":"Razorpay credentials not configured - payment gateway disabled","timestamp":"2025-12-09T17:45:45.332Z"}
+{"level":"info","message":"Server running in development mode on port 5000","timestamp":"2025-12-09T17:45:45.352Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T17:45:45.368Z"}
+{"level":"info","message":"MongoDB Connected: localhost","timestamp":"2025-12-09T17:45:45.385Z"}
+{"level":"info","message":"New client connected: dCOyxBJ7YmkBf5bMAAAC","timestamp":"2025-12-09T17:45:45.408Z"}
+{"level":"info","message":"New client connected: xHUhF4S2wbjFIGAJAAAD","timestamp":"2025-12-09T17:45:45.412Z"}
+{"level":"info","message":"Socket dCOyxBJ7YmkBf5bMAAAC joined room rider:693723c13d9c4057ad9512ed","timestamp":"2025-12-09T17:45:45.443Z"}
+{"level":"info","message":"Socket xHUhF4S2wbjFIGAJAAAD joined room driver:693723c13d9c4057ad9512ef","timestamp":"2025-12-09T17:45:45.455Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T17:45:45.459Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T17:45:45.568Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T17:45:45.738Z"}
+{"level":"warn","message":"Redis connection failed - running without cache","timestamp":"2025-12-09T17:45:45.738Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:46:09.053Z"}
+{"level":"info","message":"Client disconnected: dCOyxBJ7YmkBf5bMAAAC","timestamp":"2025-12-09T17:46:18.404Z"}
+{"level":"info","message":"New client connected: 9Rb5lBZGNjC7KKJPAAAF","timestamp":"2025-12-09T17:46:20.721Z"}
+{"level":"info","message":"Socket 9Rb5lBZGNjC7KKJPAAAF joined room rider:693723c13d9c4057ad9512ed","timestamp":"2025-12-09T17:46:20.735Z"}
+{"level":"error","message":"Surge pricing calculation error: $geoNear, $near, and $nearSphere are not allowed in this context, as these operators require sorting geospatial data. If you do not need sort, consider using $geoWithin instead. Check out https://dochub.mongodb.org/core/near-sort-operation and https://dochub.mongodb.org/core/nearSphere-sort-operationfor more details.","timestamp":"2025-12-09T17:46:41.410Z"}
+{"level":"info","message":"Trip created: 69386081ccee0f33f66e071b","timestamp":"2025-12-09T17:46:41.498Z"}
+{"level":"info","message":"Socket 9Rb5lBZGNjC7KKJPAAAF joined room rider:693723c13d9c4057ad9512ed","timestamp":"2025-12-09T17:46:41.511Z"}
+{"level":"info","message":"Ride requested: 69386081ccee0f33f66e071b","timestamp":"2025-12-09T17:46:41.514Z"}
+{"level":"info","message":"Found 2 nearby drivers for vehicle type: bike","timestamp":"2025-12-09T17:46:41.539Z"}
+{"level":"info","message":"Sent request to driver 693724b83d9c4057ad951391","timestamp":"2025-12-09T17:46:41.545Z"}
+{"level":"info","message":"Sent request to driver 6937ce914e40a61cc1cd13d6","timestamp":"2025-12-09T17:46:41.547Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:46:45.621Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:46:45.636Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:46:47.733Z"}
+{"level":"error","message":"Surge pricing calculation error: $geoNear, $near, and $nearSphere are not allowed in this context, as these operators require sorting geospatial data. If you do not need sort, consider using $geoWithin instead. Check out https://dochub.mongodb.org/core/near-sort-operation and https://dochub.mongodb.org/core/nearSphere-sort-operationfor more details.","timestamp":"2025-12-09T17:46:50.460Z"}
+{"level":"info","message":"Trip created: 6938608accee0f33f66e0727","timestamp":"2025-12-09T17:46:50.486Z"}
+{"level":"info","message":"Socket 9Rb5lBZGNjC7KKJPAAAF joined room rider:693723c13d9c4057ad9512ed","timestamp":"2025-12-09T17:46:50.497Z"}
+{"level":"info","message":"Ride requested: 6938608accee0f33f66e0727","timestamp":"2025-12-09T17:46:50.500Z"}
+{"level":"info","message":"Found 0 nearby drivers for vehicle type: auto","timestamp":"2025-12-09T17:46:50.512Z"}
+{"level":"info","message":"No drivers found for trip 6938608accee0f33f66e0727","timestamp":"2025-12-09T17:46:50.516Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:46:50.579Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:46:52.645Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:46:56.513Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:46:58.672Z"}
+{"level":"info","message":"Ride requested: 6938608accee0f33f66e0727","timestamp":"2025-12-09T17:47:01.380Z"}
+{"level":"info","message":"Found 0 nearby drivers for vehicle type: auto","timestamp":"2025-12-09T17:47:01.385Z"}
+{"level":"info","message":"No drivers found for trip 6938608accee0f33f66e0727","timestamp":"2025-12-09T17:47:01.386Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:47:02.629Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:47:05.667Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:47:08.694Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:47:10.561Z"}
+{"level":"info","message":"Ride requested: 6938608accee0f33f66e0727","timestamp":"2025-12-09T17:47:12.387Z"}
+{"level":"info","message":"Found 0 nearby drivers for vehicle type: auto","timestamp":"2025-12-09T17:47:12.396Z"}
+{"level":"info","message":"No drivers found for trip 6938608accee0f33f66e0727","timestamp":"2025-12-09T17:47:12.398Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:47:13.533Z"}
+{"level":"error","message":"Surge pricing calculation error: $geoNear, $near, and $nearSphere are not allowed in this context, as these operators require sorting geospatial data. If you do not need sort, consider using $geoWithin instead. Check out https://dochub.mongodb.org/core/near-sort-operation and https://dochub.mongodb.org/core/nearSphere-sort-operationfor more details.","timestamp":"2025-12-09T17:47:16.278Z"}
+{"level":"info","message":"Trip created: 693860a4ccee0f33f66e0741","timestamp":"2025-12-09T17:47:16.296Z"}
+{"level":"info","message":"Socket 9Rb5lBZGNjC7KKJPAAAF joined room rider:693723c13d9c4057ad9512ed","timestamp":"2025-12-09T17:47:16.304Z"}
+{"level":"info","message":"Ride requested: 693860a4ccee0f33f66e0741","timestamp":"2025-12-09T17:47:16.306Z"}
+{"level":"info","message":"Found 1 nearby drivers for vehicle type: auto","timestamp":"2025-12-09T17:47:16.316Z"}
+{"level":"info","message":"Sent request to driver 693723c13d9c4057ad9512ef","timestamp":"2025-12-09T17:47:16.320Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:47:23.627Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:47:23.638Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:47:23.640Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:47:26.490Z"}
+{"level":"error","message":"Surge pricing calculation error: $geoNear, $near, and $nearSphere are not allowed in this context, as these operators require sorting geospatial data. If you do not need sort, consider using $geoWithin instead. Check out https://dochub.mongodb.org/core/near-sort-operation and https://dochub.mongodb.org/core/nearSphere-sort-operationfor more details.","timestamp":"2025-12-09T17:47:27.472Z"}
+{"level":"info","message":"Trip created: 693860afccee0f33f66e074f","timestamp":"2025-12-09T17:47:27.493Z"}
+{"level":"info","message":"Socket 9Rb5lBZGNjC7KKJPAAAF joined room rider:693723c13d9c4057ad9512ed","timestamp":"2025-12-09T17:47:27.501Z"}
+{"level":"info","message":"Ride requested: 693860afccee0f33f66e074f","timestamp":"2025-12-09T17:47:27.503Z"}
+{"level":"info","message":"Found 1 nearby drivers for vehicle type: auto","timestamp":"2025-12-09T17:47:27.518Z"}
+{"level":"info","message":"Sent request to driver 693723c13d9c4057ad9512ef","timestamp":"2025-12-09T17:47:27.521Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:47:28.624Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:47:31.566Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:47:35.586Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:47:38.494Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:47:41.516Z"}
+{"level":"error","message":"Surge pricing calculation error: $geoNear, $near, and $nearSphere are not allowed in this context, as these operators require sorting geospatial data. If you do not need sort, consider using $geoWithin instead. Check out https://dochub.mongodb.org/core/near-sort-operation and https://dochub.mongodb.org/core/nearSphere-sort-operationfor more details.","timestamp":"2025-12-09T17:47:41.851Z"}
+{"level":"info","message":"Trip created: 693860bdccee0f33f66e075f","timestamp":"2025-12-09T17:47:41.872Z"}
+{"level":"info","message":"Socket 9Rb5lBZGNjC7KKJPAAAF joined room rider:693723c13d9c4057ad9512ed","timestamp":"2025-12-09T17:47:41.880Z"}
+{"level":"info","message":"Ride requested: 693860bdccee0f33f66e075f","timestamp":"2025-12-09T17:47:41.882Z"}
+{"level":"info","message":"Found 1 nearby drivers for vehicle type: auto","timestamp":"2025-12-09T17:47:41.892Z"}
+{"level":"info","message":"Sent request to driver 693723c13d9c4057ad9512ef","timestamp":"2025-12-09T17:47:41.895Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:47:43.591Z"}
+{"level":"info","message":"Trip 693860bdccee0f33f66e075f current status: searching","timestamp":"2025-12-09T17:47:45.383Z"}
+{"level":"info","message":"Driver 693723c13d9c4057ad9512ef accepted trip 693860bdccee0f33f66e075f","timestamp":"2025-12-09T17:47:45.428Z"}
+{"level":"info","message":"Driver 693723c13d9c4057ad9512ef accepted trip 693860bdccee0f33f66e075f","timestamp":"2025-12-09T17:47:45.437Z"}
+{"level":"info","message":"Notified rider 693723c13d9c4057ad9512ed of driver assignment","timestamp":"2025-12-09T17:47:45.461Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:47:46.530Z"}
+{"level":"info","message":"Trip 693860bdccee0f33f66e075f status updated to driver_arrived","timestamp":"2025-12-09T17:47:47.076Z"}
+{"level":"info","message":"Trip 693860bdccee0f33f66e075f status updated to driver_arrived","timestamp":"2025-12-09T17:47:47.093Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:47:49.549Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:47:52.543Z"}
+{"level":"info","message":"Trip 693860bdccee0f33f66e075f status updated to trip_started","timestamp":"2025-12-09T17:47:59.592Z"}
+{"level":"info","message":"Trip 693860bdccee0f33f66e075f status updated to trip_started","timestamp":"2025-12-09T17:47:59.604Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:48:01.181Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:48:01.185Z"}
+{"level":"info","message":"Trip 693860bdccee0f33f66e075f status updated to trip_completed","timestamp":"2025-12-09T17:48:01.324Z"}
+{"level":"info","message":"Trip 693860bdccee0f33f66e075f status updated to trip_completed","timestamp":"2025-12-09T17:48:01.341Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:48:01.576Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:48:04.575Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:48:08.643Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:48:11.714Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:48:14.642Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:48:17.566Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:48:20.693Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:48:23.632Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:48:26.692Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:48:29.650Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:48:39.065Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:48:39.069Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:48:39.070Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:48:41.686Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:48:44.665Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:48:47.689Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:48:50.692Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:48:53.674Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:48:56.650Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:48:59.682Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:49:02.673Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:49:32.672Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:49:32.675Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:49:32.677Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:49:35.685Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:49:38.664Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:49:41.678Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:49:44.659Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:49:47.705Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:49:50.665Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:49:53.684Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:49:56.669Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:49:59.687Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:50:08.163Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:50:08.165Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:50:08.696Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:50:11.685Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:50:14.686Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:50:17.655Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:50:20.656Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:50:23.691Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:50:26.663Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:50:29.688Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:51:09.349Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:52:00.937Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:52:00.943Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:52:00.944Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:52:02.546Z"}
+{"level":"info","message":"Client disconnected: 9Rb5lBZGNjC7KKJPAAAF","timestamp":"2025-12-09T17:52:03.801Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:52:05.516Z"}
+{"level":"info","message":"New client connected: 1-02y0PPSL7h3Nh1AAAH","timestamp":"2025-12-09T17:52:05.985Z"}
+{"level":"info","message":"Socket 1-02y0PPSL7h3Nh1AAAH joined room rider:693723c13d9c4057ad9512ed","timestamp":"2025-12-09T17:52:06.007Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:52:08.555Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:52:11.542Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:52:14.767Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:52:17.788Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:52:20.719Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:52:23.733Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:52:26.746Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:52:29.488Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:52:39.284Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:52:39.294Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:52:39.297Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:52:41.740Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:52:44.749Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:52:47.696Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:52:50.615Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:52:53.525Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:52:56.501Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:53:02.028Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:53:05.501Z"}
+{"level":"error","message":"Surge pricing calculation error: $geoNear, $near, and $nearSphere are not allowed in this context, as these operators require sorting geospatial data. If you do not need sort, consider using $geoWithin instead. Check out https://dochub.mongodb.org/core/near-sort-operation and https://dochub.mongodb.org/core/nearSphere-sort-operationfor more details.","timestamp":"2025-12-09T17:53:08.217Z"}
+{"level":"info","message":"Trip created: 69386204ccee0f33f66e0823","timestamp":"2025-12-09T17:53:08.235Z"}
+{"level":"info","message":"Socket 1-02y0PPSL7h3Nh1AAAH joined room rider:693723c13d9c4057ad9512ed","timestamp":"2025-12-09T17:53:08.245Z"}
+{"level":"info","message":"Ride requested: 69386204ccee0f33f66e0823","timestamp":"2025-12-09T17:53:08.246Z"}
+{"level":"info","message":"Found 1 nearby drivers for vehicle type: auto","timestamp":"2025-12-09T17:53:08.260Z"}
+{"level":"info","message":"Sent request to driver 693723c13d9c4057ad9512ef","timestamp":"2025-12-09T17:53:08.263Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:53:08.536Z"}
+{"level":"info","message":"Trip 69386204ccee0f33f66e0823 current status: searching","timestamp":"2025-12-09T17:53:12.294Z"}
+{"level":"info","message":"Driver 693723c13d9c4057ad9512ef accepted trip 69386204ccee0f33f66e0823","timestamp":"2025-12-09T17:53:12.325Z"}
+{"level":"info","message":"Driver 693723c13d9c4057ad9512ef accepted trip 69386204ccee0f33f66e0823","timestamp":"2025-12-09T17:53:12.332Z"}
+{"level":"info","message":"Notified rider 693723c13d9c4057ad9512ed of driver assignment","timestamp":"2025-12-09T17:53:12.362Z"}
+{"level":"info","message":"Trip 69386204ccee0f33f66e0823 status updated to driver_arrived","timestamp":"2025-12-09T17:53:15.285Z"}
+{"level":"info","message":"Trip 69386204ccee0f33f66e0823 status updated to driver_arrived","timestamp":"2025-12-09T17:53:15.299Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:53:16.365Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:53:16.369Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:53:16.663Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:53:19.576Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:53:22.645Z"}
+{"level":"info","message":"Trip 69386204ccee0f33f66e0823 status updated to trip_started","timestamp":"2025-12-09T17:53:23.757Z"}
+{"level":"info","message":"Trip 69386204ccee0f33f66e0823 status updated to trip_started","timestamp":"2025-12-09T17:53:23.776Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:53:25.771Z"}
+{"level":"info","message":"Trip 69386204ccee0f33f66e0823 status updated to trip_completed","timestamp":"2025-12-09T17:53:28.056Z"}
+{"level":"info","message":"Trip 69386204ccee0f33f66e0823 status updated to trip_completed","timestamp":"2025-12-09T17:53:28.072Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:53:28.602Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:53:32.784Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:53:35.796Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:53:38.763Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:53:41.707Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:53:45.129Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:53:55.660Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:53:55.672Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:53:55.706Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:53:57.051Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:54:00.135Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:54:02.811Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:54:05.728Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:54:08.707Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:54:11.753Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:54:15.151Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:54:17.713Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:54:20.752Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:54:23.712Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:54:32.463Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:54:32.466Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:55:05.385Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:55:05.391Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:55:08.157Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:55:14.653Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:55:14.655Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:55:17.698Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:55:20.675Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:55:23.689Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:55:26.646Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:55:29.676Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:55:32.684Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:55:41.257Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:55:41.260Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:55:41.660Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:55:44.676Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:55:47.656Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:55:50.649Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:55:53.669Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:55:56.623Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:55:59.687Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:56:02.674Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:56:05.737Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:56:08.653Z"}
+{"level":"warn","message":"Razorpay credentials not configured - payment gateway disabled","timestamp":"2025-12-09T17:56:25.447Z"}
+{"level":"info","message":"Server running in development mode on port 5000","timestamp":"2025-12-09T17:56:25.476Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T17:56:25.491Z"}
+{"level":"info","message":"MongoDB Connected: localhost","timestamp":"2025-12-09T17:56:25.500Z"}
+{"level":"info","message":"New client connected: neNEXtQDbmkOZYW0AAAC","timestamp":"2025-12-09T17:56:25.552Z"}
+{"level":"info","message":"New client connected: TU259FKagbYhuLOnAAAD","timestamp":"2025-12-09T17:56:25.559Z"}
+{"level":"info","message":"Socket neNEXtQDbmkOZYW0AAAC joined room driver:693723c13d9c4057ad9512ef","timestamp":"2025-12-09T17:56:25.567Z"}
+{"level":"info","message":"Socket TU259FKagbYhuLOnAAAD joined room rider:693723c13d9c4057ad9512ed","timestamp":"2025-12-09T17:56:25.578Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T17:56:25.580Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T17:56:25.696Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T17:56:25.852Z"}
+{"level":"warn","message":"Redis connection failed - running without cache","timestamp":"2025-12-09T17:56:25.853Z"}
+{"level":"warn","message":"Razorpay credentials not configured - payment gateway disabled","timestamp":"2025-12-09T17:56:40.088Z"}
+{"level":"info","message":"Server running in development mode on port 5000","timestamp":"2025-12-09T17:56:40.109Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T17:56:40.127Z"}
+{"level":"info","message":"MongoDB Connected: localhost","timestamp":"2025-12-09T17:56:40.145Z"}
+{"level":"info","message":"New client connected: hlppCp164OE26pJQAAAB","timestamp":"2025-12-09T17:56:40.193Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T17:56:40.202Z"}
+{"level":"info","message":"Socket hlppCp164OE26pJQAAAB joined room rider:693723c13d9c4057ad9512ed","timestamp":"2025-12-09T17:56:40.223Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T17:56:40.325Z"}
+{"level":"info","message":"New client connected: 6dmQEnqRywmrhvkgAAAD","timestamp":"2025-12-09T17:56:40.399Z"}
+{"level":"info","message":"Socket 6dmQEnqRywmrhvkgAAAD joined room driver:693723c13d9c4057ad9512ef","timestamp":"2025-12-09T17:56:40.417Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T17:56:40.483Z"}
+{"level":"warn","message":"Redis connection failed - running without cache","timestamp":"2025-12-09T17:56:40.485Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:57:09.172Z"}
+{"level":"warn","message":"Razorpay credentials not configured - payment gateway disabled","timestamp":"2025-12-09T17:57:22.161Z"}
+{"level":"info","message":"Server running in development mode on port 5000","timestamp":"2025-12-09T17:57:22.195Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T17:57:22.219Z"}
+{"level":"info","message":"MongoDB Connected: localhost","timestamp":"2025-12-09T17:57:22.237Z"}
+{"level":"info","message":"New client connected: adT0ry93ju32CrWEAAAB","timestamp":"2025-12-09T17:57:22.257Z"}
+{"level":"info","message":"Socket adT0ry93ju32CrWEAAAB joined room rider:693723c13d9c4057ad9512ed","timestamp":"2025-12-09T17:57:22.294Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T17:57:22.307Z"}
+{"level":"info","message":"New client connected: hi-mjjBy3EBdF2CJAAAD","timestamp":"2025-12-09T17:57:22.397Z"}
+{"level":"info","message":"Socket hi-mjjBy3EBdF2CJAAAD joined room driver:693723c13d9c4057ad9512ef","timestamp":"2025-12-09T17:57:22.415Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T17:57:22.417Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T17:57:22.587Z"}
+{"level":"warn","message":"Redis connection failed - running without cache","timestamp":"2025-12-09T17:57:22.587Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:58:09.553Z"}
+{"level":"warn","message":"Razorpay credentials not configured - payment gateway disabled","timestamp":"2025-12-09T17:59:30.201Z"}
+{"level":"info","message":"Server running in development mode on port 5000","timestamp":"2025-12-09T17:59:30.224Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T17:59:30.243Z"}
+{"level":"info","message":"MongoDB Connected: localhost","timestamp":"2025-12-09T17:59:30.254Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T17:59:30.324Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T17:59:30.435Z"}
+{"level":"info","message":"New client connected: XpydXjzz0qrAolo1AAAC","timestamp":"2025-12-09T17:59:30.449Z"}
+{"level":"info","message":"New client connected: 4fC7NSqvk8NsOYyHAAAD","timestamp":"2025-12-09T17:59:30.460Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T17:59:30.475Z"}
+{"level":"info","message":"Socket XpydXjzz0qrAolo1AAAC joined room driver:693723c13d9c4057ad9512ef","timestamp":"2025-12-09T17:59:30.501Z"}
+{"level":"info","message":"Socket 4fC7NSqvk8NsOYyHAAAD joined room rider:693723c13d9c4057ad9512ed","timestamp":"2025-12-09T17:59:30.510Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-09T17:59:30.603Z"}
+{"level":"warn","message":"Redis connection failed - running without cache","timestamp":"2025-12-09T17:59:30.604Z"}
+{"level":"info","message":"Client disconnected: XpydXjzz0qrAolo1AAAC","timestamp":"2025-12-09T17:59:48.659Z"}
+{"level":"error","message":"Auth error: jwt expired","timestamp":"2025-12-09T17:59:49.304Z"}
+{"level":"info","message":"Client disconnected: 4fC7NSqvk8NsOYyHAAAD","timestamp":"2025-12-09T17:59:51.821Z"}
+{"level":"info","message":"User logged in: 8500850058","timestamp":"2025-12-09T18:00:20.008Z"}
+{"level":"info","message":"New client connected: PO9qtyFfpIS0FzJQAAAF","timestamp":"2025-12-09T18:00:22.765Z"}
+{"level":"info","message":"Socket PO9qtyFfpIS0FzJQAAAF joined room rider:693723c13d9c4057ad9512ed","timestamp":"2025-12-09T18:00:22.784Z"}
+{"level":"error","message":"Auth error: jwt expired","timestamp":"2025-12-09T18:00:31.397Z"}
+{"level":"info","message":"User logged in: 8500850058","timestamp":"2025-12-09T18:01:01.019Z"}
+{"level":"info","message":"New client connected: DVhup9nklm5_7_RNAAAH","timestamp":"2025-12-09T18:01:01.163Z"}
+{"level":"info","message":"Socket DVhup9nklm5_7_RNAAAH joined room driver:693723c13d9c4057ad9512ef","timestamp":"2025-12-09T18:01:01.194Z"}
+{"level":"info","message":"Socket DVhup9nklm5_7_RNAAAH joined room driver:693723c13d9c4057ad9512ef","timestamp":"2025-12-09T18:01:03.240Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:01:07.369Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:01:09.582Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:01:12.530Z"}
+{"level":"error","message":"Surge pricing calculation error: $geoNear, $near, and $nearSphere are not allowed in this context, as these operators require sorting geospatial data. If you do not need sort, consider using $geoWithin instead. Check out https://dochub.mongodb.org/core/near-sort-operation and https://dochub.mongodb.org/core/nearSphere-sort-operationfor more details.","timestamp":"2025-12-09T18:01:12.834Z"}
+{"level":"info","message":"Trip created: 693863e819733a2537bc7c01","timestamp":"2025-12-09T18:01:12.872Z"}
+{"level":"info","message":"Socket PO9qtyFfpIS0FzJQAAAF joined room rider:693723c13d9c4057ad9512ed","timestamp":"2025-12-09T18:01:12.881Z"}
+{"level":"info","message":"Ride requested: 693863e819733a2537bc7c01","timestamp":"2025-12-09T18:01:12.883Z"}
+{"level":"info","message":"Found 1 nearby drivers for vehicle type: auto","timestamp":"2025-12-09T18:01:12.898Z"}
+{"level":"info","message":"Sent request to driver 693723c13d9c4057ad9512ef","timestamp":"2025-12-09T18:01:12.904Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:01:15.374Z"}
+{"level":"info","message":"Trip 693863e819733a2537bc7c01 current status: searching","timestamp":"2025-12-09T18:01:16.754Z"}
+{"level":"info","message":"Driver 693723c13d9c4057ad9512ef accepted trip 693863e819733a2537bc7c01","timestamp":"2025-12-09T18:01:16.797Z"}
+{"level":"info","message":"Driver 693723c13d9c4057ad9512ef accepted trip 693863e819733a2537bc7c01","timestamp":"2025-12-09T18:01:16.806Z"}
+{"level":"info","message":"Notified rider 693723c13d9c4057ad9512ed of driver assignment","timestamp":"2025-12-09T18:01:16.827Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:01:18.419Z"}
+{"level":"info","message":"Trip 693863e819733a2537bc7c01 status updated to driver_arrived","timestamp":"2025-12-09T18:01:18.817Z"}
+{"level":"info","message":"Trip 693863e819733a2537bc7c01 status updated to driver_arrived","timestamp":"2025-12-09T18:01:18.835Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:01:21.499Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:01:24.445Z"}
+{"level":"info","message":"Trip 693863e819733a2537bc7c01 status updated to trip_started","timestamp":"2025-12-09T18:01:27.143Z"}
+{"level":"info","message":"Trip 693863e819733a2537bc7c01 status updated to trip_started","timestamp":"2025-12-09T18:01:27.161Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:01:27.376Z"}
+{"level":"info","message":"Trip 693863e819733a2537bc7c01 status updated to trip_completed","timestamp":"2025-12-09T18:01:28.748Z"}
+{"level":"info","message":"Trip 693863e819733a2537bc7c01 status updated to trip_completed","timestamp":"2025-12-09T18:01:28.764Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:01:30.406Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:01:33.755Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:01:36.813Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:01:45.625Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:01:45.632Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:01:45.633Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:01:48.647Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:01:51.604Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:01:54.537Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:01:57.537Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:02:00.558Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:02:03.532Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:02:06.394Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:02:09.417Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:02:12.404Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:02:15.404Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:02:24.331Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:02:24.337Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:02:24.340Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:02:27.493Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:02:30.464Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:02:33.655Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:02:36.433Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:02:39.528Z"}
+{"level":"error","message":"Surge pricing calculation error: $geoNear, $near, and $nearSphere are not allowed in this context, as these operators require sorting geospatial data. If you do not need sort, consider using $geoWithin instead. Check out https://dochub.mongodb.org/core/near-sort-operation and https://dochub.mongodb.org/core/nearSphere-sort-operationfor more details.","timestamp":"2025-12-09T18:02:42.002Z"}
+{"level":"info","message":"Trip created: 6938644219733a2537bc7c73","timestamp":"2025-12-09T18:02:42.023Z"}
+{"level":"info","message":"Socket PO9qtyFfpIS0FzJQAAAF joined room rider:693723c13d9c4057ad9512ed","timestamp":"2025-12-09T18:02:42.033Z"}
+{"level":"info","message":"Ride requested: 6938644219733a2537bc7c73","timestamp":"2025-12-09T18:02:42.035Z"}
+{"level":"info","message":"Found 1 nearby drivers for vehicle type: auto","timestamp":"2025-12-09T18:02:42.048Z"}
+{"level":"info","message":"Sent request to driver 693723c13d9c4057ad9512ef","timestamp":"2025-12-09T18:02:42.051Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:02:42.634Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:02:45.356Z"}
+{"level":"info","message":"Trip 6938644219733a2537bc7c73 current status: searching","timestamp":"2025-12-09T18:02:46.229Z"}
+{"level":"info","message":"Driver 693723c13d9c4057ad9512ef accepted trip 6938644219733a2537bc7c73","timestamp":"2025-12-09T18:02:46.262Z"}
+{"level":"info","message":"Driver 693723c13d9c4057ad9512ef accepted trip 6938644219733a2537bc7c73","timestamp":"2025-12-09T18:02:46.272Z"}
+{"level":"info","message":"Notified rider 693723c13d9c4057ad9512ed of driver assignment","timestamp":"2025-12-09T18:02:46.292Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:02:48.416Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:02:51.551Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:03:00.567Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:03:00.571Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:03:00.572Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:03:03.682Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:03:06.495Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:03:09.660Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:03:12.673Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:03:15.668Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:03:18.698Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:03:21.709Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:03:24.665Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:03:27.707Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:03:32.317Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:03:33.658Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:03:36.716Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:03:39.676Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:03:42.646Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:03:45.677Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:03:48.667Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:03:51.661Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:03:54.669Z"}
+{"level":"warn","message":"Redis cache failed:","timestamp":"2025-12-09T18:04:08.958Z"}

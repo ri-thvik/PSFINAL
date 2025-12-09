@@ -17,7 +17,8 @@ const TransactionSchema = new mongoose.Schema({
             'bonus',
             'penalty',
             'commission',
-            'referral_reward'
+            'referral_reward',
+            'test'
         ],
         required: true
     },

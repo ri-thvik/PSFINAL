@@ -225,15 +225,18 @@ async function verifyToken() {
                 // User is logged in but not a driver
                 console.warn('User is not a driver or profile missing');
                 localStorage.removeItem('driverToken');
+                token = null;
                 showAuthScreen();
             }
         } else {
             localStorage.removeItem('driverToken');
+            token = null;
             showAuthScreen();
         }
     } catch (err) {
         console.error(err);
         localStorage.removeItem('driverToken');
+        token = null;
         showAuthScreen();
     }
 }
@@ -687,6 +690,7 @@ function updateVehicleTypeOptions() {
 
 // Make it global so HTML can access it
 window.updateVehicleTypeOptions = updateVehicleTypeOptions;
+window.confirmCashPayment = confirmCashPayment;
 
 // Initialize file upload handlers
 document.addEventListener('DOMContentLoaded', () => {
@@ -790,6 +794,35 @@ async function submitRegistration() {
         }
 
         driver = driverData.data.driver || driverData.data; // Handle potential structure difference
+
+        // Upload documents
+        if (token) {
+            const docTypes = ['license', 'rc', 'insurance', 'aadhar', 'photo'];
+            submitText.textContent = 'Uploading Docs...';
+
+            for (const type of docTypes) {
+                const file = registrationData[`doc_${type}`];
+                if (file) {
+                    try {
+                        const formData = new FormData();
+                        formData.append('file', file);
+                        formData.append('documentType', type);
+
+                        await fetch(`${API_URL}/drivers/documents`, {
+                            method: 'POST',
+                            headers: {
+                                'Authorization': `Bearer ${token}`
+                            },
+                            body: formData
+                        });
+                        console.log(`Uploaded ${type}`);
+                    } catch (docErr) {
+                        console.error(`Failed to upload ${type}:`, docErr);
+                    }
+                }
+            }
+        }
+
         alert('Registration successful! Your account is pending verification.');
         updateDriverInfo();
         setRegistrationVisibility(false);
@@ -888,6 +921,18 @@ function initSocket() {
 
     socket.on('ride:cancelled', (data) => {
         handleRideCancelled(data);
+    });
+
+    socket.on('payment:received', (data) => {
+        console.log('Payment received:', data);
+        if (tripState === 'payment_pending') {
+            // Map test_card back to a friendly name if needed, or just say 'Online'
+            let displayMethod = data.method;
+            if (data.method === 'test_card') displayMethod = 'Online Payment';
+
+            showNotification(`Payment received: ₹${data.amount} via ${displayMethod}`, 'success');
+            showTripCompletion();
+        }
     });
 }
 
@@ -1244,6 +1289,12 @@ function updateTripActionButton() {
         case 'in_trip':
             statusLabel.textContent = 'Trip in progress';
             actionText.textContent = 'Complete Trip';
+            // Update the top time display
+            const etaEl = document.getElementById('trip-eta');
+            if (etaEl && currentTrip) {
+                const duration = currentTrip.duration || 15;
+                etaEl.textContent = `${Math.round(duration)} mins to drop`;
+            }
             break;
     }
 }
@@ -1269,24 +1320,46 @@ function handleTripAction() {
 function completeTrip() {
     updateTripStatusFromDriver('trip_completed', () => {
         const fare = currentTrip?.fare?.amount || currentTrip?.fare || 0;
-        const distance = currentTrip?.distance || (Math.random() * 10 + 2).toFixed(1);
-        const duration = currentTrip?.duration || Math.floor(Math.random() * 30 + 10);
 
-        document.getElementById('complete-fare').textContent = fare;
-        document.getElementById('complete-distance').textContent = distance;
-        document.getElementById('complete-duration').textContent = duration;
+        if (currentTrip?.fare?.paid) {
+            showTripCompletion();
+            return;
+        }
 
+        // Show waiting for payment screen
         document.getElementById('trip-sheet').style.display = 'none';
-        document.getElementById('complete-sheet').style.display = 'block';
+        document.getElementById('payment-waiting-sheet').style.display = 'block';
+        document.getElementById('payment-waiting-amount').textContent = fare;
 
-        // Update stats
-        todayEarnings += fare;
-        todayTrips++;
-        updateStats();
-        saveStats();
-
-        tripState = 'idle';
+        tripState = 'payment_pending';
     });
+}
+
+function showTripCompletion() {
+    const fare = currentTrip?.fare?.amount || currentTrip?.fare || 0;
+    const distance = currentTrip?.distance || (Math.random() * 10 + 2).toFixed(1);
+    const duration = currentTrip?.duration || Math.floor(Math.random() * 30 + 10);
+
+    document.getElementById('complete-fare').textContent = fare;
+    document.getElementById('complete-distance').textContent = distance;
+    document.getElementById('complete-duration').textContent = duration;
+
+    document.getElementById('payment-waiting-sheet').style.display = 'none';
+    document.getElementById('complete-sheet').style.display = 'block';
+
+    // Update stats
+    todayEarnings += fare;
+    todayTrips++;
+    updateStats();
+    saveStats();
+
+    tripState = 'idle';
+}
+
+function confirmCashPayment() {
+    // For now, we assume cash payment updates are implicit or handled locally
+    // In a real app, you'd call an API to mark the trip as paid via cash
+    showTripCompletion();
 }
 
 function finishTrip() {
@@ -1469,7 +1542,7 @@ async function drawDriverRoute(pickup, drop) {
             const coordinates = decodePolyline(route.geometry);
 
             routeLayer = L.polyline(coordinates, {
-                color: '#00C853',
+                color: '#4CAF50',
                 weight: 4,
                 opacity: 0.8
             }).addTo(map);

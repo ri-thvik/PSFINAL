@@ -5,7 +5,7 @@ const PaymentSchema = new mongoose.Schema({
     tripId: { type: mongoose.Schema.Types.ObjectId, ref: 'Trip', index: true },
     type: {
         type: String,
-        enum: ['trip_payment', 'wallet_topup', 'refund', 'withdrawal'],
+        enum: ['trip_payment', 'wallet_topup', 'refund', 'withdrawal', 'test_credit'],
         required: true
     },
     amount: { type: Number, required: true },
@@ -18,7 +18,7 @@ const PaymentSchema = new mongoose.Schema({
     },
     paymentMethod: {
         type: String,
-        enum: ['wallet', 'razorpay', 'paytm', 'cash', 'card', 'upi'],
+        enum: ['wallet', 'razorpay', 'paytm', 'cash', 'card', 'upi', 'test_card'],
         required: true
     },
     paymentGateway: {

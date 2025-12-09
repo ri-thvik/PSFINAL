@@ -557,7 +557,8 @@ function handleDriverAssigned(data) {
     document.getElementById('driver-rating').textContent = data.driver?.rating || '5.0';
     document.getElementById('vehicle-model').textContent = data.driver?.vehicleModel || 'Vehicle';
     document.getElementById('vehicle-number').textContent = data.driver?.vehicleNumber || 'N/A';
-    document.getElementById('driver-eta').textContent = '3 mins';
+    document.getElementById('driver-eta').textContent = '5 mins';
+    document.getElementById('trip-status-text').textContent = 'Driver is arriving';
     document.getElementById('trip-otp').textContent = data.otp || '0000';
 
     // Update vehicle icon
@@ -619,7 +620,11 @@ function updateTripStatus(data) {
                 break;
             case 'trip_started':
                 statusTextEl.textContent = 'Trip in progress';
-                if (driverEtaEl) driverEtaEl.style.display = 'none';
+                if (driverEtaEl) {
+                    driverEtaEl.style.display = 'block';
+                    const duration = currentTrip?.duration || 15; // Fallback or use actual duration
+                    driverEtaEl.textContent = `${Math.round(duration)} mins to destination`;
+                }
                 // Hide OTP section when trip starts
                 const otpSectionStarted = document.getElementById('otp-section');
                 if (otpSectionStarted) otpSectionStarted.style.display = 'none';
@@ -1004,30 +1009,58 @@ function selectPaymentMethod(method) {
     document.getElementById('pay-now-btn').removeAttribute('disabled');
 }
 
-function processPayment() {
+async function processPayment() {
     if (!selectedPaymentMethod) return;
 
     const payBtn = document.getElementById('pay-now-btn');
     payBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processing...';
     payBtn.disabled = true;
 
-    // Simulate payment processing
-    setTimeout(() => {
-        // Hide payment modal
-        document.getElementById('payment-modal').style.display = 'none';
+    try {
+        const fareAmount = document.getElementById('payment-amount-display').textContent.replace('₹', '');
 
-        // Show success notification
-        showNotification('Payment successful!', 'success');
+        // Map frontend payment methods to backend API methods
+        // For card/upi/cash, we use 'test_card' to simulate successful external payment in this demo
+        let apiMethod = selectedPaymentMethod;
 
-        // Show rating modal
-        if (currentPaymentTripId) {
-            showRatingModal(currentPaymentTripId);
+
+        const res = await fetch(`${API_URL}/payments/create-order`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${token}`
+            },
+            body: JSON.stringify({
+                amount: parseFloat(fareAmount),
+                tripId: currentPaymentTripId,
+                paymentMethod: apiMethod
+            })
+        });
+
+        const data = await res.json();
+
+        if (data.success) {
+            // Hide payment modal
+            document.getElementById('payment-modal').style.display = 'none';
+
+            // Show success notification
+            showNotification('Payment successful!', 'success');
+
+            // Show rating modal
+            if (currentPaymentTripId) {
+                showRatingModal(currentPaymentTripId);
+            }
+        } else {
+            showNotification(data.message || 'Payment failed', 'error');
         }
 
-        // Reset button for next time (though page likely reloaded or state reset)
+    } catch (err) {
+        console.error(err);
+        showNotification('Payment error', 'error');
+    } finally {
         payBtn.textContent = 'Pay Now';
         payBtn.disabled = false;
-    }, 1500);
+    }
 }
 
 // ==================== RATING ====================
