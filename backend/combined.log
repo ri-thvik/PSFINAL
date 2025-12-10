@@ -17430,3 +17430,35 @@
 {"level":"info","message":"Socket tSXwtJUvdmD0T8QZAAAD joined room rider:693723c13d9c4057ad9512ed","timestamp":"2025-12-10T06:06:03.533Z"}
 {"level":"info","message":"Client disconnected: tSXwtJUvdmD0T8QZAAAD","timestamp":"2025-12-10T06:08:14.730Z"}
 {"level":"info","message":"Client disconnected: dl5XmutPi8DiEU29AAAB","timestamp":"2025-12-10T06:09:34.392Z"}
+{"level":"warn","message":"Razorpay credentials not configured - payment gateway disabled","timestamp":"2025-12-10T06:59:56.932Z"}
+{"level":"info","message":"Server running in development mode on port 5000","timestamp":"2025-12-10T06:59:56.958Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-10T06:59:56.970Z"}
+{"level":"info","message":"MongoDB Connected: localhost","timestamp":"2025-12-10T06:59:56.978Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-10T06:59:57.027Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-10T06:59:57.139Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-10T06:59:57.298Z"}
+{"level":"warn","message":"Redis connection failed - running without cache","timestamp":"2025-12-10T06:59:57.298Z"}
+{"level":"error","message":"Auth error: jwt expired","timestamp":"2025-12-10T07:00:48.214Z"}
+{"level":"info","message":"User logged in: gaswith@gmail.com","timestamp":"2025-12-10T07:10:58.901Z"}
+{"level":"info","message":"New client connected: 7350O9Ln4hFFIDTJAAAB","timestamp":"2025-12-10T07:11:01.666Z"}
+{"level":"info","message":"Socket 7350O9Ln4hFFIDTJAAAB joined room rider:6936a8460ccfef473a83db30","timestamp":"2025-12-10T07:11:01.685Z"}
+{"level":"info","message":"Client disconnected: 7350O9Ln4hFFIDTJAAAB","timestamp":"2025-12-10T07:36:03.937Z"}
+{"level":"warn","message":"Razorpay credentials not configured - payment gateway disabled","timestamp":"2025-12-10T08:53:34.623Z"}
+{"level":"info","message":"Server running in development mode on port 5000","timestamp":"2025-12-10T08:53:35.159Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-10T08:53:35.188Z"}
+{"level":"info","message":"MongoDB Connected: localhost","timestamp":"2025-12-10T08:53:35.213Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-10T08:53:35.281Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-10T08:53:35.412Z"}
+{"level":"warn","message":"Redis not available - running without cache","timestamp":"2025-12-10T08:53:35.568Z"}
+{"level":"warn","message":"Redis connection failed - running without cache","timestamp":"2025-12-10T08:53:35.570Z"}
+{"level":"error","message":"Auth error: jwt expired","timestamp":"2025-12-10T08:53:46.223Z"}
+{"level":"warn","message":"Redis error, falling back to memory:","timestamp":"2025-12-10T08:54:28.711Z"}
+{"level":"info","message":"OTP stored in memory for 6281949742","timestamp":"2025-12-10T08:54:28.713Z"}
+{"level":"info","message":"OTP email sent to gaswith@gmail.com: <c5fc374d-05da-534a-b1b5-edc2da587e09@gmail.com>","timestamp":"2025-12-10T08:54:33.078Z"}
+{"level":"info","message":"OTP for 6281949742: 468655","timestamp":"2025-12-10T08:54:33.079Z"}
+{"level":"warn","message":"Redis error, falling back to memory:","timestamp":"2025-12-10T08:55:24.525Z"}
+{"level":"info","message":"OTP stored in memory for 6281949742","timestamp":"2025-12-10T08:55:24.526Z"}
+{"level":"info","message":"OTP email sent to aswith0606@gmail.com: <ca934f81-a816-806f-dc02-a2423a483881@gmail.com>","timestamp":"2025-12-10T08:55:29.698Z"}
+{"level":"info","message":"OTP for 6281949742: 367460","timestamp":"2025-12-10T08:55:29.699Z"}
+{"level":"warn","message":"Redis read error:","timestamp":"2025-12-10T08:55:44.585Z"}
+{"level":"info","message":"OTP verified for 6281949742","timestamp":"2025-12-10T08:55:44.588Z"}

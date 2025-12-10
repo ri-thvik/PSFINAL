@@ -1,0 +1,301 @@
+:root {
+    --primary-black: #000000;
+    --primary-white: #ffffff;
+    --gray-bg: #f3f3f3;
+    --gray-text: #666666;
+    --border-radius: 12px;
+    --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.08);
+    --shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.12);
+    --panel-width: 400px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    overflow: hidden; /* Prevent scrolling on main body */
+}
+
+/* Map adjustments */
+#map-container {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+/* Hide legacy elements that we are replacing */
+.bottom-sheet, .map-container button.current-location-btn {
+    display: none !important;
+}
+
+/* Floating Panel Container */
+#root {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Let clicks pass through to map where panel isn't */
+    z-index: 1000;
+}
+
+.floating-panel-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: var(--panel-width);
+    max-height: calc(100vh - 40px);
+    pointer-events: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .floating-panel-container {
+        top: auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+        gap: 0;
+    }
+}
+
+/* Card Styles */
+.ui-card {
+    background: var(--primary-white);
+    border-radius: var(--border-radius);
+    padding: 24px;
+    box-shadow: var(--shadow-soft);
+    margin-bottom: 16px;
+}
+
+.ui-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.ui-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    color: var(--primary-black);
+}
+
+/* Location Selection Styling */
+.location-step {
+    display: flex;
+    align-items: flex-start; /* Align top for better multiline handling */
+    padding: 12px 0;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-radius: 8px;
+}
+.location-step:hover {
+    background-color: var(--gray-bg);
+}
+
+.step-icon {
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    margin-top: 4px; /* Align visually with text */
+    margin-right: 12px;
+}
+.dot-green {
+    width: 10px;
+    height: 10px;
+    background-color: #27AE60;
+    border-radius: 50%;
+}
+.dot-red {
+    width: 10px;
+    height: 10px;
+    background-color: #EB4D4B;
+    border-radius: 50%; /* Make it circular like screenshots usually have */
+}
+.dot-blue {
+    color: #3498DB;
+    font-size: 14px;
+}
+
+.location-connector {
+    position: absolute;
+    left: 11px; /* Center of the icon width (24px) */
+    top: 30px;
+    bottom: -10px;
+    width: 2px;
+    background-color: #e0e0e0;
+    z-index: 0;
+}
+/* Hide connector for last item */
+.location-step:last-child .location-connector {
+    display: none;
+}
+
+.step-content {
+    flex: 1;
+}
+
+.step-title {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.step-subtitle {
+    font-size: 12px;
+    color: var(--gray-text);
+}
+
+.shortcut-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.shortcut-btn {
+    flex: 1;
+    background: var(--gray-bg);
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+.shortcut-btn:hover {
+    background: #e0e0e0;
+}
+.shortcut-icon {
+    width: 24px;
+    height: 24px;
+    background: var(--primary-black);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+/* Ride Selection Styling */
+.ride-option {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    background: var(--gray-bg);
+    border-radius: 12px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.ride-option.selected {
+    border-color: var(--primary-black);
+    background: var(--primary-white);
+}
+
+.ride-icon-container {
+    width: 60px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+}
+.ride-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+/* Font Awesome fallback icons */
+.ride-fa-icon {
+    font-size: 24px;
+    color: var(--primary-black);
+}
+
+.ride-details {
+    flex: 1;
+}
+
+.ride-name {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.ride-seats {
+    font-size: 12px;
+    color: var(--gray-text);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.ride-eta {
+    font-size: 12px;
+    color: var(--gray-text);
+    margin-top: 2px;
+}
+
+.ride-price {
+    font-size: 18px;
+    font-weight: 700;
+}
+.ride-option.selected .ride-check {
+    display: block;
+}
+.ride-check {
+    display: none;
+    margin-left: 8px;
+    color: var(--primary-black);
+}
+
+/* Confirm Button */
+.confirm-btn {
+    width: 100%;
+    padding: 16px;
+    background: var(--primary-black);
+    color: var(--primary-white);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.2s;
+    margin-top: 8px;
+}
+.confirm-btn:hover {
+    opacity: 0.9;
+}
+.confirm-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

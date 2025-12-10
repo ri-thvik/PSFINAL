@@ -97,7 +97,7 @@ async function handleLogin(type) {
 
             // Redirect to main app
             setTimeout(() => {
-                window.location.href = 'index.html';
+                window.location.href = 'rider-dashboard.html';
             }, 500);
         } else {
             showNotification(data.message || 'Login failed', 'error');
