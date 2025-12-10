@@ -33,44 +33,42 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    /* Split image and form */
-    background: #0c0c0c;
-    padding: 0;
+    justify-content: center;
+    background: transparent;
+    padding: 20px;
     position: relative;
     overflow: hidden;
 }
 
-.auth-wrapper::before {
-    content: '';
-    position: relative;
-    /* Flow relative to flex container */
-    width: 60%;
-    /* Occupy left side */
-    height: 100vh;
-    /* Full height */
-    background: url('../images/login_bg_final.jpg') no-repeat center center;
-    background-size: cover;
-    /* Fill the area nicely */
-    margin-left: 0;
-    /* Remove margin to flush with edge */
-    z-index: 0;
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: blur(8px);
+    transform: scale(1.1);
 }
+
+/* Removed .auth-wrapper::before */
 
 /* ==================== AUTH CONTAINER ==================== */
 .auth-container {
     width: 100%;
-    max-width: 450px;
-    margin-right: 8%;
-    /* Spacing from right edge */
+    max-width: 420px;
+    margin: 0;
     flex-shrink: 0;
     position: relative;
     z-index: 1;
-    /* Keep other styles from original class */
-    background: #1a1a1a;
+    background: rgba(20, 20, 20, 0.6);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: var(--radius-lg);
     padding: 40px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.4);
 }
 
 .auth-header {

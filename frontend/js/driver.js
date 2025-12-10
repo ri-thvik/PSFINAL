@@ -488,17 +488,16 @@ function startRegistration() {
 }
 
 function cancelRegistration() {
-    if (confirm('Are you sure you want to cancel registration? All entered data will be lost.')) {
-        document.getElementById('registration-screen').classList.remove('active');
-        document.getElementById('registration-screen').style.display = 'none';
-        document.getElementById('auth-screen').classList.add('active');
-        document.getElementById('auth-screen').style.display = 'block';
-        currentStep = 1;
-        registrationData = {};
-        resetRegistrationForm();
-        scrollRegistrationToTop();
-        setRegistrationVisibility(false);
-    }
+    // Removed confirmation for smoother UX as requested
+    document.getElementById('registration-screen').classList.remove('active');
+    document.getElementById('registration-screen').style.display = 'none';
+    document.getElementById('auth-screen').classList.add('active');
+    document.getElementById('auth-screen').style.display = 'block';
+    currentStep = 1;
+    registrationData = {};
+    resetRegistrationForm();
+    scrollRegistrationToTop();
+    setRegistrationVisibility(false);
 }
 
 function nextStep(step) {

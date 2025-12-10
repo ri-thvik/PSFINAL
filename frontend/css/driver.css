@@ -2945,3 +2945,132 @@ select {
     /* Match logo green */
     font-weight: 600;
 }
+
+/* ==================== REGISTRATION SCREEN NEW ==================== */
+#registration-screen {
+    /* Background handled by pseudo-element for blur */
+    min-height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#registration-screen::before {
+    content: '';
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    width: 110%;
+    height: 110%;
+    background: url('../images/driver_login_bg_final.jpg') no-repeat center center;
+    background-size: cover;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+#registration-screen[style*="display: block"],
+#registration-screen.active {
+    display: flex !important;
+}
+
+.registration-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    max-width: 550px;
+    max-height: 80vh;
+    overflow-y: auto;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Custom scrollbar for container */
+.registration-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.registration-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.registration-container::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+}
+
+.registration-step h2 {
+    font-size: 30px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 8px;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.registration-step p {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 32px;
+    font-weight: 500;
+}
+
+.registration-progress {
+    margin-bottom: 40px;
+}
+
+.registration-container .input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.registration-container .input-group .input-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #555;
+    /* Darker color for visibility on white input */
+    z-index: 10;
+    pointer-events: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.registration-container .input-group input,
+.registration-container .input-group select {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid transparent;
+    color: #333;
+    padding: 16px 16px 16px 50px;
+    /* Space for icon */
+    border-radius: 12px;
+    font-weight: 500;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.registration-container .input-group input:focus,
+.registration-container .input-group select:focus {
+    background: #ffffff;
+    border-color: var(--driver-primary);
+    box-shadow: 0 0 0 4px rgba(0, 200, 83, 0.2);
+    /* Ensure icon changes color or stays visible */
+}
+
+/* Update icon color when input is focused */
+.registration-container .input-group:focus-within .input-icon {
+    color: var(--driver-primary);
+}
